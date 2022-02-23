@@ -10,5 +10,17 @@ module.exports = {
       "path": "./public/static/images"
     },
     __key: "images"
-  }]
+  },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Oxygen\:300,400,700`,
+          `Red Rose`,
+          `Lato\:300,400,700`,
+        ],
+        display: 'swap'
+      }
+    }
+  ]
 };
