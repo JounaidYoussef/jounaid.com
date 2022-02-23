@@ -1,13 +1,11 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 import Layout from "../components/Layout"
 
 // styles
 const pageStyles = {
   color: "#232129",
-  fontFamily: 'Lato'
+  fontFamily: 'Poppins',
+  fontWeight: "300"
 }
 
 // data
@@ -63,6 +61,14 @@ const IndexPage = () => {
     <Layout>
     <main style={pageStyles}>
       <title>Home Page</title>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
       <h1>Hello world</h1>
     </main>
     </Layout>

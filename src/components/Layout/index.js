@@ -7,10 +7,17 @@ const styles = {
   color: "#232129",
   padding:"40px 160px 40px 160px"}
 
+const container = {
+    padding:"0 0 0 0"
+  }
+
 export default ({ children }) => (
+  <div style={container}>
   <div style={styles}>
     <Header />
     {children}
-    <Footer />
+
   </div>
+      <Footer />
+      </div>
 )

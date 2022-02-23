@@ -15,9 +15,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Poppins\:100,200,300,400,500,600,700,800,900`,
           `Oxygen\:300,400,700`,
-          `Red Rose`,
-          `Lato\:300,400,700`,
         ],
         display: 'swap'
       }

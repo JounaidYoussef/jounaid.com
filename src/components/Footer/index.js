@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-// import "./index.scss"
+import "./index.scss"
 
 const Footer = () => (
-  <header className="container header">
-    <div className="header-container">
+  <footer className="container-footer">
+    <div className="footer-container">
       {/* <Link to="/">
         <Logo className="logo" alt="Logo" />
       </Link> */}
@@ -35,7 +35,12 @@ const Footer = () => (
            >About</Link>
       </div>
     </div>
-  </header>
+    <div><p>H</p></div>
+    <div><p>H</p></div>
+
+    <div><p>H</p></div>
+
+  </footer>
 )
 
 export default Footer
