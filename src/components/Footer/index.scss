@@ -9,12 +9,31 @@
     &:before{
         content: '';
         position: absolute;
+        z-index: -1;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(45deg,#ff0081,#6827b0);
+        background: linear-gradient(45deg,#527693,#4C596A);
         border-radius: 70% 70% 0 0/90% 90% 0 0;
         transform: scaleX(1.5);
     }
 }
+// .links{
+//     z-index: -1;
+//     position: relative;
+// }
+
+.contact{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    .getintouch {
+      color: white;
+      text-decoration: none;
+      background-color: #D19821;
+      padding: 8px 40px 8px 40px ;
+      border-radius: 20px;
+    }
+    }
