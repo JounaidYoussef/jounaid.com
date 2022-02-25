@@ -6,6 +6,7 @@ import Linkedin from "../../assets/linkedin.svg"
 import Twitter from "../../assets/twitter.svg"
 import Instagram from "../../assets/instagram.svg"
 import Dribbble from "../../assets/dribbble.svg"
+import SocialBar from "../Bars/SocialBar"
 
 const Footer = () => {
   return(
@@ -13,33 +14,39 @@ const Footer = () => {
       {/* <Link to="/">
         <Logo className="logo" alt="Logo" />
       </Link> */}
-      <div className="links">
-        <p>Got a project? Let’s talk</p>
+      <div className="footer-links">
+        <p className="footer-catch">Got a project? Let’s talk</p>
       <div className="contact">
       <a className="getintouch" href="#">Leave a Message</a>
       </div>
-      <div className="social-icons">
+      <SocialBar fill="#FFFFFF" />
+      {/* <div className="social-icons">
       <a
+      className="icon"
       href="https://www.linkedin.com/in/jounaidyoussef/">
       <Linkedin />
     </a>
     <a
+      className="icon"
       href="https://github.com/JounaidYoussef">
       <Github />
     </a>
     <a
-      href="https://podcasts.apple.com/us/podcast/geeksblabla/id1449493227">
+      className="icon"
+      href="https://twitter.com/JounaidYoussef">
       <Twitter />
     </a>
     <a
-      href="https://podcasts.apple.com/us/podcast/geeksblabla/id1449493227">
+      className="icon"
+      href="https://www.instagram.com/iamyoussefjounaid/">
       <Instagram />
     </a>
     <a
-      href="https://podcasts.apple.com/us/podcast/geeksblabla/id1449493227">
+      className="icon"
+      href="https://dribbble.com/jounaidyoussef">
       <Dribbble />
     </a>
-      </div>
+      </div> */}
       </div>
 
 
