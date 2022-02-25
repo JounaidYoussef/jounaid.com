@@ -1,0 +1,59 @@
+.intro-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.minicontainer{
+    flex: 1;
+}
+
+.personal-asset{
+    display: flex;
+    justify-content: center;
+    }
+
+.go-to-blog{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-top: 8px;
+.visit-blog {
+      color: white;
+      text-decoration: none;
+      background-color: #4C596A;
+      padding: 4px 20px 4px 20px ;
+      border-radius: 20px;
+}
+}
+
+.myname{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size:20px;
+}
+
+.dictionary{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.intro{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.line{
+    width: 80%;
+    text-align: left;
+    margin-left: 0;
+    border-width: 1px;
+    border-color: #4C596A;
+    background-color: #4C596A;
+}

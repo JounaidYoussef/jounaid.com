@@ -9,7 +9,12 @@ return (
       {/* <Link to="/">
         <Logo className="logo" alt="Logo" />
       </Link> */}
-      <p>Logo</p>
+      <Link
+           to="/"
+           // activeClassName="active"
+           >
+      Logo
+      </Link>
       <div className="links">
       <Link
            to="/blog"
