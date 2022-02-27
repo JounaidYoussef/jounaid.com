@@ -1,13 +1,13 @@
-import * as React from "react"
-import Intro from "../components/Home/Intro"
-import Layout from "../components/Layout"
+import * as React from 'react';
+import Intro from '../components/Home/Intro';
+import Layout from '../components/Layout';
 
 // styles
 const pageStyles = {
-  color: "#232129",
+  color: '#232129',
   fontFamily: 'Poppins',
-  fontWeight: "300"
-}
+  fontWeight: '300',
+};
 
 // data
 // const links = [
@@ -24,12 +24,12 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <Layout>
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <Intro />
-    </main>
+      <main style={pageStyles}>
+        <title>Home Page</title>
+        <Intro />
+      </main>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
