@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
 export default () => {
@@ -21,9 +22,9 @@ export default () => {
             You can find articles on these subjects and more on my blog
           </p>
           <div className="go-to-blog">
-            <a className="visit-blog" href="#">
+            <Link className="visit-blog" to="/blog">
               Visit Blog
-            </a>
+            </Link>
           </div>
         </div>
       </div>

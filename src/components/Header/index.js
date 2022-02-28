@@ -51,9 +51,9 @@ const Header = () => {
           <span className="nav-indicator"></span>
         </div>
         <div className="contact">
-          <a className="getintouch" href="#">
+          <Link className="getintouch" to="/contact">
             Get In Touch
-          </a>
+          </Link>
         </div>
       </div>
     </header>

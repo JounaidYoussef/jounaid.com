@@ -9,19 +9,39 @@ import Dribbble from '../../assets/dribbble.svg';
 const SocialBar = ({ fill }) => {
   return (
     <div className="social-icons">
-      <a className="icon" href="https://www.linkedin.com/in/jounaidyoussef/">
+      <a
+        className="icon"
+        target="_blank"
+        href="https://www.linkedin.com/in/jounaidyoussef/"
+      >
         <Linkedin fill={fill} />
       </a>
-      <a className="icon" href="https://github.com/JounaidYoussef">
+      <a
+        className="icon"
+        target="_blank"
+        href="https://github.com/JounaidYoussef"
+      >
         <Github fill={fill} />
       </a>
-      <a className="icon" href="https://twitter.com/JounaidYoussef">
+      <a
+        className="icon"
+        target="_blank"
+        href="https://twitter.com/JounaidYoussef"
+      >
         <Twitter fill={fill} />
       </a>
-      <a className="icon" href="https://www.instagram.com/iamyoussefjounaid/">
+      <a
+        className="icon"
+        target="_blank"
+        href="https://www.instagram.com/iamyoussefjounaid/"
+      >
         <Instagram fill={fill} />
       </a>
-      <a className="icon" href="https://dribbble.com/jounaidyoussef">
+      <a
+        className="icon"
+        target="_blank"
+        href="https://dribbble.com/jounaidyoussef"
+      >
         <Dribbble fill={fill} />
       </a>
     </div>

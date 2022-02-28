@@ -17,9 +17,9 @@ const Footer = () => {
       <div className="footer-links">
         <p className="footer-catch">Got a project? Let’s talk</p>
         <div className="contact">
-          <a className="getintouch" href="#">
-            Leave a Message
-          </a>
+          <Link className="getintouch" to="/contact">
+            Get In Touch
+          </Link>
         </div>
         <SocialBar fill="#FFFFFF" />
         {/* <div className="social-icons">

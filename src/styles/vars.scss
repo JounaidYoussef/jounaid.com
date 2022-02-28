@@ -1,29 +1,28 @@
 body {
-    --main-bg-color: #ffffff;
-    --secondary-bg-color: #F3F3F3;
-    --text-color: #4C596A; 
-    --heading-color: #4C596A; 
-    --footer-bg-color: #4C596A;
-    --secondary-footer-bg-color: #F3F3F3;
-    --icons-color: #4C596A ;
-    --footer-icons-color: #FFFFFF;
-    --secondary-footer-icons-color: #C8962A;
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f3f3f3;
+  --text-color: #4c596a;
+  --heading-color: #4c596a;
+  --footer-bg-color: #4c596a;
+  --secondary-footer-bg-color: #f3f3f3;
+  --icons-color: #4c596a;
+  --footer-icons-color: #ffffff;
+  --secondary-footer-icons-color: #c8962a;
+}
 
-  }
-  
-  .dark {
-    --main-bg-color: #ffffff;
-    --secondary-bg-color: #F3F3F3;
-    --text-color: #4C596A; 
-    --heading-color: #4C596A; 
-    --footer-bg-color: #4C596A;
-    --secondary-footer-bg-color: #F3F3F3;
-    --icons-color: #4C596A ;
-    --footer-icons-color: #FFFFFF;
-    --secondary-footer-icons-color: #C8962A;
-  }
-    
-  // font vars
+.dark {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f3f3f3;
+  --text-color: #4c596a;
+  --heading-color: #4c596a;
+  --footer-bg-color: #4c596a;
+  --secondary-footer-bg-color: #f3f3f3;
+  --icons-color: #4c596a;
+  --footer-icons-color: #ffffff;
+  --secondary-footer-icons-color: #c8962a;
+}
+
+// font vars
 //   $min_width: 320px;
 //   $max_width: 1200px;
 //   $min_font: 16px;

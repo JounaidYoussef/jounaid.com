@@ -1,5 +1,19 @@
-.bio{
-    font-family: Poppins;
-    font-size: 12px;
-    font-weight: 400;
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.minicontainer {
+  flex: 1;
+}
+
+.personal-asset {
+  display: flex;
+  justify-content: center;
 }
