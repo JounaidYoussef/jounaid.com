@@ -1,7 +1,7 @@
-import React from 'react';
-import './index.scss';
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import React from "react";
+import "./index.scss";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default () => {
   return (
@@ -16,7 +16,7 @@ export default () => {
             <br />
             I love using functional programming concepts in JavaScript and
             building <br />
-            applications with React & React Native.{' '}
+            applications with React & React Native.{" "}
           </p>
           <p className="intro,visit">
             You can find articles on these subjects and more on my blog

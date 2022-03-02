@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import './index.scss';
-import Github from '../../assets/github.svg';
-import Linkedin from '../../assets/linkedin.svg';
-import Twitter from '../../assets/twitter.svg';
-import Instagram from '../../assets/instagram.svg';
-import Dribbble from '../../assets/dribbble.svg';
-import SocialBar from '../Bars/SocialBar';
+import React from "react";
+import { Link } from "gatsby";
+import "./index.scss";
+import Github from "../../assets/github.svg";
+import Linkedin from "../../assets/linkedin.svg";
+import Twitter from "../../assets/twitter.svg";
+import Instagram from "../../assets/instagram.svg";
+import Dribbble from "../../assets/dribbble.svg";
+import SocialBar from "../Bars/SocialBar";
 
 const Footer = () => {
   return (
