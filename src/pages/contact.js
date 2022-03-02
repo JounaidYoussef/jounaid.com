@@ -1,5 +1,5 @@
-import * as React from 'react';
-import Layout from '../components/Layout';
+import * as React from "react"
+import Layout from "../components/Layout"
 
 // markup
 const Contact = () => {
@@ -21,7 +21,7 @@ const Contact = () => {
         />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

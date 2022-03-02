@@ -1,5 +1,5 @@
-import * as React from 'react';
-import Layout from '../components/Layout';
+import * as React from "react"
+import Layout from "../components/Layout"
 
 // markup
 const Oss = () => {
@@ -21,7 +21,7 @@ const Oss = () => {
         />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default Oss;
+export default Oss

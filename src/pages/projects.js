@@ -1,5 +1,5 @@
-import * as React from 'react';
-import Layout from '../components/Layout';
+import * as React from "react"
+import Layout from "../components/Layout"
 
 // markup
 const Projects = () => {
@@ -21,7 +21,7 @@ const Projects = () => {
         />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

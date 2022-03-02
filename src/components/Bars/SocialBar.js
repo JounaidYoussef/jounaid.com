@@ -1,10 +1,10 @@
-import React from 'react';
-import './index.scss';
-import Github from '../../assets/github.svg';
-import Linkedin from '../../assets/linkedin.svg';
-import Twitter from '../../assets/twitter.svg';
-import Instagram from '../../assets/instagram.svg';
-import Dribbble from '../../assets/dribbble.svg';
+import React from "react"
+import "./index.scss"
+import Github from "../../assets/github.svg"
+import Linkedin from "../../assets/linkedin.svg"
+import Twitter from "../../assets/twitter.svg"
+import Instagram from "../../assets/instagram.svg"
+import Dribbble from "../../assets/dribbble.svg"
 
 const SocialBar = ({ fill }) => {
   return (
@@ -45,7 +45,7 @@ const SocialBar = ({ fill }) => {
         <Dribbble fill={fill} />
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default SocialBar;
+export default SocialBar

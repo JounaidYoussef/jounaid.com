@@ -1,5 +1,5 @@
-import * as React from 'react';
-import Layout from '../components/Layout';
+import * as React from "react"
+import Layout from "../components/Layout"
 
 // markup
 const Blog = () => {
@@ -21,7 +21,7 @@ const Blog = () => {
         />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

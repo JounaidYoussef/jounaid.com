@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import './index.scss';
+import React from "react"
+import { Link } from "gatsby"
+import "./index.scss"
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
           to="/"
           // activeClassName="active"
         >
-          , Logo
+          Logo
         </Link>
         <div className="links">
           <Link
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
