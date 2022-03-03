@@ -1,18 +1,21 @@
 import React from "react"
-import Image from "gatsby"
+import Image, { Link } from "gatsby"
 import SocialBar from "../Bars/SocialBar"
 import "./index.scss"
+
 import { StaticImage } from "gatsby-plugin-image"
 
 export default () => {
   return (
-    <div>
+    <div className="contact-form-container">
       <div className="content ">
-        <h1> Let’s Get In Touch</h1>
-        <p>
-          To send me a message or want to meet up for a coffee, contact me
-          directly or fill out the form and I will get back to you promptly.
-        </p>
+        <div className="contact-form-header">
+          <h2> Let’s Get In Touch</h2>
+          <p className="description">
+            To send me a message or want to meet up for a coffee, contact me
+            directly or fill out the form and I will get back to you promptly.
+          </p>
+        </div>
         <form
           name="contact"
           method="POST"
@@ -41,9 +44,8 @@ export default () => {
             ></textarea>
           </div>
           <div className="actions">
-            <button type="submit" className="button">
-              Send
-            </button>
+            {/* type="submit" */}
+            <Link className="send">Send</Link>
           </div>
         </form>
       </div>
