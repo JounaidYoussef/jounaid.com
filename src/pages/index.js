@@ -1,5 +1,6 @@
 import * as React from "react"
 import Intro from "../components/Home/Intro"
+import Skills from "../components/Home/Skills"
 import Layout from "../components/Layout"
 
 // styles
@@ -27,6 +28,7 @@ const IndexPage = () => {
       <main style={pageStyles}>
         <title>Home Page</title>
         <Intro />
+        <Skills />
       </main>
     </Layout>
   )
