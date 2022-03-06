@@ -1,52 +1,71 @@
-<p align="center">
-  <a href="https://www.Jounaid.com">
-    <!-- <img alt="Gatsby"  width="200" /> -->
+<br />
+<div align="center">
+  <a target="_blank" href="https://www.Jounaid.com">
+    <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
-</p>
-<h1 align="center">
-  Youssef Jounaid Personal Website
-</h1>
 
-This is a personal Portfolio where I share and display awesome topics,and projects that may interest you.
+  <h3 align="center"> Youssef Jounaid Personal Website </h3>
 
-The website is built using [Gatsbyjs](http://gatsbyjs.org)
+  <p align="center">
+    <a target="_blank" href="https://github.com/JounaidYoussef/Portfolio/issues">Report Bug</a>
+    ·
+    <a target="_blank" href="https://github.com/JounaidYoussef/Portfolio/issues">Request Feature</a>
+  </p>
+</div>
 
-## 🚀 Quick start
 
-1.  **Fork and clone the project**
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-    ```sh
-    git clone git@github.com:JounaidYoussef/Portfolio.git
-    ```
+  This is a personal Portfolio where I share and display awesome topics and projects that may interest you.
 
-1.  **Start developing**
 
-Navigate into Portfolio directory .
 
-    ```sh
-    cd Portfolio/
-    ```
 
-Use your Package manager to install dependencies
+### Built With
 
-    ```sh
-    npm install
-    ```
+* [Gatsby.js](https://www.gatsbyjs.com/)
 
-    Or
 
-    ```sh
-    yarn install
-    ```
 
-Start the Project
+<!-- GETTING STARTED -->
+## Getting Started
 
-    ```sh
-    gatsby develop
-    ```
+Follow these instructions to set up the project locally.
 
-1.  **Open the source code and start editing!**
+### Prerequisites
 
-    the project will be running at `http://localhost:8000`
+* Yarn Package Manager
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+  ```sh
+  npm install --global yarn
+  ```
+
+### Installation
+
+1. Clone the repo
+
+   ```sh
+   git clone git@github.com:JounaidYoussef/Portfolio.git
+   ```
+2. Install packages
+
+   ```sh
+   yarn install
+   ```
+3. Lunch Project
+
+   ```js
+   yarn start
+   ```
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+the project will be running at `http://localhost:8000`
+
+_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    
+
