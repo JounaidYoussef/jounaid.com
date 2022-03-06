@@ -1,54 +1,52 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://www.Jounaid.com">
+    <!-- <img alt="Gatsby"  width="200" /> -->
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Youssef Jounaid Personal Website
 </h1>
+
+This is a personal Portfolio where I share and display awesome topics,and projects that may interest you.
+
+The website is built using [Gatsbyjs](http://gatsbyjs.org)
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Fork and clone the project**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    ```sh
+    git clone git@github.com:JounaidYoussef/Portfolio.git
     ```
 
-2.  **Start developing.**
+1.  **Start developing**
 
-    Navigate into your new site’s directory and start it up.
+Navigate into Portfolio directory .
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
+    ```sh
+    cd Portfolio/
     ```
 
-3.  **Open the code and start customizing!**
+Use your Package manager to install dependencies
 
-    Your site is now running at http://localhost:8000!
+    ```sh
+    npm install
+    ```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    Or
 
-4.  **Learn more**
+    ```sh
+    yarn install
+    ```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Start the Project
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    ```sh
+    gatsby develop
+    ```
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+1.  **Open the source code and start editing!**
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    the project will be running at `http://localhost:8000`
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
