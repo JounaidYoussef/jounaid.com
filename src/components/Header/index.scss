@@ -4,28 +4,11 @@
   align-items: center;
   margin-bottom: 6em;
   color: var(--text-color);
-  .item {
-    color: #4c596a;
-    font-family: "Poppins";
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    text-decoration: none;
-
-    &.active {
-      color: var(--heading-color);
-    }
-    &:hover {
-      color: var(--heading-color);
-    }
-  }
   .links {
     // background-color: aquamarine;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .contact {
     font-family: "Poppins";
@@ -38,6 +21,75 @@
       background-color: #4c596a;
       padding: 4px 20px 4px 20px;
       border-radius: 20px;
+    }
+  }
+}
+
+$red: #f37272;
+$brown: #584e4a;
+$whitey: #f0f0f0;
+
+$duration: 0.2s;
+$distance: 6px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+ul {
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  margin-top: 1%;
+
+  li {
+    display: inline-block;
+  }
+}
+.item {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+  color: #4c596a;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-decoration: none;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #4c596a;
+  }
+  &:before {
+    opacity: 0;
+    transform: translateY(-$distance);
+    transition: transform 0s $easeOutBack, opacity 0s;
+  }
+  &:after {
+    opacity: 0;
+    transform: translateY($distance/2);
+    transition: transform $duration $easeOutBack, opacity $duration;
+  }
+  &:hover,
+  &:focus {
+    &:before,
+    &:after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &:before {
+      transition: transform $duration $easeOutBack, opacity $duration;
+    }
+    &:after {
+      transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
     }
   }
 }

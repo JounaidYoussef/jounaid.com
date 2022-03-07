@@ -16,38 +16,49 @@ const Header = () => {
           Logo
         </Link>
         <div className="links">
-          <Link
-            to="/blog"
-            // activeClassName="active"
-            className="item"
-            aria-label="View Blog page"
-          >
-            Blog
-          </Link>
-          <Link
-            to="/oss"
-            // activeClassName="active"
-            className="item"
-            aria-label="View OSS page"
-          >
-            OSS
-          </Link>
-          <Link
-            to="/projects"
-            // activeClassName="active"
-            className="item"
-            aria-label="View Projects page"
-          >
-            Projects
-          </Link>
-          <Link
-            to="/about"
-            // activeClassName="active"
-            className="item"
-            aria-label="View About page"
-          >
-            About
-          </Link>
+          <ul>
+            <li>
+              <Link
+                to="/blog"
+                // activeClassName="active"
+                className="item"
+                aria-label="View Blog page"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/oss"
+                // activeClassName="active"
+                className="item"
+                aria-label="View OSS page"
+              >
+                OSS
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/projects"
+                // activeClassName="active"
+                className="item"
+                aria-label="View Projects page"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                // activeClassName="active"
+                className="item"
+                aria-label="View About page"
+              >
+                About
+              </Link>
+            </li>
+            <div class="underbar"></div>
+          </ul>
           <span className="nav-indicator"></span>
         </div>
         <div className="contact">
