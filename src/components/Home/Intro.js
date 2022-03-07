@@ -1,7 +1,7 @@
-import React from "react";
-import "./index.scss";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import React from "react"
+import "./index.scss"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default () => {
   return (
@@ -25,6 +25,9 @@ export default () => {
             <Link className="visit-blog" to="/blog">
               Visit Blog
             </Link>
+            <Link className="visit-resume" to="/blog">
+              View Resume
+            </Link>
           </div>
         </div>
       </div>
@@ -40,5 +43,5 @@ export default () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

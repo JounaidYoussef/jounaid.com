@@ -1,6 +1,9 @@
 import React from "react"
 import "./index.scss"
 import { StaticImage } from "gatsby-plugin-image"
+import UX from "../../assets/ux.svg"
+import Mobile from "../../assets/mobile.svg"
+import Code from "../../assets/code.svg"
 
 export default () => {
   return (
@@ -11,58 +14,42 @@ export default () => {
       <div className="intro-container">
         <div className="skill-container">
           <div className="image-container">
-            <StaticImage
-              src="../../assets/photo.png"
-              alt="Personal Picture"
-              placeholder="blurred"
-              width={20}
-              height={20}
-            />
+            <Code />
           </div>
           <div>
             <p id="skills-section-title">FullStack Web Development</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-              tempus purus, mattis posuere augue. Morbi ut sapien ipsum. Aliquam
-              ex risus, vestibulum ac maximus ac, fermentum quis elit.
+              Turning up your ideas into usable MVPs, Developing websites using
+              MERN, MEAN or JAM stack
             </p>
           </div>
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <StaticImage
-              src="../../assets/photo.png"
-              alt="Personal Picture"
-              placeholder="blurred"
-              width={20}
-              height={20}
-            />
+            <Mobile />
           </div>
           <div>
-            <p id="skills-section-title">Mobile Development</p>
+            <p id="skills-section-title">
+              Mobile <br /> Development
+            </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-              tempus purus, mattis posuere augue. Morbi ut sapien ipsum. Aliquam
-              ex risus, vestibulum ac maximus ac, fermentum quis elit.
+              Mainly with React Native, I work on creating CrossPlatform
+              (Android and iOS) Mobile Apps from scratch
             </p>
           </div>
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <StaticImage
-              src="../../assets/photo.png"
-              alt="Personal Picture"
-              placeholder="blurred"
-              width={20}
-              height={20}
-            />
+            <UX />
           </div>
           <div>
-            <p id="skills-section-title">UI/UX Design</p>
+            <p id="skills-section-title">
+              UI/UX
+              <br /> Design
+            </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
-              tempus purus, mattis posuere augue. Morbi ut sapien ipsum. Aliquam
-              ex risus, vestibulum ac maximus ac, fermentum quis elit.
+              Designing and optimizing user interfaces focusing on design,
+              usability, function, and even branding and marketing
             </p>
           </div>
         </div>
