@@ -8,6 +8,13 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: "src/templates/blog",
+    //     name: "blog",
+    //   },
+    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
