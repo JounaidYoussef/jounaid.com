@@ -8,18 +8,21 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: "src/templates/blog",
-    //     name: "blog",
-    //   },
-    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "assets",
+        // eslint-disable-next-line node/no-path-concat
+        path: `${__dirname}/content/blog`,
+        name: "blog",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        // eslint-disable-next-line node/no-path-concat
+        // path: `${__dirname}/content/assets`,
         path: "./src/assets",
+        name: "assets",
       },
       __key: "assets",
     },
