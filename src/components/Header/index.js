@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./index.scss"
+import Logo from "../../assets/logo.svg"
 
 const Header = () => {
   return (
@@ -11,9 +12,9 @@ const Header = () => {
       </Link> */}
         <Link
           to="/"
-          // activeClassName="active"
+          className="logo" // activeClassName="active"
         >
-          Logo
+          <Logo fill={"#4c596a"} width="36px" height="36px" />
         </Link>
         <div className="links">
           <ul>
