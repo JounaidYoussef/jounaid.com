@@ -2,6 +2,7 @@ import React from "react"
 import SocialBar from "../Bars/SocialBar"
 import "./index.scss"
 import { StaticImage } from "gatsby-plugin-image"
+import ArtBar from "../Bars/ArtBar"
 
 export default () => {
   return (
@@ -10,19 +11,23 @@ export default () => {
         <div className="about-container">
           <div className="minicontainer">
             <p>
-              I'm a Mobile/FrontEnd engineer. Currently working with helping my
-              team produce good quality Apps.
+              I'm a FullStack Web & Mobile engineer. Solving problems and
+              creating new visual languages is my biggest passion.
               <br />
-              Solving problems and creating new visual languages is my biggest
-              passion. My software engineering background makes me think of
-              solutions in a structural and algorithmic way. Everything will
-              need to make perfect sense and will need to be built around the
-              user.
+              <br /> In building JavaScript applications, I'm equipped with just
+              the right tools, and can absolutely function independently of them
+              to deliver fast, resilient,optimized and scalable solutions.
               <br />
-              I'm interested in all kinds of visual communication, I enjoy using
-              my obsessive attention to detail to do that.
+              <br /> My tireless dedication to details keeps me trying and
+              experimenting, always learning, and never bored.
+              <br />
+              <br /> Besides computer science, I am interested in all aspects of
+              Art, Entrepreneurship, Management and new technologies.
+              <br />I love photography, cinematography and videography. And if
+              it wasn’t for IT, I would have been a director, who turns stories
+              into movies.
+              <br />
             </p>
-            <p>I am always experimenting, always learning, and never bored.</p>
           </div>
           <div className="minicontainer">
             <div className="personal-asset">
@@ -39,6 +44,7 @@ export default () => {
       </div>
       <div>
         <SocialBar fill="#4C596A" />
+        <ArtBar fill="#4C596A" />
       </div>
     </div>
   )

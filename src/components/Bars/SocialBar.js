@@ -3,7 +3,7 @@ import "./index.scss"
 import Github from "../../assets/github.svg"
 import Linkedin from "../../assets/linkedin.svg"
 import Twitter from "../../assets/twitter.svg"
-import Instagram from "../../assets/instagram.svg"
+import Behance from "../../assets/behance.svg"
 import Dribbble from "../../assets/dribbble.svg"
 
 const SocialBar = ({ fill }) => {
@@ -33,9 +33,9 @@ const SocialBar = ({ fill }) => {
       <a
         className="icon"
         target="_blank"
-        href="https://www.instagram.com/iamyoussefjounaid/"
+        href="https://www.behance.net/jounaidyoussef"
       >
-        <Instagram fill={fill} />
+        <Behance fill={fill} />
       </a>
       <a
         className="icon"
