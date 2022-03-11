@@ -4,8 +4,9 @@ import SocialBar from "../Bars/SocialBar"
 import "./index.scss"
 
 import { StaticImage } from "gatsby-plugin-image"
+import ContactInfo from "./ContactInfo"
 
-export default () => {
+const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <div className="content ">
@@ -51,7 +52,10 @@ export default () => {
       </div>
       <div className="social">
         <SocialBar fill="#4C596A" />
+        <ContactInfo />
       </div>
     </div>
   )
 }
+
+export default ContactForm

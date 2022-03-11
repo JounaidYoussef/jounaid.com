@@ -78,3 +78,19 @@ h2 {
 .social {
   float: right;
 }
+
+a {
+  font-family: Poppins;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#info-text {
+  margin-left: 0.4em;
+}
