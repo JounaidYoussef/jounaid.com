@@ -1,12 +1,12 @@
 import React from "react"
 import "./index.scss"
 
-const RepoCard = () => {
+const ProjectCard = () => {
   return (
     <div>
-      <p> RepoCard </p>
+      <p> ProjectCard </p>
     </div>
   )
 }
 
-export default RepoCard
+export default ProjectCard
