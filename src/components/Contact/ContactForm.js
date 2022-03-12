@@ -5,6 +5,7 @@ import "./index.scss"
 
 import { StaticImage } from "gatsby-plugin-image"
 import ContactInfo from "./ContactInfo"
+import ArtBar from "../Bars/ArtBar"
 
 const ContactForm = () => {
   return (
@@ -49,20 +50,19 @@ const ContactForm = () => {
             <label id="contact-label">Your Message</label>
             <textarea
               placeholder="Hi, I think we need a design system for our products at X. How soon can you hop on to discuss this"
-              rows="6"
+              rows={7}
               name="message"
               required
             ></textarea>
           </div>
           <div className="actions">
             {/* type="submit" */}
-            <Link className="send">Send</Link>
+            <a className="send">Send</a>
           </div>
         </form>
       </div>
       <div className="social">
         <SocialBar fill="#4C596A" />
-        <ContactInfo />
       </div>
     </div>
   )
