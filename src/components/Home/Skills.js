@@ -17,7 +17,10 @@ export default () => {
             <Code />
           </div>
           <div>
-            <p id="skills-section-title">FullStack Web Development</p>
+            <p id="skills-section-title">
+              FullStack <br />
+              Web Development
+            </p>
             <p>
               Turning up your ideas into usable MVPs, Developing websites using
               MERN, MEAN or JAM stack

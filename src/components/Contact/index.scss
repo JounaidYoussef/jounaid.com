@@ -72,7 +72,15 @@ h2 {
 .contact-item {
   display: flex;
   flex-direction: column;
+  width: 40%;
   margin-bottom: 1em;
+}
+
+.contact-item-long {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  background-color: #d19821;
 }
 
 .social {
@@ -88,9 +96,19 @@ a {
 #info-item {
   display: flex;
   flex-direction: row;
+  width: 100%;
   align-items: center;
 }
 
 #info-text {
   margin-left: 0.4em;
+}
+
+textarea {
+  resize: none;
+  width: max-content;
+}
+
+#contact-label {
+  margin-bottom: 8px;
 }

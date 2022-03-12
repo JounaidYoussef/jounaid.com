@@ -28,18 +28,28 @@ const ContactForm = () => {
           <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="bot-field" />
           <div className="contact-item">
-            <label>Your Name</label>
-            <input placeholder="Name" type="text" name="name" required />
+            <label id="contact-label">Name</label>
+            <input
+              placeholder="Enter your name"
+              type="text"
+              name="name"
+              required
+            />
           </div>
           <div className="contact-item">
-            <label>Your Email</label>
-            <input placeholder="Email" type="email" name="email" required />
+            <label id="contact-label">Email Adress</label>
+            <input
+              placeholder="Enter your email address"
+              type="email"
+              name="email"
+              required
+            />
           </div>
-          <div className="contact-item">
-            <label>Your Message</label>
+          <div className="contact-item-long">
+            <label id="contact-label">Your Message</label>
             <textarea
-              placeholder="Your Message"
-              rows="5"
+              placeholder="Hi, I think we need a design system for our products at X. How soon can you hop on to discuss this"
+              rows="6"
               name="message"
               required
             ></textarea>
