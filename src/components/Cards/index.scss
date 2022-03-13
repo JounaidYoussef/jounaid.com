@@ -45,3 +45,60 @@ p {
 
 .secPostDate {
 }
+
+.repoContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  padding: 0.8em;
+  background-color: rgb(221, 221, 221);
+  border-radius: 0.8em;
+}
+
+#repoStats {
+  padding: 0 0.8em 0 0;
+  display: flex;
+  // background-color: bisque;
+}
+
+.repoFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.repoTags {
+  display: flex;
+  flex-direction: row;
+}
+
+.repo-tag {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgb(243, 138, 0);
+  padding: 0 12px 0 12px;
+  margin-right: 0.4em;
+  border-radius: 20px;
+}
+
+.inline-repo-stats {
+  font-size: 12px;
+  // background-color: aqua;
+  font-weight: 700;
+  margin: 0 0 0 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.repoTitle {
+  margin: 0;
+  // background-color: aquamarine;
+}
+
+.repoDesc {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  // background-color: aqua;
+}
