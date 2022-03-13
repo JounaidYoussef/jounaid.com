@@ -58,7 +58,7 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <div class="underbar"></div>
+            <div className="underbar"></div>
           </ul>
           <span className="nav-indicator"></span>
         </div>
