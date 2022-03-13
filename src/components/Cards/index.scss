@@ -1,0 +1,47 @@
+p {
+  font-family: Poppins;
+}
+
+.tag {
+  background-color: rgb(243, 138, 0);
+  padding: 0 12px 0 12px;
+  margin-right: 0.4em;
+  border-radius: 20px;
+}
+
+.mainPostContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainPostPicture {
+  margin: 0 16px 0 0;
+}
+
+.mainPostTitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.mainPostDescription {
+}
+
+.mainPostDate {
+}
+
+.secPostContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.secPostPicture {
+}
+
+.secPostTitle {
+}
+
+.secPostDescription {
+}
+
+.secPostDate {
+}
