@@ -79,7 +79,7 @@ ul {
   }
   &:after {
     opacity: 0;
-    transform: translateY($distance/2);
+    transform: translateY(calc($distance/2));
     transition: transform $duration $easeOutBack, opacity $duration;
   }
   &:hover,
