@@ -1,8 +1,8 @@
-import React from "react"
+import ArtBar from "../Bars/ArtBar"
 import SocialBar from "../Bars/SocialBar"
 import "./index.scss"
 import { StaticImage } from "gatsby-plugin-image"
-import ArtBar from "../Bars/ArtBar"
+import React from "react"
 
 export default () => {
   return (

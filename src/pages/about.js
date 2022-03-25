@@ -1,6 +1,6 @@
-import * as React from "react"
-import Layout from "../components/Layout"
 import Content from "../components/About/Content.js"
+import Layout from "../components/Layout"
+import * as React from "react"
 
 const About = () => {
   return (

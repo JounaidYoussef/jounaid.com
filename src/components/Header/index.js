@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import "./index.scss"
 import Logo from "../../assets/logo.svg"
+import "./index.scss"
+import { Link } from "gatsby"
+import React from "react"
 
 const Header = () => {
   return (

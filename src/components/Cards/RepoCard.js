@@ -1,7 +1,7 @@
-import React from "react"
-import "./index.scss"
 import Fork from "../../assets/fork.svg"
 import Star from "../../assets/star.svg"
+import "./index.scss"
+import React from "react"
 
 const RepoCard = () => {
   return (

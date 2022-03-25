@@ -1,6 +1,6 @@
-import * as React from "react"
 import BlogPostCard from "../components/Cards/BlogPostCard"
 import Layout from "../components/Layout"
+import * as React from "react"
 
 // markup
 const Blog = () => {

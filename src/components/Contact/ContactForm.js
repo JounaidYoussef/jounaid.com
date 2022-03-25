@@ -1,11 +1,10 @@
-import React from "react"
-import Image, { Link } from "gatsby"
-import SocialBar from "../Bars/SocialBar"
-import "./index.scss"
-
-import { StaticImage } from "gatsby-plugin-image"
-import ContactInfo from "./ContactInfo"
 import ArtBar from "../Bars/ArtBar"
+import SocialBar from "../Bars/SocialBar"
+import ContactInfo from "./ContactInfo"
+import "./index.scss"
+import Image, { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
 
 const ContactForm = () => {
   return (

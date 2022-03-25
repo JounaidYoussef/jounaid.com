@@ -1,6 +1,6 @@
-import React from "react"
 import "./index.scss"
 import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
 
 const BlogPostCard = () => {
   const mainpost = false

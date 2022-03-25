@@ -1,7 +1,7 @@
-import React from "react"
 import "./index.scss"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
 
 export default () => {
   return (

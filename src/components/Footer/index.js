@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
-import "./index.scss"
+import Dribbble from "../../assets/dribbble.svg"
 import Github from "../../assets/github.svg"
+import Instagram from "../../assets/instagram.svg"
 import Linkedin from "../../assets/linkedin.svg"
 import Twitter from "../../assets/twitter.svg"
-import Instagram from "../../assets/instagram.svg"
-import Dribbble from "../../assets/dribbble.svg"
 import SocialBar from "../Bars/SocialBar"
+import "./index.scss"
+import { Link } from "gatsby"
+import React from "react"
 
 const Footer = () => {
   return (

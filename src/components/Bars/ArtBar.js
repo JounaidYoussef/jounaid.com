@@ -1,9 +1,9 @@
-import React from "react"
-import "./index.scss"
+import Instagram from "../../assets/instagram.svg"
+import Tiktok from "../../assets/tiktok.svg"
 import Unsplash from "../../assets/unsplash.svg"
 import Youtube from "../../assets/youtube.svg"
-import Tiktok from "../../assets/tiktok.svg"
-import Instagram from "../../assets/instagram.svg"
+import "./index.scss"
+import React from "react"
 
 const ArtBar = ({ fill }) => {
   return (

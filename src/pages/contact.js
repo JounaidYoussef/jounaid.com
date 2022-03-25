@@ -1,6 +1,6 @@
-import * as React from "react"
 import ContactForm from "../components/Contact/ContactForm"
 import Layout from "../components/Layout"
+import * as React from "react"
 
 // markup
 const Contact = () => {

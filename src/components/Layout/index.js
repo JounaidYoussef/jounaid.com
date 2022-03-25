@@ -1,16 +1,15 @@
-import React from "react";
-
-import Header from "../Header";
-import Footer from "../Footer";
+import Footer from "../Footer"
+import Header from "../Header"
+import React from "react"
 
 const styles = {
   color: "#232129",
   padding: "40px 160px 40px 160px",
-};
+}
 
 const container = {
   padding: "0 0 0 0",
-};
+}
 
 export default ({ children, isFooterDisabled = false }) => {
   return (
@@ -21,5 +20,5 @@ export default ({ children, isFooterDisabled = false }) => {
       </div>
       {isFooterDisabled ? null : <Footer />}
     </div>
-  );
-};
+  )
+}

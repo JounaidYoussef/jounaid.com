@@ -1,6 +1,6 @@
-import * as React from "react"
 import RepoCard from "../components/Cards/RepoCard"
 import Layout from "../components/Layout"
+import * as React from "react"
 
 // markup
 const Oss = () => {

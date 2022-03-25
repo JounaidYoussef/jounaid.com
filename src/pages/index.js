@@ -1,7 +1,7 @@
-import * as React from "react"
 import Intro from "../components/Home/Intro"
 import Skills from "../components/Home/Skills"
 import Layout from "../components/Layout"
+import * as React from "react"
 
 // styles
 const pageStyles = {

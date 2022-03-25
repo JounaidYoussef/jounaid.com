@@ -1,7 +1,7 @@
-import React from "react"
-import "./index.scss"
-import Mail from "../../assets/mail.svg"
 import Location from "../../assets/location.svg"
+import Mail from "../../assets/mail.svg"
+import "./index.scss"
+import React from "react"
 
 const ContactInfo = () => {
   return (
