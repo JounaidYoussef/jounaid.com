@@ -1,6 +1,7 @@
 ---
 date: 2022-03-12
 title: "Article1"
+author: "Youssef Jounaid"
 categories: ["blog"]
 keywords: ["blog", "blog", "blog"]
 published: true

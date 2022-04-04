@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: "Portfolio",
-    siteUrl: "https://www.yourdomain.tld",
+    title: "Youssef Jounaid",
+    description: "This is my awesome blog I made from scratch!",
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    `gatsby-transformer-remark`,
+    "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {

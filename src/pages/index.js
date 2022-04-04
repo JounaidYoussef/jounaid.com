@@ -2,6 +2,7 @@ import Intro from "../components/Home/Intro"
 import Skills from "../components/Home/Skills"
 import Layout from "../components/Layout"
 import * as React from "react"
+import { graphql } from "gatsby"
 
 // styles
 const pageStyles = {
@@ -22,11 +23,13 @@ const pageStyles = {
 // ]
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const { title, description } = data.site.siteMetadata
+
   return (
     <Layout>
       <main style={pageStyles}>
-        <title>Home Page</title>
+        <title>{title}</title>
         <Intro />
         <Skills />
       </main>
@@ -35,3 +38,14 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query MetadataQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`

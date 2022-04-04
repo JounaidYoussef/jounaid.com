@@ -28,7 +28,7 @@ const Header = () => {
                 Blog
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/oss"
                 // activeClassName="active"
@@ -37,7 +37,7 @@ const Header = () => {
               >
                 OSS
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/projects"
