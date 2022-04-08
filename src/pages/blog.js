@@ -10,7 +10,7 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <main>
-        <title>Blog Page</title>
+        <title>Blog | Youssef Jounaid</title>
         <div>
           <h2>title</h2>
           <div

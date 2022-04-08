@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Layout isFooterDisabled={true}>
       <main>
-        <title>Contact Page</title>
+        <title>Contact | Youssef Jounaid</title>
         <div>
           <ContactForm />
         </div>

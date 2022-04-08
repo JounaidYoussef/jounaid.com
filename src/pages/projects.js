@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Layout>
       <main>
-        <title>Projects Page</title>
+        <title>Projects | Youssef Jounaid</title>
         <h1>
           work work
           <br />

@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Layout isFooterDisabled={true}>
       <main>
-        <title>About Page</title>
+        <title>About | Youssef Jounaid</title>
         <Content />
       </main>
     </Layout>

@@ -7,7 +7,7 @@ const Oss = () => {
   return (
     <Layout>
       <main>
-        <title>Oss Page</title>
+        <title>OSS | Youssef Jounaid</title>
         <RepoCard />
       </main>
     </Layout>
