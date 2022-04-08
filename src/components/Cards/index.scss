@@ -107,7 +107,7 @@ p {
 
 .list-blogpost-container {
   display: flex;
-  flexdirection: row;
+  flex-direction: row;
   background-color: #e0e0e0;
   border-radius: 20px;
   margin: 0.8em 0 0.8em 0;
@@ -120,5 +120,23 @@ p {
 }
 
 .list-blogpost-info-container {
+  padding: 1.6em;
+}
+
+.grid-blogpost-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  margin: 0.8em 0 0.8em 0;
+}
+
+.grid-blogpost-image-container {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.grid-blogpost-info-container {
   padding: 1.6em;
 }

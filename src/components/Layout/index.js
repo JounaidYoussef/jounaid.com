@@ -9,6 +9,7 @@ const styles = {
 
 const container = {
   padding: "0 0 0 0",
+  minwidth: "320px",
 }
 
 export default ({ children, isFooterDisabled = false }) => {
