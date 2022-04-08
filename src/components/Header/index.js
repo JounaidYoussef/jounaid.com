@@ -10,15 +10,25 @@ const Header = () => {
         {/* <Link to="/">
         <Logo className="logo" alt="Logo" />
       </Link> */}
-        <Link
-          to="/"
-          className="logo" // activeClassName="active"
-        >
-          <Logo fill={"#4c596a"} width="36px" height="36px" />
-        </Link>
         <div className="links">
+          <Link
+            to="/"
+            className="logo" // activeClassName="active"
+          >
+            <Logo fill={"#4c596a"} width="36px" height="36px" />
+          </Link>
           <ul>
             <li>
+              <li>
+                <Link
+                  to="/"
+                  // activeClassName="active"
+                  className="item"
+                  aria-label="View Home page"
+                >
+                  Home
+                </Link>
+              </li>
               <Link
                 to="/blog"
                 // activeClassName="active"
