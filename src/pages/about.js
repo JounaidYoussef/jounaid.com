@@ -5,8 +5,8 @@ import * as React from "react"
 const About = () => {
   return (
     <Layout isFooterDisabled={true}>
+      <title>About | Youssef Jounaid</title>
       <main>
-        <title>About | Youssef Jounaid</title>
         <Content />
       </main>
     </Layout>

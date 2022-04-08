@@ -28,8 +28,8 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <title>{title} Personal Portfolio</title>
       <main style={pageStyles}>
-        <title>{title} Personal Portfolio</title>
         <Intro />
         <Skills />
       </main>

@@ -6,8 +6,8 @@ import * as React from "react"
 const Oss = () => {
   return (
     <Layout>
+      <title>OSS | Youssef Jounaid</title>
       <main>
-        <title>OSS | Youssef Jounaid</title>
         <RepoCard />
       </main>
     </Layout>

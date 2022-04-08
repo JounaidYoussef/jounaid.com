@@ -9,8 +9,8 @@ const Blog = ({ data }) => {
   const [toggleViewMode, setToggleViewMode] = React.useState(true)
   return (
     <Layout>
+      <title>Blog | Youssef Jounaid</title>
       <main>
-        <title>Blog | Youssef Jounaid</title>
         <div>
           <h2>title</h2>
           <div

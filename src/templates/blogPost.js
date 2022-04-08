@@ -9,12 +9,13 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <div>
+        <h1>{post.frontmatter.title}</h1>
+        <small>{post.frontmatter.author}</small>
+        <small>{post.frontmatter.date}</small>
         <GatsbyImage
           image={post.frontmatter.banner.childImageSharp.gatsbyImageData}
           alt="hello"
         />
-        <h1>{post.frontmatter.title}</h1>
-        <small>{post.frontmatter.date}</small>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -27,9 +28,10 @@ export const query = graphql`
       frontmatter {
         title
         date
+        author
         banner {
           childImageSharp {
-            gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 500, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

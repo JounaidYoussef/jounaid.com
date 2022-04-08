@@ -6,8 +6,8 @@ import * as React from "react"
 const Contact = () => {
   return (
     <Layout isFooterDisabled={true}>
+      <title>Contact | Youssef Jounaid</title>
       <main>
-        <title>Contact | Youssef Jounaid</title>
         <div>
           <ContactForm />
         </div>
