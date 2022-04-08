@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
@@ -8,6 +9,10 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <div>
+        <GatsbyImage
+          image={post.frontmatter.banner.childImageSharp.gatsbyImageData}
+          alt="hello"
+        />
         <h1>{post.frontmatter.title}</h1>
         <small>{post.frontmatter.date}</small>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -22,6 +27,11 @@ export const query = graphql`
       frontmatter {
         title
         date
+        banner {
+          childImageSharp {
+            gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
+          }
+        }
       }
     }
   }
