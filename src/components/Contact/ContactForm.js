@@ -9,7 +9,7 @@ import React from "react"
 const ContactForm = () => {
   return (
     <div className="contact-form-container">
-      <div className="content ">
+      <div className="contact-content">
         <div className="contact-form-header">
           <h2> Let’s Get In Touch</h2>
           <p className="description">
