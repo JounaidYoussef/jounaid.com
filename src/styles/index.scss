@@ -13,45 +13,179 @@
   flex-direction: column;
 }
 
+button {
+  border: 0;
+  background-color: transparent;
+}
+
 //tabs
 
-.bloc-tabs {
+// .bloc-tabs {
+//   display: flex;
+//   width: 40%;
+//   min-width: 200px;
+// }
+// .tabs {
+//   padding: 20px;
+//   text-align: center;
+//   width: 50%;
+//   cursor: pointer;
+//   box-sizing: content-box;
+//   position: relative;
+//   outline: none;
+//   border: 0;
+//   background-color: transparent;
+// }
+// .tabs:not(:last-child) {
+// }
+
+// .active-tabs {
+//   border: 0;
+//   background-color: transparent;
+//   background-color: #eeeeee;
+//   border-radius: 20px;
+// }
+
+// .active-tabs::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: -5px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: calc(100% + 2px);
+//   height: 5px;
+// }
+
+// .content-tabs {
+//   flex-grow: 1;
+// }
+
+//here
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --primary-color: #185ee0;
+  --secondary-color: #e6eef9;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.containerxx {
+  font-family: Poppins;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
-  width: 30%;
+  align-items: center;
+  margin: 0.2em 0 2.4em 0;
 }
 .tabs {
-  padding: 15px;
-  text-align: center;
-  width: 50%;
-  background: rgba(128, 128, 128, 0.075);
-  cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-  box-sizing: content-box;
+  display: flex;
   position: relative;
-  outline: none;
-}
-.tabs:not(:last-child) {
-}
-
-.active-tabs {
-  background: #eeeeee;
-  border-bottom: 1px solid transparent;
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 99px; // just a high number to create pill effect
+  * {
+    z-index: 2;
+  }
 }
 
-.active-tabs::before {
-  content: "";
-  display: block;
+input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 100px;
+  font-size: 0.8em;
+  font-weight: 500;
+  border-radius: 99px; // just a high number to create pill effect
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: 0.15s ease-in;
+}
+
+input[type="radio"] {
+  &:checked {
+    & + label {
+      color: var(--primary-color);
+      & > .notification {
+        background-color: var(--primary-color);
+        color: #fff;
+      }
+    }
+  }
+}
+
+input[id="radio-1"] {
+  &:checked {
+    & ~ .glider {
+      transform: translateX(0);
+    }
+  }
+}
+
+input[id="radio-2"] {
+  &:checked {
+    & ~ .glider {
+      transform: translateX(100%);
+    }
+  }
+}
+
+input[id="radio-3"] {
+  &:checked {
+    & ~ .glider {
+      transform: translateX(200%);
+    }
+  }
+}
+
+input[id="radio-4"] {
+  &:checked {
+    & ~ .glider {
+      transform: translateX(300%);
+    }
+  }
+}
+
+.glider {
   position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 5px;
-  background: rgb(88, 147, 241);
+  display: flex;
+  height: 32px;
+  width: 100px;
+  background-color: #e6eef9;
+  z-index: 1;
+  border-radius: 99px; // just a high number to create pill effect
+  transition: 0.25s ease-out;
 }
 
-.content-tabs {
-  flex-grow: 1;
+@media (max-width: 700px) {
+  .tabs {
+    transform: scale(0.6);
+  }
 }
 
 .projects-content {

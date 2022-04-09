@@ -14,33 +14,72 @@ const Projects = () => {
     <Layout>
       <title>Projects | Youssef Jounaid</title>
       <main>
-        <div className="container">
-          <div className="bloc-tabs">
+        <div className="ccc">
+          <div className="containerxx">
+            <div className="tabs">
+              <input type="radio" id="radio-1" name="tabs" />
+              <label
+                onClick={() => toggleTab(1)}
+                className="tab"
+                htmlFor="radio-1"
+              >
+                All
+                {/* <span className="notification">2</span> */}
+              </label>
+              <input type="radio" id="radio-2" name="tabs" />
+              <label
+                onClick={() => toggleTab(2)}
+                className="tab"
+                htmlFor="radio-2"
+              >
+                Clients
+              </label>
+              <input type="radio" id="radio-3" name="tabs" />
+              <label
+                onClick={() => toggleTab(3)}
+                className="tab"
+                htmlFor="radio-3"
+              >
+                Apps
+              </label>
+              <input type="radio" id="radio-4" name="tabs" />
+              <label
+                onClick={() => toggleTab(4)}
+                className="tab"
+                htmlFor="radio-4"
+              >
+                Clones
+              </label>
+              <span className="glider"></span>
+            </div>
+          </div>
+
+          {/* <div className="bloc-tabs">
             <button
               className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(1)}
             >
-              Tab 1
+              All
             </button>
             <button
               className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(2)}
             >
-              Tab 2
+              Clients
             </button>
             <button
               className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(3)}
             >
-              Tab 3
+              Apps
             </button>
             <button
               className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(4)}
             >
-              Tab 4
+              Clones
             </button>
-          </div>
+          </div> */}
 
           <div className="content-tabs">
             <div
