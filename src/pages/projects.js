@@ -5,17 +5,31 @@ import { useState } from "react"
 
 // markup
 const Projects = () => {
+  const projects = [
+    {
+      title: "project",
+      titles: "project",
+      titless: "project",
+      titlesss: "project",
+      titlessss: "project",
+      titlexx: "project",
+      titlexxx: "project",
+    },
+    {},
+    {},
+  ]
+
   const [toggleState, setToggleState] = useState(1)
 
   const toggleTab = (index) => {
     setToggleState(index)
   }
   return (
-    <Layout>
+    <Layout iscontact={false}>
       <title>Projects | Youssef Jounaid</title>
       <main>
-        <div className="ccc">
-          <div className="containerxx">
+        <div>
+          <div className="radio-container">
             <div className="tabs">
               <input type="radio" id="radio-1" name="tabs" />
               <label
