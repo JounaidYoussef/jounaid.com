@@ -2,8 +2,9 @@ import Logo from "../../assets/logo.svg"
 import "./index.scss"
 import { Link } from "gatsby"
 import React from "react"
+import { navigate } from "@reach/router"
 
-const Header = () => {
+const Header = ({ iscontact }) => {
   return (
     <header className="container header">
       <div className="header-container">
@@ -73,9 +74,15 @@ const Header = () => {
           <span className="nav-indicator"></span>
         </div>
         <div className="contact">
-          <Link className="getintouch" to="/contact">
-            Get In Touch
-          </Link>
+          {!iscontact ? (
+            <Link className="getintouch" to="/contact">
+              Get In Touch
+            </Link>
+          ) : (
+            <a onClick={() => navigate(-1)} className="close">
+              Close
+            </a>
+          )}
         </div>
       </div>
     </header>
