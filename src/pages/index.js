@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
   const { title, description } = data.site.siteMetadata
 
   return (
-    <Layout>
+    <Layout iscontact={false}>
       <title>{title} Personal Portfolio</title>
       <main style={pageStyles}>
         <Intro />

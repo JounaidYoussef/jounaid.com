@@ -12,11 +12,11 @@ const container = {
   minwidth: "320px",
 }
 
-export default ({ children, isFooterDisabled = false }) => {
+export default ({ iscontact, children, isFooterDisabled = false }) => {
   return (
     <div style={container}>
       <div style={styles}>
-        <Header />
+        <Header iscontact={iscontact} />
         {children}
       </div>
       {isFooterDisabled ? null : <Footer />}

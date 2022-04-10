@@ -5,7 +5,7 @@ import * as React from "react"
 // markup
 const Oss = () => {
   return (
-    <Layout>
+    <Layout iscontact={false}>
       <title>OSS | Youssef Jounaid</title>
       <main>
         <RepoCard />

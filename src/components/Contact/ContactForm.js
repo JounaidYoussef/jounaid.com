@@ -18,14 +18,14 @@ const ContactForm = () => {
           </p>
         </div>
         <div className="form-container">
-          <div className="contact-image">
+          {/* <div className="contact-image">
             <StaticImage
               src="../../assets/1.jpg"
               alt="Personal Picture"
               width={400}
               height={200}
             />
-          </div>
+          </div> */}
           <form
             name="contact"
             method="POST"

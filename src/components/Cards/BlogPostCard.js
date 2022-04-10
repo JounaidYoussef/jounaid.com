@@ -3,8 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const BlogPostCard = ({ start, viewMode, post }) => {
-  console.log(start)
+const BlogPostCard = ({ viewMode, post }) => {
   return viewMode ? (
     <Link to={post.fields.slug} aria-label={`View ${post.frontmatter.title}`}>
       <div className="grid-blogpost-container">

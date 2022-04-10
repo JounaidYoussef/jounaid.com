@@ -4,7 +4,7 @@ import * as React from "react"
 
 const About = () => {
   return (
-    <Layout isFooterDisabled={true}>
+    <Layout iscontact={false} isFooterDisabled={true}>
       <title>About | Youssef Jounaid</title>
       <main>
         <Content />
