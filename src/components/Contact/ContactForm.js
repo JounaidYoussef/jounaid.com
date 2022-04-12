@@ -11,7 +11,7 @@ const ContactForm = () => {
     <div className="contact-form-container">
       <div className="contact-content">
         <div className="contact-form-header">
-          <h2> Let’s Get In Touch</h2>
+          <h2> Let’s Talk</h2>
           <p className="description">
             To send me a message or want to meet up for a coffee, contact me
             directly or fill out the form and I will get back to you promptly.

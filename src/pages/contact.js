@@ -8,7 +8,7 @@ const Contact = ({ location }) => {
       <title>Contact | Youssef Jounaid</title>
       <main>
         <div>
-          <p>The location is {location.pathname}</p>
+          {/* <p>The location is {location.pathname}</p> */}
           <ContactForm />
         </div>
       </main>
