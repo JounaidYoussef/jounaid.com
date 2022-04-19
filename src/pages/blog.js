@@ -3,6 +3,9 @@ import Layout from "../components/Layout"
 import * as React from "react"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import Grid from "../assets/grid.svg"
+import List from "../assets/list.svg"
+
 // markup
 const Blog = ({ data }) => {
   const { posts } = data.blog
@@ -75,7 +78,7 @@ const Blog = ({ data }) => {
                 }}
                 onClick={() => setToggleViewMode(true)}
               >
-                <p>grid</p>
+                <Grid />
               </button>
               <button
                 style={{
@@ -87,7 +90,7 @@ const Blog = ({ data }) => {
                 }}
                 onClick={() => setToggleViewMode(false)}
               >
-                <p>list</p>
+                <List />
               </button>
             </div>
           </div>
