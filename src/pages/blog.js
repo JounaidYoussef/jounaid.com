@@ -19,89 +19,136 @@ const Blog = ({ data }) => {
     <Layout iscontact={false}>
       <title>Blog | Youssef Jounaid</title>
       <main>
-        <div>
-          <h2>title</h2>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <div className="radio-container">
-              <div className="tabs">
-                <input type="radio" id="radio-1" name="tabs" />
-                <label
-                  onClick={() => toggleTab(1)}
-                  className="tab"
-                  htmlFor="radio-1"
-                >
-                  All
-                  {/* <span className="notification">2</span> */}
-                </label>
-                <input type="radio" id="radio-2" name="tabs" />
-                <label
-                  onClick={() => toggleTab(2)}
-                  className="tab"
-                  htmlFor="radio-2"
-                >
-                  Dev
-                </label>
-                <input type="radio" id="radio-3" name="tabs" />
-                <label
-                  onClick={() => toggleTab(3)}
-                  className="tab"
-                  htmlFor="radio-3"
-                >
-                  Design
-                </label>
-                <input type="radio" id="radio-4" name="tabs" />
-                <label
-                  onClick={() => toggleTab(4)}
-                  className="tab"
-                  htmlFor="radio-4"
-                >
-                  Tools
-                </label>
-                <span className="glider"></span>
-              </div>
-            </div>
-            <div>
-              {" "}
-              <button
-                style={{
-                  border: 0,
-                  padding: "0.4em",
-                  borderRadius: "5px",
-                  backgroundColor: toggleViewMode ? "#e1e1e1" : "transparent",
-                }}
-                onClick={() => setToggleViewMode(true)}
+        <h2>title</h2>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <div className="radio-container">
+            <div className="tabs">
+              <input type="radio" id="radio-1" name="tabs" />
+              <label
+                onClick={() => toggleTab(1)}
+                className="tab"
+                htmlFor="radio-1"
               >
-                <Grid />
-              </button>
-              <button
-                style={{
-                  marginLeft: "0.4em",
-                  border: 0,
-                  padding: "0.4em",
-                  borderRadius: "5px",
-                  backgroundColor: !toggleViewMode ? "#e1e1e1" : "transparent",
-                }}
-                onClick={() => setToggleViewMode(false)}
+                All
+                {/* <span className="notification">2</span> */}
+              </label>
+              <input type="radio" id="radio-2" name="tabs" />
+              <label
+                onClick={() => toggleTab(2)}
+                className="tab"
+                htmlFor="radio-2"
               >
-                <List />
-              </button>
+                Dev
+              </label>
+              <input type="radio" id="radio-3" name="tabs" />
+              <label
+                onClick={() => toggleTab(3)}
+                className="tab"
+                htmlFor="radio-3"
+              >
+                Design
+              </label>
+              <input type="radio" id="radio-4" name="tabs" />
+              <label
+                onClick={() => toggleTab(4)}
+                className="tab"
+                htmlFor="radio-4"
+              >
+                Tools
+              </label>
+              <span className="glider"></span>
             </div>
+          </div>
+          <div>
+            {" "}
+            <button
+              style={{
+                border: 0,
+                padding: "0.4em",
+                borderRadius: "5px",
+                backgroundColor: toggleViewMode ? "#e1e1e1" : "transparent",
+              }}
+              onClick={() => setToggleViewMode(true)}
+            >
+              <Grid />
+            </button>
+            <button
+              style={{
+                marginLeft: "0.4em",
+                border: 0,
+                padding: "0.4em",
+                borderRadius: "5px",
+                backgroundColor: !toggleViewMode ? "#e1e1e1" : "transparent",
+              }}
+              onClick={() => setToggleViewMode(false)}
+            >
+              <List />
+            </button>
           </div>
         </div>
         <div className={toggleViewMode ? "grid-layout" : "list-layout"}>
-          {posts.map((post) => (
-            <article key={post.id}>
-              {console.log(post.id)}
-              <BlogPostCard viewMode={toggleViewMode} post={post} />
-            </article>
-          ))}
+          <div className="content-tabs">
+            <div
+              className={
+                toggleState === 1
+                  ? "projects-content  active-content"
+                  : "projects-content"
+              }
+            >
+              {posts.map((post) => (
+                <article key={post.id}>
+                  <BlogPostCard viewMode={toggleViewMode} post={post} />
+                </article>
+              ))}
+            </div>
+
+            <div
+              className={
+                toggleState === 2
+                  ? "projects-content  active-content"
+                  : "projects-content"
+              }
+            >
+              {posts.map((post) => (
+                <article key={post.id}>
+                  <BlogPostCard viewMode={toggleViewMode} post={post} />
+                </article>
+              ))}
+            </div>
+            <div
+              className={
+                toggleState === 3
+                  ? "projects-content  active-content"
+                  : "projects-content"
+              }
+            >
+              {posts.map((post) => (
+                <article key={post.id}>
+                  <BlogPostCard viewMode={toggleViewMode} post={post} />
+                </article>
+              ))}
+            </div>
+            <div
+              className={
+                toggleState === 4
+                  ? "projects-content  active-content"
+                  : "projects-content"
+              }
+            >
+              {posts.map((post) => (
+                <article key={post.id}>
+                  <BlogPostCard viewMode={toggleViewMode} post={post} />
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </main>
     </Layout>
