@@ -25,9 +25,13 @@ export default () => {
             <Link className="visit-blog" to="/blog">
               Visit Blog
             </Link>
-            <Link className="visit-resume" to="/blog">
+            <a
+              // href="src\assets\_CV.pdf"
+              // download="CV.pdf"
+              className="visit-resume"
+            >
               View Resume
-            </Link>
+            </a>
           </div>
         </div>
       </div>

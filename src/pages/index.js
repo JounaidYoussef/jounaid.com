@@ -3,6 +3,8 @@ import Skills from "../components/Home/Skills"
 import Layout from "../components/Layout"
 import * as React from "react"
 import { graphql } from "gatsby"
+import Testimonials from "../components/Home/Testimonials"
+import Work from "../components/Home/Work"
 
 // styles
 const pageStyles = {
@@ -32,6 +34,8 @@ const IndexPage = ({ data }) => {
       <main style={pageStyles}>
         <Intro />
         <Skills />
+        <Testimonials />
+        <Work />
       </main>
     </Layout>
   )
