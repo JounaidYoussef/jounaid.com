@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo.svg"
+import Jo from "../../assets/jo.svg"
 import "./index.scss"
 import { Link } from "gatsby"
 import React from "react"
@@ -16,7 +16,7 @@ const Header = ({ iscontact }) => {
             to="/"
             className="logo" // activeClassName="active"
           >
-            <Logo fill={"#4c596a"} width="36px" height="36px" />
+            <Jo fill={"#4c596a"} width="36px" height="36px" />
           </Link>
           <ul>
             <li>
