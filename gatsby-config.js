@@ -4,6 +4,15 @@ module.exports = {
     description: "This is my awesome blog I made from scratch!",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "favicon",
+        start_url: "/",
+        display: "standalone",
+        icon: "src/assets/jo.svg",
+      },
+    },
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
