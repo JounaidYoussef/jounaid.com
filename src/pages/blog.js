@@ -9,7 +9,9 @@ import List from "../assets/list.svg"
 // markup
 const Blog = ({ data }) => {
   const { posts } = data.blog
-  const [toggleViewMode, setToggleViewMode] = React.useState(true)
+
+  console.log(posts)
+  const [toggleViewMode, setToggleViewMode] = React.useState(false)
   const [toggleState, setToggleState] = React.useState(1)
 
   const toggleTab = (index) => {
@@ -168,6 +170,7 @@ export const pageQuery = graphql`
           date(fromNow: true)
           title
           author
+          categories
           banner {
             childImageSharp {
               gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])

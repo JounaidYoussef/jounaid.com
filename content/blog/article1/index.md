@@ -2,7 +2,7 @@
 date: 2022-04-12
 title: "Article1"
 author: "Youssef Jounaid"
-categories: ["blog"]
+categories: ["dev"]
 keywords: ["blog", "blog", "blog"]
 published: true
 banner: "./louvre.jpg"

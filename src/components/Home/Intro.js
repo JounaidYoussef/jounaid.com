@@ -26,8 +26,8 @@ export default () => {
               Visit Blog
             </Link>
             <a
-              // href="src\assets\_CV.pdf"
-              // download="CV.pdf"
+              href="src\assets\_CV.pdf"
+              download="CV.pdf"
               className="visit-resume"
             >
               View Resume
