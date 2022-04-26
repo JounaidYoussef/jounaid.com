@@ -1,6 +1,16 @@
 @import "./vars";
 @import "./mixins.scss";
 
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
