@@ -11,6 +11,25 @@
   flex-direction: row;
 }
 
+.end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icenter {
+  display: flex;
+  align-items: center;
+}
+
+.jcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.ta {
+  text-align: center;
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

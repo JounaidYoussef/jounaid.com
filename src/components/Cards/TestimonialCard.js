@@ -5,10 +5,18 @@ import Quote from "../../assets/quote.svg"
 
 const TestimonialCard = () => {
   return (
-    <div className="testimonialCard-container">
-      <div className="col">
+    <div
+      className="col"
+      style={{
+        width: "50%",
+        backgroundColor: "#eaf0f5",
+        padding: "1.8em",
+        borderRadius: "20px",
+      }}
+    >
+      <div className="col ta">
         <Quote />
-        <text style={{ fontSize: 14, fontWeight: "400" }}>
+        <text style={{ fontSize: 12, fontWeight: "400" }}>
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
           fermentum orci. Suspendisse consequat tincidunt eleifend. Sed ac
@@ -18,14 +26,25 @@ const TestimonialCard = () => {
           lectus hendrerit blandit. Ut eu ornare risus.
         </text>
       </div>
-      <div style={{ width: "40%" }}>
+      <div className="col icenter testimonial-avatar-container">
         <StaticImage
           src="../../assets/aa.jpg"
           alt="Personal Picture"
           placeholder="blurred"
-          width={160}
-          height={160}
+          width={48}
+          height={48}
+          imgStyle={{ borderRadius: "100%" }}
+          style={{ margin: "0.4em" }}
         />
+        <div className="col ta">
+          <text style={{ fontSize: 12, fontWeight: "600" }}>
+            Youssef Jounaid
+          </text>
+          <text style={{ fontSize: 10, fontWeight: "400" }}>
+            {" "}
+            Développeur Web FullSTack
+          </text>
+        </div>
       </div>
     </div>
   )
