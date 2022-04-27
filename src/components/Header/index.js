@@ -79,7 +79,7 @@ const Header = ({ iscontact }) => {
               Get In Touch
             </Link>
           ) : (
-            <a onClick={() => navigate(-1)} className="close">
+            <a onClick={() => history.back()} className="close">
               Close
             </a>
           )}
