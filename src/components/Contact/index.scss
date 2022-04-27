@@ -43,9 +43,7 @@ h2 {
     font-family: "Poppins";
     font-size: 12px;
     padding: 8px 8px 8px 8px;
-    border-radius: 20px;
-    border: solid #527693;
-    border-width: 2px;
+    border: none;
     outline: none;
     width: 100%;
     background: transparent;
@@ -88,6 +86,10 @@ h2 {
 .contact-item {
   width: 100%;
   margin-bottom: 1em;
+  border-radius: 20px;
+  border: solid #527693;
+  border-width: 2px;
+  padding-left: 0.4em;
 }
 
 .contact-item-long {
@@ -96,8 +98,8 @@ h2 {
 }
 
 .social {
-  float: right;
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 

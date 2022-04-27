@@ -5,6 +5,9 @@ import "./index.scss"
 import Image, { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import Baremail from "../../assets/baremail.svg"
+import Profile from "../../assets/profile.svg"
+import Download from "../../assets/download.svg"
 
 const ContactForm = () => {
   return (
@@ -34,10 +37,12 @@ const ContactForm = () => {
             data-netlify-honeypot="bot-field"
             action="/thanks"
           >
-            <div className="contact-item">
+            <div className="contact-item row icenter">
+              <Profile />
               <input placeholder="Name" type="text" name="name" required />
             </div>
-            <div className="contact-item">
+            <div className="contact-item row icenter">
+              <Baremail />
               <input placeholder="Email" type="email" name="email" required />
             </div>
             <div className="contact-item-long">
@@ -48,15 +53,23 @@ const ContactForm = () => {
                 required
               ></textarea>
             </div>
+            <a href="#" className="contact-item row icenter">
+              <Download />
+              <text
+                style={{ padding: "8px", fontWeight: "400", fontSize: "12px" }}
+              >
+                Insert File
+              </text>
+            </a>
             <div className="actions">
               {/* type="submit" */}
               <a className="send">Send</a>
             </div>
           </form>
         </div>
-      </div>
-      <div className="social">
-        <SocialBar fill="#4C596A" />
+        <div style={{ marginTop: "2em" }}>
+          <SocialBar fill="#4C596A" />
+        </div>
       </div>
     </div>
   )
