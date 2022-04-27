@@ -4,7 +4,7 @@ import React from "react"
 
 const styles = {
   color: "#232129",
-  padding: "40px 160px 40px 160px",
+  padding: "20px 160px 40px 160px",
 }
 
 const container = {

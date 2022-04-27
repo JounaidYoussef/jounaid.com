@@ -2,6 +2,9 @@
 
 .contact-content {
   font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form-header {
@@ -20,40 +23,52 @@ h2 {
   color: var(--text-color);
 }
 
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   font-size: 1.2rem;
-  width: 100%;
+  width: 320px;
   padding-top: 2rem;
-  background-color: #4c596a;
+  // background-color: #eaf0f5;
   border-radius: 20px;
   padding: 0.8em;
   input {
     font-family: "Poppins";
     font-size: 12px;
-    padding: 8px 8px 8px 12px;
+    padding: 8px 8px 8px 8px;
     border-radius: 20px;
-    border-width: 0;
+    border: solid #527693;
+    border-width: 2px;
     outline: none;
+    width: 100%;
+    background: transparent;
+    color: #527693;
+  }
+  input::-webkit-input-placeholder {
+    color: #527693;
   }
   textarea {
     font-family: "Poppins";
     color: var(--heading-color);
-    background: var(--secondary-bg-color);
-    padding: 16px;
-    width: 80%;
-    border-radius: 7px;
-    border: none;
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: solid #527693;
+    border-width: 2px;
     outline: none;
     font-size: 12px;
     resize: none;
   }
-  label {
-    color: var(--secondary-text-color);
-    font-size: 0.6em;
-    padding-left: 12px;
+  textarea::-webkit-input-placeholder {
+    color: #527693;
   }
   .actions {
     font-family: "Poppins";
@@ -71,15 +86,12 @@ h2 {
 }
 
 .contact-item {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+  width: 100%;
   margin-bottom: 1em;
 }
 
 .contact-item-long {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   margin-bottom: 1em;
 }
 
@@ -109,14 +121,4 @@ a {
 
 #contact-label {
   margin-bottom: 8px;
-}
-
-.contact-image {
-  position: absolute;
-  right: -60px;
-  top: -120px;
-}
-
-.form-container {
-  position: relative;
 }
