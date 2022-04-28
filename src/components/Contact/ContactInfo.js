@@ -1,4 +1,4 @@
-import Location from "../../assets/location.svg"
+import Visio from "../../assets/visio.svg"
 import Mail from "../../assets/mail.svg"
 import Baremail from "../../assets/baremail.svg"
 import "./index.scss"
@@ -9,20 +9,14 @@ const ContactInfo = () => {
     <div className="infos-global-container">
       <div className="info-mini-container">
         <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
-          <Mail fill="#4C596A" />
-          <p id="info-text">+33 758 792 117</p>
-        </a>
-      </div>
-      <div className="info-mini-container">
-        <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
-          <Baremail />
+          <Baremail height="14" width="14" />
           <p id="info-text">Jounaid.ysf@gmail.com</p>
         </a>
       </div>
       <div className="info-mini-container">
         <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
-          <Location />
-          <p id="info-text">Paris, France</p>
+          <Visio fill="#4C596A" />
+          <p id="info-text">Book a Call</p>
         </a>
       </div>
     </div>

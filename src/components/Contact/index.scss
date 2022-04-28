@@ -113,7 +113,10 @@ a {
 .infos-global-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+}
+
+.info-mini-container {
+  margin: 0 0.4em 0 0.4em;
 }
 
 #info-item {
@@ -121,10 +124,15 @@ a {
   flex-direction: row;
   width: 100%;
   align-items: center;
+  background-color: #eaf0f5;
+  border-radius: 20px;
+  padding: 0em 0.6em 0em 0.6em;
 }
 
 #info-text {
-  margin-left: 0.8em;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 0.4em;
 }
 
 #contact-label {

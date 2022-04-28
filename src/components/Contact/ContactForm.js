@@ -20,6 +20,9 @@ const ContactForm = () => {
             directly or fill out the form and I will get back to you promptly.
           </p>
         </div>
+        <div className="jcenter" style={{ marginTop: "0.4em" }}>
+          <ContactInfo />
+        </div>
         <div className="form-container">
           {/* <div className="contact-image">
             <StaticImage
@@ -68,13 +71,8 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-      <div className="col">
-        <div style={{ marginTop: "2em" }}>
-          <ContactInfo />
-        </div>
-        <div className="jcenter" style={{ marginTop: "2em" }}>
-          <SocialBar fill="#4C596A" />
-        </div>
+      <div className="jcenter" style={{ marginTop: "2em" }}>
+        <SocialBar fill="#4C596A" />
       </div>
     </div>
   )
