@@ -67,7 +67,12 @@ const ContactForm = () => {
             </div>
           </form>
         </div>
+      </div>
+      <div className="col">
         <div style={{ marginTop: "2em" }}>
+          <ContactInfo />
+        </div>
+        <div className="jcenter" style={{ marginTop: "2em" }}>
           <SocialBar fill="#4C596A" />
         </div>
       </div>

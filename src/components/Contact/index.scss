@@ -110,6 +110,12 @@ a {
   text-decoration: none;
 }
 
+.infos-global-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #info-item {
   display: flex;
   flex-direction: row;
@@ -118,7 +124,7 @@ a {
 }
 
 #info-text {
-  margin-left: 0.4em;
+  margin-left: 0.8em;
 }
 
 #contact-label {

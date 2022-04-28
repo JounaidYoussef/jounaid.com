@@ -1,5 +1,6 @@
 import Location from "../../assets/location.svg"
 import Mail from "../../assets/mail.svg"
+import Baremail from "../../assets/baremail.svg"
 import "./index.scss"
 import React from "react"
 
@@ -9,13 +10,19 @@ const ContactInfo = () => {
       <div className="info-mini-container">
         <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
           <Mail fill="#4C596A" />
+          <p id="info-text">+33 758 792 117</p>
+        </a>
+      </div>
+      <div className="info-mini-container">
+        <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
+          <Baremail />
           <p id="info-text">Jounaid.ysf@gmail.com</p>
         </a>
       </div>
       <div className="info-mini-container">
         <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
-          <Location fill="#4C596A" />
-          <p id="info-text">Paris</p>
+          <Location />
+          <p id="info-text">Paris, France</p>
         </a>
       </div>
     </div>
