@@ -8,13 +8,13 @@ const ContactInfo = () => {
   return (
     <div className="infos-global-container">
       <div className="info-mini-container">
-        <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
-          <Baremail height="14" width="14" />
+        <a id="info-item" href="mailto:jounaid.ysf@gmail.com">
+          <Baremail fill="#527693" height="12" width="12" />
           <p id="info-text">Jounaid.ysf@gmail.com</p>
         </a>
       </div>
       <div className="info-mini-container">
-        <a id="info-item" href="https://www.linkedin.com/in/jounaidyoussef/">
+        <a id="info-item" href="https://calendly.com/jounaidyoussef/call">
           <Visio fill="#4C596A" />
           <p id="info-text">Book a Call</p>
         </a>
