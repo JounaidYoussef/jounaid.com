@@ -56,14 +56,14 @@ const ContactForm = () => {
                 required
               ></textarea>
             </div>
-            <a href="#" className="contact-item row icenter">
+            {/* <a href="#" className="contact-item row icenter">
               <Download />
               <text
                 style={{ padding: "8px", fontWeight: "400", fontSize: "12px" }}
               >
                 Insert File
               </text>
-            </a>
+            </a> */}
             <div className="actions">
               {/* type="submit" */}
               <a className="send">Send</a>
