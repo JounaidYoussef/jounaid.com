@@ -104,7 +104,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.map((post) => (
+              {posts.slice(0, 2).map((post) => (
                 <article key={post.id}>
                   <BlogPostCard viewMode={toggleViewMode} post={post} />
                 </article>
@@ -118,7 +118,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.map((post) => (
+              {posts.slice(2, 4).map((post) => (
                 <article key={post.id}>
                   <BlogPostCard viewMode={toggleViewMode} post={post} />
                 </article>
@@ -131,7 +131,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.map((post) => (
+              {posts.slice(4, 6).map((post) => (
                 <article key={post.id}>
                   <BlogPostCard viewMode={toggleViewMode} post={post} />
                 </article>
@@ -144,7 +144,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.map((post) => (
+              {posts.slice(6, 9).map((post) => (
                 <article key={post.id}>
                   <BlogPostCard viewMode={toggleViewMode} post={post} />
                 </article>
