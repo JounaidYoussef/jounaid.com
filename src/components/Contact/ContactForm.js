@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Baremail from "../../assets/baremail.svg"
 import Profile from "../../assets/profile.svg"
-import Download from "../../assets/download.svg"
+// import Download from "../../assets/download.svg"
 
 const ContactForm = () => {
   return (

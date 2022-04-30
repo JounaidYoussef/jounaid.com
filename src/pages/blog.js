@@ -5,6 +5,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Grid from "../assets/grid.svg"
 import List from "../assets/list.svg"
+import BlogPostList from "./../components/Blog/BlogPostList"
 
 // markup
 const Blog = ({ data }) => {
@@ -104,11 +105,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.slice(0, 2).map((post) => (
-                <article key={post.id}>
-                  <BlogPostCard viewMode={toggleViewMode} post={post} />
-                </article>
-              ))}
+              <BlogPostList data={posts} mode={toggleViewMode} />
             </div>
 
             <div
@@ -118,11 +115,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.slice(2, 4).map((post) => (
-                <article key={post.id}>
-                  <BlogPostCard viewMode={toggleViewMode} post={post} />
-                </article>
-              ))}
+              <BlogPostList data={posts.slice(0, 1)} mode={toggleViewMode} />
             </div>
             <div
               className={
@@ -131,11 +124,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.slice(4, 6).map((post) => (
-                <article key={post.id}>
-                  <BlogPostCard viewMode={toggleViewMode} post={post} />
-                </article>
-              ))}
+              <BlogPostList data={posts} mode={toggleViewMode} />
             </div>
             <div
               className={
@@ -144,11 +133,7 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              {posts.slice(6, 9).map((post) => (
-                <article key={post.id}>
-                  <BlogPostCard viewMode={toggleViewMode} post={post} />
-                </article>
-              ))}
+              <BlogPostList data={posts} mode={toggleViewMode} />
             </div>
           </div>
         </div>
