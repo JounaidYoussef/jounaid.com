@@ -8,7 +8,7 @@ const TestimonialCard = () => {
     <div
       className="col"
       style={{
-        width: "50%",
+        width: "30em",
         backgroundColor: "#eaf0f5",
         padding: "1.8em",
         borderRadius: "20px",
