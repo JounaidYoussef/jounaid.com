@@ -2,6 +2,7 @@ import Footer from "../Footer"
 import Header from "../Header"
 import React, { useState } from "react"
 import "./index.scss"
+import Scrollup from "../../assets/scrollup.svg"
 
 const styles = {
   color: "#232129",
@@ -17,9 +18,9 @@ export default ({ iscontact, children, isFooterDisabled = false }) => {
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 500) {
+    if (!showScroll && window.pageYOffset > 400) {
       setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 500) {
+    } else if (showScroll && window.pageYOffset <= 400) {
       setShowScroll(false)
     }
   }
@@ -39,7 +40,7 @@ export default ({ iscontact, children, isFooterDisabled = false }) => {
         onClick={scrollTop}
         style={{ height: 40, display: showScroll ? "flex" : "none" }}
       >
-        Top
+        <Scrollup />
       </button>
       {isFooterDisabled ? null : <Footer />}
     </div>
