@@ -15,6 +15,7 @@ const container = {
 
 export default ({ iscontact, children, isFooterDisabled = false }) => {
   const [showScroll, setShowScroll] = useState(false)
+
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 500) {
       setShowScroll(true)
