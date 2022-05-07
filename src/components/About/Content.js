@@ -1,8 +1,8 @@
 import ArtBar from "../Bars/ArtBar"
 import SocialBar from "../Bars/SocialBar"
 import "./index.scss"
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import Avatar from "../../assets/avatar.svg"
 
 export default () => {
   return (
@@ -31,13 +31,7 @@ export default () => {
           </div>
           <div className="minicontainer">
             <div className="personal-asset">
-              <StaticImage
-                src="../../assets/photo.png"
-                alt="Personal Picture"
-                placeholder="blurred"
-                width={200}
-                height={200}
-              />
+              <Avatar />
             </div>
           </div>
         </div>
