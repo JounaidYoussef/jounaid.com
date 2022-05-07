@@ -5,18 +5,10 @@ import Quote from "../../assets/quote.svg"
 
 const TestimonialCard = () => {
   return (
-    <div
-      className="col"
-      style={{
-        width: "30em",
-        backgroundColor: "#eaf0f5",
-        padding: "1.8em",
-        borderRadius: "20px",
-      }}
-    >
+    <div className="col testimonial-card-container">
       <div className="col ta">
         <Quote />
-        <text style={{ fontSize: 12, fontWeight: "400" }}>
+        <text style={{ fontSize: 13, fontWeight: "400" }}>
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
           fermentum orci. Suspendisse consequat tincidunt eleifend. Sed ac
