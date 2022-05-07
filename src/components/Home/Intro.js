@@ -1,11 +1,16 @@
 import "./index.scss"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import Mainavatar from "../../assets/mainavatar.svg"
 
 export default () => {
   return (
     <div className="intro-container">
+      <div className="minicontainer">
+        <div className="personal-asset">
+          <Mainavatar width="200px" />
+        </div>
+      </div>
       <div className="minicontainer">
         <div className="intro">
           <p className="myname">Youssef Jounaid</p>
@@ -33,17 +38,6 @@ export default () => {
               View Resume
             </a>
           </div>
-        </div>
-      </div>
-      <div className="minicontainer">
-        <div className="personal-asset">
-          <StaticImage
-            src="../../assets/photo.png"
-            alt="Personal Picture"
-            placeholder="blurred"
-            width={200}
-            height={200}
-          />
         </div>
       </div>
     </div>

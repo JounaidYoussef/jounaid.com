@@ -1,10 +1,12 @@
 .intro-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .minicontainer {
-  flex: 1;
+  margin: 1.8em;
 }
 
 .personal-asset {
@@ -19,19 +21,21 @@
   border-radius: 20px;
   margin-top: 8px;
   .visit-blog {
-    color: white;
+    color: #4c596a;
     text-decoration: none;
-    background-color: #4c596a;
+    background-color: transparent;
     padding: 4px 20px 4px 20px;
     margin-right: 0.8em;
     border-radius: 20px;
+    border: 3px solid #4c596a;
   }
   .visit-resume {
-    color: white;
+    color: #527693;
     text-decoration: none;
-    background-color: #527693;
+    background-color: transparent;
     padding: 4px 20px 4px 20px;
     border-radius: 20px;
+    border: 3px solid #527693;
   }
 }
 
