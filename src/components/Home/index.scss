@@ -27,7 +27,13 @@
     padding: 4px 20px 4px 20px;
     margin-right: 0.8em;
     border-radius: 20px;
-    border: 3px solid #4c596a;
+    border: 2px solid #4c596a;
+  }
+  .visit-blog:hover,
+  .visit-blog:focus {
+    color: #fff;
+    outline: 0;
+    padding: 6px 22px 6px 22px;
   }
   .visit-resume {
     color: #527693;
@@ -35,7 +41,31 @@
     background-color: transparent;
     padding: 4px 20px 4px 20px;
     border-radius: 20px;
-    border: 3px solid #527693;
+    border: 2px solid #527693;
+  }
+  .visit-resume:hover {
+    color: #fff;
+    outline: 0;
+    padding: 6px 22px 6px 22px;
+  }
+  .first {
+    -webkit-transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+    transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #4c596a inset;
+    border: none;
+    outline: none;
+  }
+  .second {
+    -webkit-transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+    transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  }
+  .second:hover {
+    box-shadow: 0 0 40px 40px #527693 inset;
+    border: none;
+
+    outline: 0;
   }
 }
 

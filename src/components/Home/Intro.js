@@ -27,13 +27,13 @@ export default () => {
             You can find articles on these subjects and more on my blog
           </p>
           <div className="go-to-blog">
-            <Link className="visit-blog" to="/blog">
+            <Link className="first visit-blog" to="/blog">
               Visit Blog
             </Link>
             <a
               href="src\assets\_CV.pdf"
               download="CV.pdf"
-              className="visit-resume"
+              className="visit-resume second"
             >
               View Resume
             </a>
