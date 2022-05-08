@@ -6,7 +6,11 @@ export default () => {
   return (
     <div className="work-container icenter col">
       <h2>Featured Work</h2>
-      <ProjectCard />
+      <div className="row">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
     </div>
   )
 }

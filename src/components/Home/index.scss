@@ -102,18 +102,32 @@
 
 // skills Component
 
+// .inter-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 5em 0 0 0;
+// }
+
 .skills-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5em 0 0 0;
+  margin: 1em 0 0 0;
 }
 
 .skill-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 3em;
+  margin: 2em;
   font-size: 0.7em;
-  text-align: center;
+  border-radius: 20px;
+  padding: 0.6em;
+  width: 320px;
 }
 
 .image-container {
@@ -131,8 +145,17 @@
 }
 
 #skills-section-title {
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #527693;
+  margin: 0;
+}
+
+#skills-section-text {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+  color: #527693;
 }
 
 .testimonials-container {
@@ -201,6 +224,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotate(180deg);
 }
 
 .swiper-button-next {

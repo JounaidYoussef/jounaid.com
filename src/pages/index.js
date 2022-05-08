@@ -34,8 +34,8 @@ const IndexPage = ({ data }) => {
       <main style={pageStyles}>
         <Intro />
         <Skills />
-        <Testimonials />
         <Work />
+        <Testimonials />
       </main>
     </Layout>
   )

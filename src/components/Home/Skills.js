@@ -1,6 +1,6 @@
-import Code from "../../assets/code.svg"
-import Mobile from "../../assets/mobile.svg"
-import UX from "../../assets/ux.svg"
+import D from "../../assets/d.svg"
+import M from "../../assets/m.svg"
+import U from "../../assets/u.svg"
 import "./index.scss"
 import React from "react"
 
@@ -13,14 +13,11 @@ export default () => {
       <div className="intro-container">
         <div className="skill-container">
           <div className="image-container">
-            <Code />
+            <D width="140px" height="140px" />
           </div>
           <div>
-            <p id="skills-section-title">
-              FullStack <br />
-              Web Development
-            </p>
-            <p>
+            <p id="skills-section-title">FullStack Web Development</p>
+            <p id="skills-section-text">
               Turning up your ideas into usable MVPs, Developing websites using
               MERN, MEAN or JAM stack
             </p>
@@ -28,13 +25,11 @@ export default () => {
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <Mobile />
+            <M width="140px" height="140px" />
           </div>
           <div>
-            <p id="skills-section-title">
-              Mobile <br /> Development
-            </p>
-            <p>
+            <p id="skills-section-title">Mobile Development</p>
+            <p id="skills-section-text">
               Mainly with React Native, I work on creating CrossPlatform
               (Android and iOS) Mobile Apps from scratch
             </p>
@@ -42,14 +37,11 @@ export default () => {
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <UX />
+            <U width="140px" height="140px" />
           </div>
           <div>
-            <p id="skills-section-title">
-              UI/UX
-              <br /> Design
-            </p>
-            <p>
+            <p id="skills-section-title">UI/UX Design</p>
+            <p id="skills-section-text">
               Designing and optimizing user interfaces focusing on design,
               usability, function, and even branding and marketing
             </p>
