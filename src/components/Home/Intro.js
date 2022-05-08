@@ -14,8 +14,7 @@ export default () => {
       <div className="minicontainer">
         <div className="intro">
           <p className="myname">Youssef Jounaid</p>
-          <p className="dictionary">(noun)</p>
-          <hr className="line" />
+          {/* <hr className="line" /> */}
           <p className="intro">
             Software Engineer, Designer and Art Enthusiast,
             <br />

@@ -11,6 +11,7 @@ export default () => {
         <div className="about-container">
           <div className="minicontainer">
             <p>
+              Youssef Jounaid <br />
               I'm a FullStack Web & Mobile engineer. Solving problems and
               creating new visual languages is my biggest passion.
               <br />
