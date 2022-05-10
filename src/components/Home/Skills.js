@@ -8,7 +8,7 @@ export default () => {
   return (
     <div className="skills-container">
       <div className="skills-title">
-        <h3 id="skills-header">What I do</h3>
+        <h2>What I Do</h2>
       </div>
       <div className="intro-container">
         <div className="skill-container">

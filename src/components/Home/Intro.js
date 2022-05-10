@@ -30,8 +30,8 @@ export default () => {
               Visit Blog
             </Link>
             <a
-              href="src\assets\_CV.pdf"
-              download="CV.pdf"
+              href="https://www.google.com"
+              target="_blank"
               className="visit-resume second"
             >
               View Resume

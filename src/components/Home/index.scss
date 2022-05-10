@@ -126,6 +126,7 @@
   margin: 2em;
   font-size: 0.7em;
   border-radius: 20px;
+  // background: #fff;
   padding: 0.6em;
   width: 320px;
 }
@@ -147,7 +148,7 @@
 #skills-section-title {
   font-size: 1.6em;
   font-weight: 700;
-  color: #527693;
+  color: #4c596a;
   margin: 0;
 }
 
@@ -155,7 +156,7 @@
   font-size: 1em;
   font-weight: 400;
   margin: 0;
-  color: #527693;
+  color: #4c596a;
 }
 
 .testimonials-container {
@@ -242,4 +243,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.see-all {
+  color: #527693;
+  font-weight: 600;
+  margin: 0.8em 0 0.8em 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
