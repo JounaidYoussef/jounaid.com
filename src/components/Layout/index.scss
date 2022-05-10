@@ -1,10 +1,11 @@
 .scrollTop {
+  position: -webkit-sticky; /* Safari */
   position: sticky;
-  width: 100%;
   bottom: 100px;
+  right: 20px;
   align-items: center;
   height: 5px;
-  justify-content: flex-end;
+  float: right;
   animation: fadeIn 0.5s;
   transition: opacity 0.7s;
   opacity: 0.5;
