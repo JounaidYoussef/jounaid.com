@@ -2,6 +2,9 @@ import "./index.scss"
 import React from "react"
 import Github from "../../assets/github.svg"
 import Web from "../../assets/web.svg"
+import Copylink from "../../assets/copylink.svg"
+import Checkmark from "../../assets/checkmark.svg"
+
 import { StaticImage } from "gatsby-plugin-image"
 
 const ProjectCard = () => {
@@ -9,19 +12,27 @@ const ProjectCard = () => {
     <div
       style={{
         // width: "50%",
-        backgroundColor: "#eaf0f5",
         padding: "1.6em",
         margin: "0.8em",
         borderRadius: "20px",
         maxWidth: "320px",
       }}
     >
-      <StaticImage
-        src="../../assets/webpr.png"
-        alt="Project"
-        width={300}
-        imgStyle={{ borderRadius: "10px" }}
-      />
+      <div className="im">
+        <StaticImage
+          src="../../assets/webpr.png"
+          alt="Project"
+          width={300}
+          imgStyle={{ borderRadius: "10px" }}
+        />
+        <div className="copylink">
+          <a href="#" className="copyl">
+            <Copylink width="10px" height="10px" />
+            <Checkmark width="12px" height="12px" />
+          </a>
+        </div>{" "}
+      </div>
+
       <div className="col">
         <text style={{ fontSize: "20px", fontWeight: 600 }}>Hello world</text>
         <text style={{ fontSize: "12px", fontWeight: 400 }}>

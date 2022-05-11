@@ -153,3 +153,19 @@ p {
   border: solid 3px #527693;
   border-radius: 20px;
 }
+
+.im {
+  position: relative;
+}
+
+.copylink {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.copyl {
+  background-color: #ffffff;
+  border-radius: 10%;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+}
