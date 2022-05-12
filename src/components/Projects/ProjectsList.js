@@ -5,7 +5,7 @@ import ProjectCard from "../Cards/ProjectCard"
 
 const ProjectsList = () => {
   return (
-    <div>
+    <div className="prListContainer">
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />
