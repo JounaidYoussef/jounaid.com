@@ -8,8 +8,13 @@ export default () => {
   return (
     <div>
       <div className="bio">
-        <div className="about-container">
+        <div className="about-container col">
           <div className="minicontainer">
+            <div className="personal-asset">
+              <Avatar />
+            </div>
+          </div>
+          <div className="minicontainer ta">
             <p>
               Youssef Jounaid <br />
               I'm a FullStack Web & Mobile engineer. Solving problems and
@@ -29,11 +34,6 @@ export default () => {
               into movies.
               <br />
             </p>
-          </div>
-          <div className="minicontainer">
-            <div className="personal-asset">
-              <Avatar />
-            </div>
           </div>
         </div>
       </div>
