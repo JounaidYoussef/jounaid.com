@@ -25,12 +25,10 @@ const ProjectCard = () => {
           width={300}
           imgStyle={{ borderRadius: "10px" }}
         />
-        <div className="copylink">
-          <a href="#" className="copyl">
-            <Copylink width="10px" height="10px" />
-            <Checkmark width="12px" height="12px" />
-          </a>
-        </div>{" "}
+        <a href="#" className="copylink">
+          <Copylink width="10px" height="10px" />
+          <Checkmark width="12px" height="12px" />
+        </a>
       </div>
 
       <div className="col">

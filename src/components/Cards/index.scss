@@ -158,13 +158,18 @@ p {
   position: relative;
 }
 
-.copylink {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.im:hover {
+  border: 2px solid aqua;
 }
 
-.copyl {
+.bp-link {
+  position: relative;
+}
+
+.copylink {
+  position: absolute;
+  top: 16px;
+  left: 16px;
   background-color: #ffffff;
   border-radius: 10%;
   padding: 0.2em 0.4em 0.2em 0.4em;
