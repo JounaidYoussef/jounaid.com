@@ -254,3 +254,33 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+//Subsribe
+
+.subscribe-container {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  margin-top: 5em;
+  text-align: center;
+  padding: 0.8em;
+  background-color: #cce8ff;
+  border-radius: 20px;
+}
+
+.subscribe-input {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #527693;
+  padding: 0.4em;
+}
+
+.subscribe-button {
+  border-radius: 20px;
+  background-color: #d19821;
+  padding: 0.6em 1.2em 0.6em 1.2em;
+  outline: none;
+}
+.subscribe-input :focus {
+  outline: none;
+}
