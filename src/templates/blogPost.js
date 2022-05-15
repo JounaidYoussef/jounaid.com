@@ -21,20 +21,20 @@ export default function BlogPost({ data }) {
     </Layout>
   )
 }
-export const query = graphql`
-  query BlogQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        date
-        author
-        banner {
-          childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP, AVIF])
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query BlogQuery($slug: String!) {
+//     markdownRemark(fields: { slug: { eq: $slug } }) {
+//       html
+//       frontmatter {
+//         title
+//         date
+//         author
+//         banner {
+//           childImageSharp {
+//             gatsbyImageData(width: 500, formats: [AUTO, WEBP, AVIF])
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

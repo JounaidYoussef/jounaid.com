@@ -5,6 +5,8 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import Testimonials from "../components/Home/Testimonials"
 import Work from "../components/Home/Work"
+import Articles from "../components/Home/Articles"
+import Subscribe from "../components/Home/Subscribe"
 
 // styles
 const pageStyles = {
@@ -34,8 +36,10 @@ const IndexPage = ({ data }) => {
       <main style={pageStyles}>
         <Intro />
         <Skills />
+        <Articles />
         <Work />
         <Testimonials />
+        <Subscribe />
       </main>
     </Layout>
   )
