@@ -1,12 +1,29 @@
 @import "./vars";
 @import "./mixins.scss";
 
+body,
+input,
+textarea,
+button {
+  font-family: Poppins;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 .m-0 {
   margin: 0;
 }
 .my-2 {
   margin-top: 0.4em;
   margin-bottom: 0.4em;
+}
+
+.mx-2 {
+  margin-right: 0.4em;
+  margin-left: 0.4em;
 }
 
 .col {

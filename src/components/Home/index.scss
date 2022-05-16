@@ -259,28 +259,55 @@
 
 .subscribe-container {
   display: flex;
-  max-width: 600px;
+  justify-content: center;
+  color: #527693;
+}
+.subscribe-minicontainer {
+  display: flex;
   flex-direction: column;
   margin-top: 5em;
   text-align: center;
+  align-items: center;
   padding: 0.8em;
-  background-color: #cce8ff;
-  border-radius: 20px;
+  width: 80%;
+  background-color: #e0e0e0;
+  border-radius: 200px;
 }
 
 .subscribe-input {
   width: 100%;
+  font-size: 0.7em;
   border-radius: 20px;
   border: 2px solid #527693;
   padding: 0.4em;
+  padding-left: 1.6em;
 }
 
 .subscribe-button {
   border-radius: 20px;
-  background-color: #d19821;
-  padding: 0.6em 1.2em 0.6em 1.2em;
+  color: #ffffff;
+  background-color: #527693;
+  padding: 0.6em 1.8m 0.6em 1.8em;
   outline: none;
+  cursor: pointer;
+  width: 200px;
 }
 .subscribe-input :focus {
   outline: none;
+}
+
+.subscribe-item {
+  width: 100%;
+  border-radius: 20px;
+  border: solid #527693;
+  border-width: 2px;
+  padding-left: 0.4em;
+  background-color: #ffffff;
+}
+
+.in {
+  background-color: transparent;
+  border: 0;
+  padding: 0.6em 1.2em 0.6em 1.2em;
+  width: 100%;
 }
