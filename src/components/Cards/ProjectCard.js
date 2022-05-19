@@ -1,9 +1,9 @@
 import "./index.scss"
 import React from "react"
-import Github from "../../assets/github.svg"
-import Web from "../../assets/web.svg"
-import Copylink from "../../assets/copylink.svg"
-import Checkmark from "../../assets/checkmark.svg"
+// import Github from "../../assets/github.svg"
+// import Web from "../../assets/web.svg"
+// import Copylink from "../../assets/copylink.svg"
+// import Checkmark from "../../assets/checkmark.svg"
 
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -25,10 +25,10 @@ const ProjectCard = () => {
           width={300}
           imgStyle={{ borderRadius: "10px" }}
         />
-        <a href="#" className="copylink">
+        {/* <a href="#" className="copylink">
           <Copylink width="10px" height="10px" />
           <Checkmark width="12px" height="12px" />
-        </a>
+        </a> */}
       </div>
 
       <div className="col">
@@ -37,7 +37,7 @@ const ProjectCard = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas
           diam ut ipsum gravida lacinia.
         </text>
-        <div>
+        {/* <div>
           <a
             className="icon"
             target="_blank"
@@ -52,7 +52,7 @@ const ProjectCard = () => {
           >
             <Web />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   )

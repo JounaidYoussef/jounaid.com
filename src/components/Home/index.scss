@@ -123,12 +123,17 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 2em;
+  margin: 2em 0.4em 2em 0.4em;
   font-size: 0.7em;
+  padding: 2em;
   border-radius: 20px;
-  // background: #fff;
-  padding: 0.6em;
-  width: 320px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 150px;
+}
+
+.row-skills-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .image-container {
@@ -146,17 +151,10 @@
 }
 
 #skills-section-title {
-  font-size: 1.6em;
-  font-weight: 700;
-  color: #4c596a;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #7e8f99;
   margin: 0;
-}
-
-#skills-section-text {
-  font-size: 1em;
-  font-weight: 400;
-  margin: 0;
-  color: #4c596a;
 }
 
 .testimonials-container {
@@ -270,7 +268,7 @@
   align-items: center;
   padding: 0.8em;
   width: 80%;
-  background-color: #e0e0e0;
+  background-color: #eeeeee;
   border-radius: 200px;
 }
 
