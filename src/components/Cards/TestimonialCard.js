@@ -9,7 +9,6 @@ const TestimonialCard = () => {
       <div className="col ta">
         <Quote />
         <text style={{ fontSize: 13, fontWeight: "400" }}>
-          {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
           fermentum orci. Suspendisse consequat tincidunt eleifend. Sed ac
           lectus facilisis felis venenatis efficitur vel feugiat turpis. Donec
@@ -19,21 +18,27 @@ const TestimonialCard = () => {
         </text>
       </div>
       <div className="col icenter testimonial-avatar-container">
-        <StaticImage
-          src="../../assets/aa.jpg"
-          alt="Personal Picture"
-          placeholder="blurred"
-          width={48}
-          height={48}
-          imgStyle={{ borderRadius: "100%" }}
-          style={{ margin: "0.4em" }}
-        />
+        <div
+          style={{
+            borderRadius: "100%",
+            width: 48,
+            height: 48,
+            margin: "0.4em 0 0.4em 0",
+          }}
+        >
+          <StaticImage
+            src="../../assets/photo.png"
+            alt="Personal Picture"
+            placeholder="blurred"
+            style={{ borderRadius: "100%" }}
+          />
+        </div>
+
         <div className="col ta">
           <text style={{ fontSize: 12, fontWeight: "600" }}>
             Youssef Jounaid
           </text>
           <text style={{ fontSize: 10, fontWeight: "400" }}>
-            {" "}
             Développeur Web FullSTack
           </text>
         </div>
