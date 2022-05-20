@@ -22,7 +22,6 @@ const Blog = ({ data }) => {
     <Layout iscontact={false}>
       <title>Blog | Youssef Jounaid</title>
       <main>
-        <h2>title</h2>
         <div
           style={{
             display: "flex",
@@ -69,26 +68,20 @@ const Blog = ({ data }) => {
               <span className="glider"></span>
             </div>
           </div>
-          <div>
-            {" "}
+          <div className="toggle-layout-section">
             <button
+              id="toggle-button"
               style={{
-                border: 0,
-                padding: "0.4em",
-                borderRadius: "5px",
-                backgroundColor: toggleViewMode ? "#e1e1e1" : "transparent",
+                backgroundColor: toggleViewMode ? "#E6EEF9" : "transparent",
               }}
               onClick={() => setToggleViewMode(true)}
             >
               <Grid />
             </button>
             <button
+              id="toggle-button"
               style={{
-                marginLeft: "0.4em",
-                border: 0,
-                padding: "0.4em",
-                borderRadius: "5px",
-                backgroundColor: !toggleViewMode ? "#e1e1e1" : "transparent",
+                backgroundColor: !toggleViewMode ? "#E6EEF9" : "transparent",
               }}
               onClick={() => setToggleViewMode(false)}
             >

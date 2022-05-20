@@ -8,6 +8,10 @@ button {
   font-family: Poppins;
 }
 
+button {
+  cursor: pointer;
+}
+
 textarea:focus,
 input:focus {
   outline: none;
@@ -70,6 +74,21 @@ input:focus {
 button {
   border: 0;
   background-color: transparent;
+}
+
+#toggle-button {
+  border: 0;
+  padding: 0.4em;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+.toggle-layout-section {
+  display: flex;
+  flex-direction: row;
 }
 
 //tabs
