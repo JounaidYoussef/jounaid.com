@@ -22,6 +22,8 @@ const Blog = ({ data }) => {
     <Layout iscontact={false}>
       <title>Blog | Youssef Jounaid</title>
       <main>
+        <h2>Blog</h2>
+        <h4>Find the latest of my writing here</h4>
         <div
           style={{
             display: "flex",

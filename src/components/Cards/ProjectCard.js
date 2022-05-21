@@ -6,10 +6,12 @@ import React from "react"
 // import Checkmark from "../../assets/checkmark.svg"
 
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const ProjectCard = () => {
   return (
-    <div
+    <Link
+      to="/blog"
       style={{
         // width: "50%",
         padding: "1.6em",
@@ -54,7 +56,7 @@ const ProjectCard = () => {
           </a>
         </div> */}
       </div>
-    </div>
+    </Link>
   )
 }
 
