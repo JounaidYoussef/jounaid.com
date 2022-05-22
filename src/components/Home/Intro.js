@@ -6,12 +6,12 @@ import Mainavatar from "../../assets/mainavatar.svg"
 export default () => {
   return (
     <div className="intro-container">
-      <div className="minicontainer">
+      <div className="intro-minicontainer">
         <div className="personal-asset">
           <Mainavatar width="200px" />
         </div>
       </div>
-      <div className="minicontainer">
+      <div className="intro-minicontainer">
         <div className="intro">
           <p className="myname">Youssef Jounaid</p>
           {/* <hr className="line" /> */}
