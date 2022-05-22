@@ -6,13 +6,13 @@
 
 .bio {
   font-family: Poppins;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
 }
 
-// .minicontainer {
-//   flex: 1;
-// }
+.minicontainer {
+  display: flex;
+}
 
 .personal-asset {
   display: flex;
