@@ -5,24 +5,18 @@ import { useState } from "react"
 import ProjectsList from "./../components/Projects/ProjectsList"
 // markup
 const Projects = () => {
-  const projects = [
-    {
-      title: "project",
-      titles: "project",
-      titless: "project",
-      titlesss: "project",
-      titlessss: "project",
-      titlexx: "project",
-      titlexxx: "project",
-    },
-    {},
-    {},
-  ]
+  const [projectsToggleState, setProjectsToggleState] = useState(
+    JSON.parse(localStorage.getItem("projects-display-section")) == null
+      ? 1
+      : JSON.parse(localStorage.getItem("projects-display-section"))
+  )
 
-  const [toggleState, setToggleState] = useState(1)
+  React.useEffect(() => {
+    localStorage.setItem("projects-display-section", projectsToggleState)
+  }, [projectsToggleState])
 
   const toggleTab = (index) => {
-    setToggleState(index)
+    setProjectsToggleState(index)
   }
   return (
     <Layout iscontact={false}>
@@ -31,7 +25,12 @@ const Projects = () => {
         <div>
           <div className="radio-container">
             <div className="tabs">
-              <input type="radio" id="radio-1" name="tabs" />
+              <input
+                type="radio"
+                id="radio-1"
+                name="tabs"
+                checked={projectsToggleState === 1}
+              />
               <label
                 onClick={() => toggleTab(1)}
                 className="tab"
@@ -40,7 +39,12 @@ const Projects = () => {
                 All
                 {/* <span className="notification">2</span> */}
               </label>
-              <input type="radio" id="radio-2" name="tabs" />
+              <input
+                type="radio"
+                id="radio-2"
+                name="tabs"
+                checked={projectsToggleState === 2}
+              />
               <label
                 onClick={() => toggleTab(2)}
                 className="tab"
@@ -48,7 +52,12 @@ const Projects = () => {
               >
                 Clients
               </label>
-              <input type="radio" id="radio-3" name="tabs" />
+              <input
+                type="radio"
+                id="radio-3"
+                name="tabs"
+                checked={projectsToggleState === 3}
+              />
               <label
                 onClick={() => toggleTab(3)}
                 className="tab"
@@ -56,7 +65,12 @@ const Projects = () => {
               >
                 Apps
               </label>
-              <input type="radio" id="radio-4" name="tabs" />
+              <input
+                type="radio"
+                id="radio-4"
+                name="tabs"
+                checked={projectsToggleState === 4}
+              />
               <label
                 onClick={() => toggleTab(4)}
                 className="tab"
@@ -70,25 +84,25 @@ const Projects = () => {
 
           {/* <div className="bloc-tabs">
             <button
-              className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+              className={projectsToggleState === 1 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(1)}
             >
               All
             </button>
             <button
-              className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+              className={projectsToggleState === 2 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(2)}
             >
               Clients
             </button>
             <button
-              className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+              className={projectsToggleState === 3 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(3)}
             >
               Apps
             </button>
             <button
-              className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+              className={projectsToggleState === 4 ? "tabs active-tabs" : "tabs"}
               onClick={() => toggleTab(4)}
             >
               Clones
@@ -98,7 +112,7 @@ const Projects = () => {
           <div className="content-tabs">
             <div
               className={
-                toggleState === 1
+                projectsToggleState === 1
                   ? "projects-content  active-content"
                   : "projects-content"
               }
@@ -107,7 +121,7 @@ const Projects = () => {
             </div>
             <div
               className={
-                toggleState === 2
+                projectsToggleState === 2
                   ? "projects-content  active-content"
                   : "projects-content"
               }
@@ -117,7 +131,7 @@ const Projects = () => {
 
             <div
               className={
-                toggleState === 3
+                projectsToggleState === 3
                   ? "projects-content  active-content"
                   : "projects-content"
               }
@@ -126,7 +140,7 @@ const Projects = () => {
             </div>
             <div
               className={
-                toggleState === 4
+                projectsToggleState === 4
                   ? "projects-content  active-content"
                   : "projects-content"
               }
