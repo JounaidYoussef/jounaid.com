@@ -3,8 +3,9 @@ import SocialBar from "../Bars/SocialBar"
 import "./index.scss"
 import React from "react"
 import Hobbies from "../../assets/hobbies.svg"
-import Uiux from "../../assets/Uiux.svg"
+import Uiux from "../../assets/uiux.svg"
 import Avatar from "../../assets/avatar.svg"
+import { Link } from "gatsby"
 
 export default () => {
   return (
@@ -17,16 +18,20 @@ export default () => {
             </div>
           </div> */}
           <div className="ta">
-            <h1>I'm Youssef Jounaid</h1>
+            <h1>Hello</h1>
           </div>
           <div className="row icenter">
             <div className="minicontainer icenter jcenter">
               <p style={{ maxWidth: "40em", textJustify: "auto" }}>
-                I'm a FullStack Web & Mobile engineer. Solving problems and
-                creating new visual languages is my biggest passion. In building
-                JavaScript applications, I'm equipped with just the right tools,
-                and can absolutely function independently of them to deliver
-                fast, resilient,optimized and scalable solutions.
+                I’m <b>Youssef Jounaid</b>. I’m a software Engineer, Frontend
+                developer and Designer. I care deeply about creating robust,
+                useful, and beautiful products that help.
+                <br /> My interest in web development started back in 2012 when
+                I discovered Chrome Inspector and I changed headers and text to
+                prank friends. turns out I learned a lot about HTML & CSS
+                without knowing it.
+                {/* people and make a difference. From the seed of the idea, to
+                sketches, design, system design, and even the front-end and WordPress build. */}
                 {/* <br />
               <br /> My tireless dedication to details keeps me trying and
               experimenting, always learning, and never bored.
@@ -55,11 +60,13 @@ export default () => {
             </div>
             <div className="minicontainer icenter jcenter">
               <p style={{ maxWidth: "40em", textJustify: "auto" }}>
-                I'm a FullStack Web & Mobile engineer. Solving problems and
-                creating new visual languages is my biggest passion. In building
-                JavaScript applications, I'm equipped with just the right tools,
-                and can absolutely function independently of them to deliver
-                fast, resilient,optimized and scalable solutions.
+                Im constantly writing blogs about my learning journey. Whether
+                it's software or design related. Also, Im looking forward to
+                share my own experience on tools, paradigms and techniques.
+                <br />
+                My main focus these days is building accessible, inclusive
+                products and digital experiences for teams at{" "}
+                <a href="https://www.orange.fr/">Orange France </a>.
                 {/* <br />
               <br /> My tireless dedication to details keeps me trying and
               experimenting, always learning, and never bored.
@@ -81,11 +88,12 @@ export default () => {
                   textJustify: "auto",
                 }}
               >
-                I'm a FullStack Web & Mobile engineer. Solving problems and
-                creating new visual languages is my biggest passion. In building
-                JavaScript applications, I'm equipped with just the right tools,
-                and can absolutely function independently of them to deliver
-                fast, resilient,optimized and scalable solutions.
+                Outside of work,I find inspiration through Filmmaking,
+                Photography, and traveling with friends.
+                <br />
+                If it wasn’t for IT, I would have been a movie director, I'm
+                always interested in storytelling and whatever form that comes
+                in.
                 {/* <br />
               <br /> My tireless dedication to details keeps me trying and
               experimenting, always learning, and never bored.
@@ -107,9 +115,16 @@ export default () => {
           </div>
         </div>
       </div>
-      <div style={{ margin: "6em 0 2em 0" }} className="row jcenter">
-        <SocialBar fill="#4C596A" />
-        <ArtBar fill="#4C596A" />
+      <div className="col jcenter icenter" style={{ margin: "3em 0 2em 0" }}>
+        <div className="about-contact">
+          <Link className="about-getintouch" to="/contact">
+            Get In Touch
+          </Link>
+        </div>
+        <div className="row jcenter">
+          <SocialBar fill="#d19821" />
+          <ArtBar fill="#d19821" />
+        </div>
       </div>
     </div>
   )

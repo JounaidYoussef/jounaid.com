@@ -18,3 +18,17 @@
   display: flex;
   justify-content: center;
 }
+
+.about-contact {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  .about-getintouch {
+    color: white;
+    text-decoration: none;
+    background-color: #d19821;
+    padding: 8px 40px 8px 40px;
+    border-radius: 20px;
+  }
+}
