@@ -1,6 +1,6 @@
 ---
 date: 2022-03-12
-title: "Article6"
+title: "is a long title for testing how it will be displayed"
 author: "Youssef Jounaid"
 categories: ["tools"]
 keywords: ["blog", "blog", "blog"]

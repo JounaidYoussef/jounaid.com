@@ -1,6 +1,6 @@
 ---
 date: 2022-04-12
-title: "Article1"
+title: "Article1 is a long title for testing how it will be displayed"
 author: "Youssef Jounaid"
 categories: ["dev"]
 keywords: ["blog", "blog", "blog"]
