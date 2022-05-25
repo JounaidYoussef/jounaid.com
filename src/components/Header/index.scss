@@ -18,7 +18,23 @@
     .getintouch {
       color: white;
       text-decoration: none;
-      background-color: #4c596a;
+      background: rgb(76, 89, 106);
+      background: -moz-linear-gradient(
+        65deg,
+        rgba(76, 89, 106, 1) 0%,
+        rgba(209, 152, 33, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        65deg,
+        rgba(76, 89, 106, 1) 0%,
+        rgba(209, 152, 33, 1) 100%
+      );
+      background: linear-gradient(
+        65deg,
+        rgba(76, 89, 106, 1) 0%,
+        rgba(209, 152, 33, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c596a",endColorstr="#d19821",GradientType=1);
       padding: 4px 20px 4px 20px;
       border-radius: 20px;
     }
