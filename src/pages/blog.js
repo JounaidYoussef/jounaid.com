@@ -12,11 +12,28 @@ const Blog = ({ data }) => {
   const { posts } = data.blog
 
   console.log(posts)
-  const [toggleViewMode, setToggleViewMode] = React.useState(false)
-  const [toggleState, setToggleState] = React.useState(1)
+  const [toggleViewMode, setToggleViewMode] = React.useState(
+    JSON.parse(localStorage.getItem("display-mode")) == null
+      ? true
+      : JSON.parse(localStorage.getItem("display-mode"))
+  )
+
+  React.useEffect(() => {
+    localStorage.setItem("display-mode", toggleViewMode)
+  }, [toggleViewMode])
+
+  const [blogToggleState, setBlogToggleState] = React.useState(
+    JSON.parse(localStorage.getItem("blog-display-section")) == null
+      ? 1
+      : JSON.parse(localStorage.getItem("blog-display-section"))
+  )
+
+  React.useEffect(() => {
+    localStorage.setItem("blog-display-section", blogToggleState)
+  }, [blogToggleState])
 
   const toggleTab = (index) => {
-    setToggleState(index)
+    setBlogToggleState(index)
   }
   return (
     <Layout iscontact={false}>
@@ -34,7 +51,12 @@ const Blog = ({ data }) => {
         >
           <div className="radio-container">
             <div className="tabs">
-              <input type="radio" id="radio-1" name="tabs" />
+              <input
+                type="radio"
+                id="radio-1"
+                name="tabs"
+                checked={blogToggleState === 1}
+              />
               <label
                 onClick={() => toggleTab(1)}
                 className="tab"
@@ -43,7 +65,12 @@ const Blog = ({ data }) => {
                 All
                 {/* <span className="notification">2</span> */}
               </label>
-              <input type="radio" id="radio-2" name="tabs" />
+              <input
+                type="radio"
+                id="radio-2"
+                name="tabs"
+                checked={blogToggleState === 2}
+              />
               <label
                 onClick={() => toggleTab(2)}
                 className="tab"
@@ -51,7 +78,12 @@ const Blog = ({ data }) => {
               >
                 Dev
               </label>
-              <input type="radio" id="radio-3" name="tabs" />
+              <input
+                type="radio"
+                id="radio-3"
+                name="tabs"
+                checked={blogToggleState === 3}
+              />
               <label
                 onClick={() => toggleTab(3)}
                 className="tab"
@@ -59,7 +91,12 @@ const Blog = ({ data }) => {
               >
                 Design
               </label>
-              <input type="radio" id="radio-4" name="tabs" />
+              <input
+                type="radio"
+                id="radio-4"
+                name="tabs"
+                checked={blogToggleState === 4}
+              />
               <label
                 onClick={() => toggleTab(4)}
                 className="tab"
@@ -91,44 +128,44 @@ const Blog = ({ data }) => {
             </button>
           </div>
         </div>
-        <div className={toggleViewMode ? "grid-layout" : "list-layout"}>
+        <div className={!toggleViewMode ? "grid-layout" : "list-layout"}>
           <div className="content-tabs">
             <div
               className={
-                toggleState === 1
+                blogToggleState === 1
                   ? "projects-content  active-content"
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts} mode={toggleViewMode} />
+              <BlogPostList data={posts} mode={!toggleViewMode} />
             </div>
 
             <div
               className={
-                toggleState === 2
+                blogToggleState === 2
                   ? "projects-content  active-content"
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts.slice(0, 1)} mode={toggleViewMode} />
+              <BlogPostList data={posts.slice(0, 1)} mode={!toggleViewMode} />
             </div>
             <div
               className={
-                toggleState === 3
+                blogToggleState === 3
                   ? "projects-content  active-content"
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts} mode={toggleViewMode} />
+              <BlogPostList data={posts} mode={!toggleViewMode} />
             </div>
             <div
               className={
-                toggleState === 4
+                blogToggleState === 4
                   ? "projects-content  active-content"
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts} mode={toggleViewMode} />
+              <BlogPostList data={posts} mode={!toggleViewMode} />
             </div>
           </div>
         </div>

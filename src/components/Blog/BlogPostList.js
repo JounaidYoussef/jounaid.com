@@ -4,7 +4,7 @@ import BlogPostCard from "../Cards/BlogPostCard"
 
 const BlogPostList = ({ data, mode }) => {
   return (
-    <div className={mode === true ? "bloglist-grid" : "bloglist-list"}>
+    <div className={mode === false ? "bloglist-grid" : "bloglist-list"}>
       {data.map((post) => (
         <article key={post.id}>
           <BlogPostCard viewMode={mode} post={post} />

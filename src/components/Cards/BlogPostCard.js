@@ -11,7 +11,7 @@ const BlogPostCard = ({ viewMode, post }) => {
     console.log("hello")
   }
 
-  return viewMode ? (
+  return !viewMode ? (
     <div>
       <Link to={post.fields.slug} aria-label={`View ${post.frontmatter.title}`}>
         <div

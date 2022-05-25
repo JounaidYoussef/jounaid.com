@@ -109,15 +109,13 @@ p {
   display: flex;
   height: 300px;
   flex-direction: row;
-  background-color: #e0e0e0;
   border-radius: 20px;
   margin: 0.8em 0 0.8em 0;
 }
 
 .list-blogpost-image-container {
   width: 40%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
 }
 
 .list-blogpost-info-container {
@@ -161,7 +159,7 @@ p {
 }
 
 .im:hover {
-  border: 2px solid aqua;
+  border: 2px solid #d19821;
   border-radius: 10px;
 }
 
