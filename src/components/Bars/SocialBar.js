@@ -3,6 +3,8 @@ import Dribbble from "../../assets/dribbble.svg"
 import Github from "../../assets/github.svg"
 import Linkedin from "../../assets/linkedin.svg"
 import Twitter from "../../assets/twitter.svg"
+import Codepen from "../../assets/codepen.svg"
+
 import "./index.scss"
 import React from "react"
 
@@ -43,6 +45,13 @@ const SocialBar = ({ fill }) => {
         href="https://dribbble.com/jounaidyoussef"
       >
         <Dribbble fill={fill} />
+      </a>
+      <a
+        className="icon"
+        target="_blank"
+        href="https://dribbble.com/jounaidyoussef"
+      >
+        <Codepen fill={fill} />
       </a>
     </div>
   )
