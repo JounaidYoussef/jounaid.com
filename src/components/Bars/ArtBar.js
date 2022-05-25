@@ -10,7 +10,7 @@ const ArtBar = ({ fill }) => {
       <a
         className="icon"
         target="_blank"
-        href="https://unsplash.com/@jounaidyoussef"
+        href="https://www.youtube.com/channel/UCaQ4mey5SSJ11eLlWeb1GPg"
       >
         <Youtube fill={fill} />
       </a>
