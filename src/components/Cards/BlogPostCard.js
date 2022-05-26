@@ -4,8 +4,11 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Copylink from "../../assets/copylink.svg"
 import Checkmark from "../../assets/checkmark.svg"
+import { format } from "date-fns"
 
 const BlogPostCard = ({ viewMode, post }) => {
+  const date = format(new Date(post.frontmatter.date), "MMMM do yyyy")
+
   const copylink = () => {
     event.preventDefault()
     console.log("hello")
@@ -36,6 +39,9 @@ const BlogPostCard = ({ viewMode, post }) => {
           </div>
 
           <div className="col">
+            <text style={{ fontSize: "10px", fontWeight: 400 }}>
+              {date} — {post.frontmatter.min} min read
+            </text>
             <text style={{ fontSize: "20px", fontWeight: 600 }}>
               {post.frontmatter.title}
             </text>
@@ -67,8 +73,10 @@ const BlogPostCard = ({ viewMode, post }) => {
           className="list-blogpost-image-container"
         />
         <div className="list-blogpost-info-container">
-          <h2>{post.frontmatter.title}</h2>
-          <p>{post.excerpt}</p>
+          <p style={{ fontSize: "10px", fontWeight: 400 }}>
+            {date} — {post.frontmatter.min} min read
+          </p>
+          <h3>{post.frontmatter.title}</h3>
           <span />
         </div>
       </div>

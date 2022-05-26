@@ -29,6 +29,7 @@ export const query = graphql`
         title
         date
         author
+        min
         banner {
           childImageSharp {
             gatsbyImageData(width: 500, formats: [AUTO, WEBP, AVIF])

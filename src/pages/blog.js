@@ -184,10 +184,11 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(fromNow: true)
+          date
           title
           author
           categories
+          min
           banner {
             childImageSharp {
               gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
@@ -200,3 +201,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// (fromNow: true)
