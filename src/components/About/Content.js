@@ -66,7 +66,10 @@ export default () => {
                 <br />
                 My main focus these days is building accessible, inclusive
                 products and digital experiences for teams at{" "}
-                <a href="https://www.orange.fr/">Orange France </a>.
+                <a target="_blank" href="https://www.orange.fr/">
+                  Orange France{" "}
+                </a>
+                .
                 {/* <br />
               <br /> My tireless dedication to details keeps me trying and
               experimenting, always learning, and never bored.
