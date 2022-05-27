@@ -23,25 +23,23 @@ export default () => {
           <div className="row icenter">
             <div className="minicontainer icenter jcenter">
               <p style={{ maxWidth: "40em", textJustify: "auto" }}>
-                I’m <b>Youssef Jounaid</b>. I’m a software Engineer, Frontend
-                developer and Designer. I care deeply about creating robust,
-                useful, and beautiful products that help.
+                I’m{" "}
+                <b
+                  style={{
+                    color: "#4C596A",
+                    fontSize: "14px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Youssef Jounaid
+                </b>
+                . I’m a software Engineer, Frontend developer and Designer. I
+                care deeply about creating robust, useful, and beautiful
+                products that help.
                 <br /> My interest in web development started back in 2012 when
                 I discovered Chrome Inspector and I changed headers and text to
                 prank friends. turns out I learned a lot about HTML & CSS
                 without knowing it.
-                {/* people and make a difference. From the seed of the idea, to
-                sketches, design, system design, and even the front-end and WordPress build. */}
-                {/* <br />
-              <br /> My tireless dedication to details keeps me trying and
-              experimenting, always learning, and never bored.
-              <br />
-              <br /> Besides computer science, I am interested in all aspects of
-              Art, Entrepreneurship, Management and new technologies.
-              <br />I love photography, cinematography and videography. And if
-              it wasn’t for IT, I would have been a director, who turns stories
-              into movies.
-              <br /> */}
               </p>
             </div>
             <div
@@ -66,20 +64,19 @@ export default () => {
                 <br />
                 My main focus these days is building accessible, inclusive
                 products and digital experiences for teams at{" "}
-                <a target="_blank" href="https://www.orange.fr/">
-                  Orange France{" "}
+                <a
+                  style={{
+                    color: "#4C596A",
+                    fontSize: "12px",
+                    fontWeight: "500",
+                    textDecoration: "underline",
+                  }}
+                  target="_blank"
+                  href="https://www.orange.fr/"
+                >
+                  Orange France
                 </a>
                 .
-                {/* <br />
-              <br /> My tireless dedication to details keeps me trying and
-              experimenting, always learning, and never bored.
-              <br />
-              <br /> Besides computer science, I am interested in all aspects of
-              Art, Entrepreneurship, Management and new technologies.
-              <br />I love photography, cinematography and videography. And if
-              it wasn’t for IT, I would have been a director, who turns stories
-              into movies.
-              <br /> */}
               </p>
             </div>
           </div>
@@ -91,22 +88,12 @@ export default () => {
                   textJustify: "auto",
                 }}
               >
-                Outside of work,I find inspiration through Filmmaking,
+                Outside of work, I find inspiration through Filmmaking,
                 Photography, and traveling with friends.
                 <br />
                 If it wasn’t for IT, I would have been a movie director, I'm
                 always interested in storytelling and whatever form that comes
                 in.
-                {/* <br />
-              <br /> My tireless dedication to details keeps me trying and
-              experimenting, always learning, and never bored.
-              <br />
-              <br /> Besides computer science, I am interested in all aspects of
-              Art, Entrepreneurship, Management and new technologies.
-              <br />I love photography, cinematography and videography. And if
-              it wasn’t for IT, I would have been a director, who turns stories
-              into movies.
-              <br /> */}
               </p>
             </div>
             <div
@@ -125,8 +112,8 @@ export default () => {
           </Link>
         </div>
         <div className="row jcenter">
-          <SocialBar fill="#d19821" />
-          <ArtBar fill="#d19821" />
+          <SocialBar fill="#527693" />
+          <ArtBar fill="#527693" />
         </div>
       </div>
     </div>

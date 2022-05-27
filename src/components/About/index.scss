@@ -7,7 +7,8 @@
 .bio {
   font-family: Poppins;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
+  color: #4c596a;
 }
 
 .minicontainer {
@@ -27,7 +28,23 @@
   .about-getintouch {
     color: white;
     text-decoration: none;
-    background-color: #d19821;
+    background: rgb(180, 196, 209);
+    background: -moz-linear-gradient(
+      42deg,
+      rgba(180, 196, 209, 1) 0%,
+      rgba(82, 118, 147, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      42deg,
+      rgba(180, 196, 209, 1) 0%,
+      rgba(82, 118, 147, 1) 100%
+    );
+    background: linear-gradient(
+      42deg,
+      rgba(180, 196, 209, 1) 0%,
+      rgba(82, 118, 147, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4c4d1",endColorstr="#527693",GradientType=1);
     padding: 8px 40px 8px 40px;
     border-radius: 20px;
   }
