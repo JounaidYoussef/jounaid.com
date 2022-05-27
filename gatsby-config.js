@@ -30,6 +30,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         // eslint-disable-next-line node/no-path-concat
+        path: `${__dirname}/content/projects`,
+        name: "project",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        // eslint-disable-next-line node/no-path-concat
         // path: `${__dirname}/content/assets`,
         path: "./src/assets",
         name: "assets",

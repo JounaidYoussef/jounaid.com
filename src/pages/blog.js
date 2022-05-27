@@ -214,6 +214,7 @@ export const pageQuery = graphql`
           min
           published
           categories
+          posttype
         }
         excerpt
         id

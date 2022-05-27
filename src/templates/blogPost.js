@@ -9,6 +9,8 @@ export default function BlogPost({ data }) {
   return (
     <Layout iscontact={false}>
       <div>
+        <p>this is a post template</p>
+
         <h1>{post.frontmatter.title}</h1>
         <small>{post.frontmatter.author}</small>
         <small>{post.frontmatter.date}</small>
@@ -37,6 +39,7 @@ export const query = graphql`
         }
         published
         categories
+        posttype
       }
     }
   }

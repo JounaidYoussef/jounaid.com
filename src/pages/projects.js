@@ -3,8 +3,13 @@ import * as React from "react"
 import ProjectCard from "../components/Cards/ProjectCard"
 import { useState } from "react"
 import ProjectsList from "./../components/Projects/ProjectsList"
+import { graphql } from "gatsby"
 // markup
-const Projects = () => {
+const Projects = ({ data }) => {
+  const { posts } = data.blog
+
+  console.log(posts)
+
   const [projectsToggleState, setProjectsToggleState] = useState(
     JSON.parse(localStorage.getItem("projects-display-section")) == null
       ? 1
@@ -117,7 +122,7 @@ const Projects = () => {
                   : "projects-content"
               }
             >
-              <ProjectsList />
+              <ProjectsList category="all" data={posts} />
             </div>
             <div
               className={
@@ -126,7 +131,7 @@ const Projects = () => {
                   : "projects-content"
               }
             >
-              <ProjectsList />
+              <ProjectsList category="clients" data={posts} />
             </div>
 
             <div
@@ -136,7 +141,7 @@ const Projects = () => {
                   : "projects-content"
               }
             >
-              <ProjectsList />
+              <ProjectsList category="apps" data={posts} />
             </div>
             <div
               className={
@@ -145,7 +150,7 @@ const Projects = () => {
                   : "projects-content"
               }
             >
-              <ProjectsList />
+              <ProjectsList category="clones" data={posts} />
             </div>
           </div>
         </div>
@@ -155,3 +160,34 @@ const Projects = () => {
 }
 
 export default Projects
+
+export const pageQuery = graphql`
+  query Query {
+    blog: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      posts: nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          date
+          title
+          author
+          categories
+          banner {
+            childImageSharp {
+              gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
+            }
+          }
+          min
+          published
+          categories
+          posttype
+        }
+        excerpt
+        id
+      }
+    }
+  }
+`
