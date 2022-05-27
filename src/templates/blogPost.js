@@ -35,6 +35,8 @@ export const query = graphql`
             gatsbyImageData(width: 500, formats: [AUTO, WEBP, AVIF])
           }
         }
+        published
+        categories
       }
     }
   }

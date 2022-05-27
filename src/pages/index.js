@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
       <main style={pageStyles}>
         <Intro />
         <Skills />
-        <Articles />
+        {/* <Articles /> */}
         <Work />
         <Testimonials />
         <Subscribe />

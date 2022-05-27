@@ -137,7 +137,11 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts} mode={!toggleViewMode} />
+              <BlogPostList
+                category="all"
+                data={posts}
+                mode={!toggleViewMode}
+              />
             </div>
 
             <div
@@ -147,7 +151,11 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts.slice(0, 1)} mode={!toggleViewMode} />
+              <BlogPostList
+                category="dev"
+                data={posts}
+                mode={!toggleViewMode}
+              />
             </div>
             <div
               className={
@@ -156,7 +164,11 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts} mode={!toggleViewMode} />
+              <BlogPostList
+                category="design"
+                data={posts}
+                mode={!toggleViewMode}
+              />
             </div>
             <div
               className={
@@ -165,7 +177,11 @@ const Blog = ({ data }) => {
                   : "projects-content"
               }
             >
-              <BlogPostList data={posts} mode={!toggleViewMode} />
+              <BlogPostList
+                category="tools"
+                data={posts}
+                mode={!toggleViewMode}
+              />
             </div>
           </div>
         </div>
@@ -178,7 +194,9 @@ export default Blog
 
 export const pageQuery = graphql`
   query MyQuery {
-    blog: allMarkdownRemark {
+    blog: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       posts: nodes {
         fields {
           slug
@@ -188,12 +206,14 @@ export const pageQuery = graphql`
           title
           author
           categories
-          min
           banner {
             childImageSharp {
               gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
             }
           }
+          min
+          published
+          categories
         }
         excerpt
         id

@@ -1,8 +1,8 @@
 ---
-date: 2022-04-12
+date: 2022-01-01
 title: "Article1 is a long title for testing how it will be displayed"
 author: "Youssef Jounaid"
-categories: ["dev"]
+categories: ["all", "dev"]
 keywords: ["blog", "blog", "blog"]
 published: true
 banner: "./louvre.jpg"

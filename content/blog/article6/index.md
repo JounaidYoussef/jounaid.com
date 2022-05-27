@@ -2,7 +2,7 @@
 date: 2022-03-12
 title: "is a long title for testing how it will be displayed"
 author: "Youssef Jounaid"
-categories: ["tools"]
+categories: ["all", "tools"]
 keywords: ["blog", "blog", "blog"]
 published: true
 banner: "./louvre.jpg"
