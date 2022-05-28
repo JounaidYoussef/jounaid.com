@@ -5,21 +5,21 @@ import { transform } from "typescript"
 import { Link } from "gatsby"
 import DrawnArrow from "../../assets/DrawnArrow"
 
-export default () => {
+const Articles = ({ data }) => {
   return (
-    <div className="work-container icenter col">
+    <div className=" icenter col">
       <h2>Featured Work</h2>
-      <div className="row"></div>
-      <Link
-        to="/projects"
-        // activeClassName="active"
-        className="see-all"
-      >
-        <div>See all projects </div>
-        <div style={{ transform: "rotate(90deg)", marginLeft: "4px" }}>
-          <DrawnArrow height="24px" width="24px" fill="#527693" />
-        </div>
-      </Link>
+      <div className="gridarticles">
+        {data.map((post) =>
+          post.frontmatter.posttype === "project" && post.frontmatter.lead ? (
+            <article key={post.id}>
+              <ProjectCard post={post} />
+            </article>
+          ) : null
+        )}
+      </div>
     </div>
   )
 }
+
+export default Articles
