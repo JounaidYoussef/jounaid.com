@@ -1,8 +1,8 @@
 import "./index.scss"
 import React from "react"
 import ProjectCard from "../Cards/ProjectCard"
-import Baremail from "../../assets/baremail.svg"
 import { transform } from "typescript"
+import BareMail from "../../assets/BareMail"
 
 export default () => {
   return (
@@ -18,7 +18,7 @@ export default () => {
         </div>
         <div className="row" style={{ width: "70%", marginTop: "0.8em" }}>
           <div className="subscribe-item row icenter">
-            <Baremail width="20" />
+            <BareMail width="20" />
             <input
               className="in"
               placeholder="Email"

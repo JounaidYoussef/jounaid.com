@@ -2,11 +2,10 @@ import ArtBar from "../Bars/ArtBar"
 import SocialBar from "../Bars/SocialBar"
 import ContactInfo from "./ContactInfo"
 import "./index.scss"
-import Image, { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import Baremail from "../../assets/baremail.svg"
-import Profile from "../../assets/profile.svg"
+import Profile from "../../assets/Profile"
+import BareMail from "../../assets/BareMail"
+
 // import Download from "../../assets/download.svg"
 
 const ContactForm = () => {
@@ -38,14 +37,14 @@ const ContactForm = () => {
             data-netlify="true"
             className="contact-form"
             data-netlify-honeypot="bot-field"
-            action="/thanks"
+            action="/blog"
           >
             <div className="contact-item row icenter">
               <Profile />
               <input placeholder="Name" type="text" name="name" required />
             </div>
             <div className="contact-item row icenter">
-              <Baremail />
+              <BareMail />
               <input placeholder="Email" type="email" name="email" required />
             </div>
             <div className="contact-item-long">
@@ -66,7 +65,9 @@ const ContactForm = () => {
             </a> */}
             <div className="actions">
               {/* type="submit" */}
-              <a className="send">Send</a>
+              <button type="submit" className="send">
+                Send
+              </button>
             </div>
           </form>
         </div>

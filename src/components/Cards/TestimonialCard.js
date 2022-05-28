@@ -1,21 +1,15 @@
 import "./index.scss"
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Quote from "../../assets/quote.svg"
+import Quote from "../../assets/Quote"
 
-const TestimonialCard = () => {
+const TestimonialCard = ({ content, fullname, title, image }) => {
+  console.log(image)
   return (
     <div className="col testimonial-card-container">
       <div className="col ta">
         <Quote />
-        <text style={{ fontSize: 13, fontWeight: "400" }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-          fermentum orci. Suspendisse consequat tincidunt eleifend. Sed ac
-          lectus facilisis felis venenatis efficitur vel feugiat turpis. Donec
-          eget dui sit amet lectus vulputate viverra. Mauris sem quam, fringilla
-          quis semper et, tincidunt sit amet erat. Mauris gravida mauris at
-          lectus hendrerit blandit. Ut eu ornare risus.
-        </text>
+        <text style={{ fontSize: 13, fontWeight: "400" }}>{content}</text>
       </div>
       <div className="col icenter testimonial-avatar-container">
         <div
@@ -27,20 +21,15 @@ const TestimonialCard = () => {
           }}
         >
           <StaticImage
-            src="../../assets/photo.png"
+            src={image}
             alt="Personal Picture"
-            placeholder="blurred"
-            style={{ borderRadius: "100%" }}
+            style={{ borderRadius: "100%", width: 48, height: 48 }}
           />
         </div>
 
         <div className="col ta">
-          <text style={{ fontSize: 12, fontWeight: "600" }}>
-            Youssef Jounaid
-          </text>
-          <text style={{ fontSize: 10, fontWeight: "400" }}>
-            Développeur Web FullSTack
-          </text>
+          <text style={{ fontSize: 12, fontWeight: "600" }}>{fullname}</text>
+          <text style={{ fontSize: 10, fontWeight: "400" }}>{title}</text>
         </div>
       </div>
     </div>

@@ -1,12 +1,11 @@
-import Behance from "../../assets/behance.svg"
-import Dribbble from "../../assets/dribbble.svg"
-import Github from "../../assets/github.svg"
-import Linkedin from "../../assets/linkedin.svg"
-import Twitter from "../../assets/twitter.svg"
-import Codepen from "../../assets/codepen.svg"
-
 import "./index.scss"
 import React from "react"
+import Linkedin from "../../assets/Linkedin"
+import Github from "../../assets/Github"
+import Twitter from "../../assets/Twitter"
+import Behance from "../../assets/Behance"
+import Dribbble from "../../assets/Dribbble"
+import Codepen from "../../assets/Codepen"
 
 const SocialBar = ({ fill }) => {
   return (

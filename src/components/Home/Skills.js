@@ -1,8 +1,8 @@
-import W from "../../assets/w.svg"
-import Mm from "../../assets/mm.svg"
-import U from "../../assets/u.svg"
 import "./index.scss"
 import React from "react"
+import W from "../../assets/W"
+import Mm from "../../assets/Mm"
+import U from "../../assets/U"
 
 export default () => {
   return (
@@ -13,7 +13,7 @@ export default () => {
       <div className="row-skills-container">
         <div className="skill-container">
           <div className="image-container">
-            <W width="72px" height="72px" />
+            <W />
           </div>
           <div>
             <p id="skills-section-title">Web Development</p>
@@ -21,7 +21,7 @@ export default () => {
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <Mm width="72px" height="72px" fill="#4c596a" />{" "}
+            <Mm />
           </div>
           <div>
             <p id="skills-section-title">Mobile Development</p>
@@ -29,7 +29,7 @@ export default () => {
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <U width="72px" height="72px" />
+            <U />
           </div>
           <div>
             <p id="skills-section-title">UI/UX Design</p>

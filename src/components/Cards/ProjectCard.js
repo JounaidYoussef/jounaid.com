@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Copylink from "../../assets/copylink.svg"
-import Checkmark from "../../assets/checkmark.svg"
 import { format } from "date-fns"
 
 const ProjectCard = ({ post }) => {
@@ -31,10 +29,7 @@ const ProjectCard = ({ post }) => {
               alt="hello"
             />
             <div className="copylink">
-              <button onClick={() => copylink()} className="copyl">
-                <Copylink width="10px" height="10px" />
-                {/* <Checkmark width="12px" height="12px" /> */}
-              </button>
+              <button onClick={() => copylink()} className="copyl"></button>
             </div>
           </div>
 

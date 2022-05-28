@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Copylink from "../../assets/copylink.svg"
-import Checkmark from "../../assets/checkmark.svg"
 import { format } from "date-fns"
+import CopyLink from "../../assets/CopyLink"
+import Checkmark from "../../assets/Checkmark"
 
 const BlogPostCard = ({ viewMode, post }) => {
   const date = format(new Date(post.frontmatter.date), "MMMM do yyyy")
@@ -32,8 +32,8 @@ const BlogPostCard = ({ viewMode, post }) => {
             />
             <div className="copylink">
               <button onClick={() => copylink()} className="copyl">
-                <Copylink width="10px" height="10px" />
-                {/* <Checkmark width="12px" height="12px" /> */}
+                <CopyLink width="10px" height="10px" />
+                <Checkmark width="12px" height="12px" />
               </button>
             </div>
           </div>

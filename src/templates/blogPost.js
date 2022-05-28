@@ -9,7 +9,7 @@ export default function BlogPost({ data }) {
   return (
     <Layout iscontact={false}>
       <div>
-        <p>this is a post template</p>
+        <p>{post.frontmatter.posttype}</p>
 
         <h1>{post.frontmatter.title}</h1>
         <small>{post.frontmatter.author}</small>

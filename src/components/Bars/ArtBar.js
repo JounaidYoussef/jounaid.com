@@ -1,7 +1,7 @@
-import Unsplash from "../../assets/unsplash.svg"
-import Youtube from "../../assets/youtube.svg"
 import "./index.scss"
 import React from "react"
+import Youtube from "../../assets/Youtube"
+import Unsplash from "../../assets/Unsplash"
 
 const ArtBar = ({ fill }) => {
   return (

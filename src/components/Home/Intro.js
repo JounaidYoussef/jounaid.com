@@ -1,14 +1,14 @@
 import "./index.scss"
 import { Link } from "gatsby"
 import React from "react"
-import Mainavatar from "../../assets/mainavatar.svg"
+import MainAvatar from "../../assets/MainAvatar"
 
 export default () => {
   return (
     <div className="intro-container">
       <div className="intro-minicontainer">
         <div className="personal-asset">
-          <Mainavatar width="200px" />
+          <MainAvatar />
         </div>
       </div>
       <div className="intro-minicontainer">

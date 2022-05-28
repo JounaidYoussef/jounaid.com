@@ -3,9 +3,9 @@ import Layout from "../components/Layout"
 import * as React from "react"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Grid from "../assets/grid.svg"
-import List from "../assets/list.svg"
 import BlogPostList from "./../components/Blog/BlogPostList"
+import Grid from "../assets/Grid"
+import List from "../assets/List"
 
 // markup
 const Blog = ({ data }) => {

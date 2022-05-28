@@ -1,9 +1,9 @@
 import "./index.scss"
 import React from "react"
 import ProjectCard from "../Cards/ProjectCard"
-import DrawnArrow from "../../assets/drawnArrow.svg"
 import { transform } from "typescript"
 import { Link } from "gatsby"
+import DrawnArrow from "../../assets/DrawnArrow"
 
 export default () => {
   return (

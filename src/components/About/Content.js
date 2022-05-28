@@ -2,10 +2,11 @@ import ArtBar from "../Bars/ArtBar"
 import SocialBar from "../Bars/SocialBar"
 import "./index.scss"
 import React from "react"
-import Hobbies from "../../assets/hobbies.svg"
-import Uiux from "../../assets/uiux.svg"
-import Avatar from "../../assets/avatar.svg"
+
 import { Link } from "gatsby"
+import Avatar from "../../assets/Avatar"
+import UiUx from "../../assets/UiUx"
+import Hobbies from "../../assets/Hobbies"
 
 export default () => {
   return (
@@ -54,7 +55,7 @@ export default () => {
               style={{ marginRight: "0.8em" }}
               className="minicontainer icenter jcenter"
             >
-              <Uiux />
+              <UiUx />
             </div>
             <div className="minicontainer icenter jcenter">
               <p style={{ maxWidth: "40em", textJustify: "auto" }}>

@@ -1,8 +1,8 @@
-import Jo from "../../assets/jo.svg"
 import "./index.scss"
 import { Link } from "gatsby"
 import React from "react"
 import { navigate } from "@reach/router"
+import Jo from "../../assets/Jo"
 
 const Header = ({ iscontact }) => {
   return (
@@ -16,7 +16,7 @@ const Header = ({ iscontact }) => {
             to="/"
             className="logo" // activeClassName="active"
           >
-            <Jo fill={"#4c596a"} width="36px" height="36px" />
+            <Jo fill={"#4c596a"} />
           </Link>
           <ul>
             <li>

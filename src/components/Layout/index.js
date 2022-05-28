@@ -2,7 +2,7 @@ import Footer from "../Footer"
 import Header from "../Header"
 import React, { useState } from "react"
 import "./index.scss"
-import Scrollup from "../../assets/scrollup.svg"
+import ScrollUp from "../../assets/ScrollUp"
 
 const styles = {
   color: "#232129",
@@ -43,7 +43,7 @@ export default ({ iscontact, children, isFooterDisabled = false }) => {
           display: showScroll ? "flex" : "none",
         }}
       >
-        <Scrollup />
+        <ScrollUp />
       </button>
       {isFooterDisabled ? null : <Footer />}
     </div>
