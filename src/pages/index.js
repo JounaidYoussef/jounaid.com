@@ -28,17 +28,21 @@ const pageStyles = {
 
 // markup
 const IndexPage = ({ data }) => {
-  const { title, description } = data.site.siteMetadata
+  const { posts } = data.blog
+
+  console.log(posts)
+
+  // const { title, description } = data.site.siteMetadata
 
   return (
     <Layout iscontact={false}>
-      <title>{title} Personal Portfolio</title>
+      <title>Joe Personal Portfolio</title>
       <main style={pageStyles}>
         <Intro />
         <Skills />
-        {/* <Articles /> */}
-        <Work />
-        <Testimonials />
+        <Articles data={posts} />
+        <Work data={posts} />
+        {/* <Testimonials /> */}
         <Subscribe />
       </main>
     </Layout>
@@ -48,11 +52,32 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query MetadataQuery {
-    site {
-      siteMetadata {
-        title
-        description
+  query IQuery {
+    blog: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      posts: nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          date
+          title
+          author
+          categories
+          banner {
+            childImageSharp {
+              gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
+            }
+          }
+          min
+          published
+          categories
+          posttype
+          lead
+        }
+        excerpt
+        id
       }
     }
   }

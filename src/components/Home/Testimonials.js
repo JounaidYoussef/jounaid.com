@@ -8,8 +8,13 @@ import "swiper/css/pagination"
 
 import { Navigation, Pagination, Autoplay } from "swiper"
 import Arrow from "../../assets/Arrow"
+import { graphql } from "gatsby"
 
-const Testimonials = () => {
+const Testimonials = ({ data }) => {
+  // const { posts } = data.testimonials
+
+  // console.log(posts)
+
   return (
     <>
       <div className="jcenter">
@@ -36,7 +41,6 @@ const Testimonials = () => {
         <div className="swiper-wrapper">
           <SwiperSlide>
             <TestimonialCard
-              image="../assets/adnane.jpg"
               content="Youssef is the right freelancer for the job .
 Tireless work ethic , he is not just willing to do  whatever it takes to create a product that will translate the customer's vision into reality but also explaining how it works for better understanding in the client side .
 Quality , performance and efficient are the result of working with him   , actually an inspiring person
@@ -48,7 +52,6 @@ Looking forward to working with him again!"
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialCard
-              image="../../assets/adnane.jpg"
               content="Youssef is the right freelancer for the job .
 Tireless work ethic , he is not just willing to do  whatever it takes to create a product that will translate the customer's vision into reality but also explaining how it works for better understanding in the client side .
 Quality , performance and efficient are the result of working with him   , actually an inspiring person
@@ -60,7 +63,6 @@ Looking forward to working with him again!"
           </SwiperSlide>
           <SwiperSlide>
             <TestimonialCard
-              image="../../assets/adnane.jpg"
               content="Youssef is the right freelancer for the job .
 Tireless work ethic , he is not just willing to do  whatever it takes to create a product that will translate the customer's vision into reality but also explaining how it works for better understanding in the client side .
 Quality , performance and efficient are the result of working with him   , actually an inspiring person
@@ -83,3 +85,34 @@ Looking forward to working with him again!"
 }
 
 export default Testimonials
+
+// export const pageQuery = graphql`
+//   query TQuery {
+//     testimonials: allMarkdownRemark(
+//       sort: { order: DESC, fields: [frontmatter___date] }
+//     ) {
+//       posts: nodes {
+//         fields {
+//           slug
+//         }
+//         frontmatter {
+//           date
+//           title
+//           author
+//           categories
+//           banner {
+//             childImageSharp {
+//               gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
+//             }
+//           }
+//           min
+//           published
+//           categories
+//           posttype
+//         }
+//         excerpt
+//         id
+//       }
+//     }
+//   }
+// `

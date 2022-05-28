@@ -1,18 +1,20 @@
 import "./index.scss"
 import React from "react"
-import ProjectCard from "../Cards/ProjectCard"
-import DrawnArrow from "../../assets/drawnArrow.svg"
-import { graphql, Link } from "gatsby"
 import BlogPostCard from "../Cards/BlogPostCard"
 
 const Articles = ({ data }) => {
   return (
-    <div>
-      {data.map((post) => (
-        <article key={post.id}>
-          <BlogPostCard viewMode={false} post={post} />
-        </article>
-      ))}
+    <div className=" col icenter">
+      <h2>Blog</h2>
+      <div className="gridarticles">
+        {data.map((post) =>
+          post.frontmatter.posttype === "post" && post.frontmatter.lead ? (
+            <article key={post.id}>
+              <BlogPostCard viewMode={false} post={post} />
+            </article>
+          ) : null
+        )}
+      </div>
     </div>
   )
 }
