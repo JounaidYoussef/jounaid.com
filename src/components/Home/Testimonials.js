@@ -1,20 +1,15 @@
 import "./index.scss"
 import React from "react"
-import TestimonialCard from "../Cards/TestimonialCard"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
-
 import { Navigation, Pagination, Autoplay } from "swiper"
 import Arrow from "../../assets/Arrow"
-import { graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import Quote from "../../assets/Quote"
 
-const Testimonials = ({ data }) => {
-  // const { posts } = data.testimonials
-
-  // console.log(posts)
-
+const Testimonials = () => {
   return (
     <>
       <div className="jcenter">
@@ -40,37 +35,127 @@ const Testimonials = ({ data }) => {
       >
         <div className="swiper-wrapper">
           <SwiperSlide>
-            <TestimonialCard
-              content="Youssef is the right freelancer for the job .
-Tireless work ethic , he is not just willing to do  whatever it takes to create a product that will translate the customer's vision into reality but also explaining how it works for better understanding in the client side .
-Quality , performance and efficient are the result of working with him   , actually an inspiring person
+            <div className="col testimonial-card-container">
+              <div className="col ta">
+                <Quote />
+                <text style={{ fontSize: 13, fontWeight: "400" }}>
+                  Youssef is the right freelancer for the job . Tireless work
+                  ethic , he is not just willing to do whatever it takes to
+                  create a product that will translate the customer's vision
+                  into reality but also explaining how it works for better
+                  understanding in the client side . Quality , performance and
+                  efficient are the result of working with him , actually an
+                  inspiring person Looking forward to working with him again!
+                </text>
+              </div>
+              <div className="col icenter testimonial-avatar-container">
+                <div
+                  style={{
+                    borderRadius: "100%",
+                    width: 48,
+                    height: 48,
+                    margin: "0.4em 0 0.4em 0",
+                  }}
+                >
+                  <StaticImage
+                    src="../../assets/pictures/adnane.webp"
+                    alt="Personal Picture"
+                    style={{ borderRadius: "100%", width: 48, height: 48 }}
+                  />
+                </div>
 
-Looking forward to working with him again!"
-              fullname="Mohamed Adnane Abouchadi"
-              title="CTO at Skwiq"
-            />
+                <div className="col ta">
+                  <text style={{ fontSize: 12, fontWeight: "600" }}>
+                    Mohamed Adnane Abouchadi
+                  </text>
+                  <text style={{ fontSize: 10, fontWeight: "400" }}>
+                    CTO at Skwiq
+                  </text>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialCard
-              content="Youssef is the right freelancer for the job .
-Tireless work ethic , he is not just willing to do  whatever it takes to create a product that will translate the customer's vision into reality but also explaining how it works for better understanding in the client side .
-Quality , performance and efficient are the result of working with him   , actually an inspiring person
+            <div className="col testimonial-card-container">
+              <div className="col ta">
+                <Quote />
+                <text style={{ fontSize: 13, fontWeight: "400" }}>
+                  Youssef is the right freelancer for the job . Tireless work
+                  ethic , he is not just willing to do whatever it takes to
+                  create a product that will translate the customer's vision
+                  into reality but also explaining how it works for better
+                  understanding in the client side . Quality , performance and
+                  efficient are the result of working with him , actually an
+                  inspiring person Looking forward to working with him again!
+                </text>
+              </div>
+              <div className="col icenter testimonial-avatar-container">
+                <div
+                  style={{
+                    borderRadius: "100%",
+                    width: 48,
+                    height: 48,
+                    margin: "0.4em 0 0.4em 0",
+                  }}
+                >
+                  <StaticImage
+                    src="../../assets/pictures/youssef.webp"
+                    alt="Personal Picture"
+                    style={{ borderRadius: "100%", width: 48, height: 48 }}
+                  />
+                </div>
 
-Looking forward to working with him again!"
-              fullname="Mohamed Adnane Abouchadi"
-              title="CTO at Skwiq"
-            />
+                <div className="col ta">
+                  <text style={{ fontSize: 12, fontWeight: "600" }}>
+                    Mohamed Adnane Abouchadi
+                  </text>
+                  <text style={{ fontSize: 10, fontWeight: "400" }}>
+                    CTO at Skwiq
+                  </text>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <TestimonialCard
-              content="Youssef is the right freelancer for the job .
-Tireless work ethic , he is not just willing to do  whatever it takes to create a product that will translate the customer's vision into reality but also explaining how it works for better understanding in the client side .
-Quality , performance and efficient are the result of working with him   , actually an inspiring person
+            <div className="col testimonial-card-container">
+              <div className="col ta">
+                <Quote />
+                <text style={{ fontSize: 13, fontWeight: "400" }}>
+                  Youssef is the right freelancer for the job . Tireless work
+                  ethic , he is not just willing to do whatever it takes to
+                  create a product that will translate the customer's vision
+                  into reality but also explaining how it works for better
+                  understanding in the client side . Quality , performance and
+                  efficient are the result of working with him , actually an
+                  inspiring person Looking forward to working with him again!
+                </text>
+              </div>
+              <div className="col icenter testimonial-avatar-container">
+                <div
+                  style={{
+                    borderRadius: "100%",
+                    width: 48,
+                    height: 48,
+                    margin: "0.4em 0 0.4em 0",
+                  }}
+                >
+                  <StaticImage
+                    src="../../assets/pictures/youssef.webp"
+                    alt="Personal Picture"
+                    style={{ borderRadius: "100%", width: 48, height: 48 }}
+                  />
+                </div>
 
-Looking forward to working with him again!"
-              fullname="Mohamed Adnane Abouchadi"
-              title="CTO at Skwiq"
-            />
+                <div className="col ta">
+                  <text style={{ fontSize: 12, fontWeight: "600" }}>
+                    Mohamed Adnane Abouchadi
+                  </text>
+                  <text style={{ fontSize: 10, fontWeight: "400" }}>
+                    CTO at Skwiq
+                  </text>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
         </div>
         <button className="swiper-button-next">
@@ -85,34 +170,3 @@ Looking forward to working with him again!"
 }
 
 export default Testimonials
-
-// export const pageQuery = graphql`
-//   query TQuery {
-//     testimonials: allMarkdownRemark(
-//       sort: { order: DESC, fields: [frontmatter___date] }
-//     ) {
-//       posts: nodes {
-//         fields {
-//           slug
-//         }
-//         frontmatter {
-//           date
-//           title
-//           author
-//           categories
-//           banner {
-//             childImageSharp {
-//               gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
-//             }
-//           }
-//           min
-//           published
-//           categories
-//           posttype
-//         }
-//         excerpt
-//         id
-//       }
-//     }
-//   }
-// `

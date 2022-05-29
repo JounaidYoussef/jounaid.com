@@ -36,13 +36,13 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout iscontact={false}>
-      <title>Joe Personal Portfolio</title>
+      <title>Youssef Jounaid Personal Portfolio</title>
       <main style={pageStyles}>
         <Intro />
         <Skills />
         <Articles data={posts} />
         <Work data={posts} />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <Subscribe />
       </main>
     </Layout>
