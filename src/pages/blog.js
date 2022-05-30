@@ -1,11 +1,11 @@
-import BlogPostCard from "../components/Cards/BlogPostCard"
 import Layout from "../components/Layout"
 import * as React from "react"
-import { graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 import BlogPostList from "./../components/Blog/BlogPostList"
 import Grid from "../assets/Grid"
 import List from "../assets/List"
+
+const isBrowser = typeof window !== "undefined"
 
 // markup
 const Blog = ({ data }) => {
@@ -13,23 +13,31 @@ const Blog = ({ data }) => {
 
   console.log(posts)
   const [toggleViewMode, setToggleViewMode] = React.useState(
-    JSON.parse(localStorage.getItem("display-mode")) == null
-      ? true
-      : JSON.parse(localStorage.getItem("display-mode"))
+    isBrowser
+      ? JSON.parse(localStorage.getItem("display-mode")) == null
+        ? true
+        : JSON.parse(localStorage.getItem("display-mode"))
+      : null
   )
 
   React.useEffect(() => {
-    localStorage.setItem("display-mode", toggleViewMode)
+    if (isBrowser) {
+      localStorage.setItem("display-mode", toggleViewMode)
+    }
   }, [toggleViewMode])
 
   const [blogToggleState, setBlogToggleState] = React.useState(
-    JSON.parse(localStorage.getItem("blog-display-section")) == null
-      ? 1
-      : JSON.parse(localStorage.getItem("blog-display-section"))
+    isBrowser
+      ? JSON.parse(localStorage.getItem("blog-display-section")) == null
+        ? 1
+        : JSON.parse(localStorage.getItem("blog-display-section"))
+      : null
   )
 
   React.useEffect(() => {
-    localStorage.setItem("blog-display-section", blogToggleState)
+    if (isBrowser) {
+      localStorage.setItem("blog-display-section", blogToggleState)
+    }
   }, [blogToggleState])
 
   const toggleTab = (index) => {

@@ -1,9 +1,11 @@
 import Layout from "../components/Layout"
 import * as React from "react"
-import ProjectCard from "../components/Cards/ProjectCard"
 import { useState } from "react"
 import ProjectsList from "./../components/Projects/ProjectsList"
 import { graphql } from "gatsby"
+
+const isBrowser = typeof window !== "undefined"
+
 // markup
 const Projects = ({ data }) => {
   const { posts } = data.blog
@@ -11,13 +13,21 @@ const Projects = ({ data }) => {
   console.log(posts)
 
   const [projectsToggleState, setProjectsToggleState] = useState(
-    JSON.parse(localStorage.getItem("projects-display-section")) == null
-      ? 1
-      : JSON.parse(localStorage.getItem("projects-display-section"))
+    isBrowser
+      ? JSON.parse(window.localStorage.getItem("projects-display-section")) ==
+        null
+        ? 1
+        : JSON.parse(window.localStorage.getItem("projects-display-section"))
+      : 1
   )
 
   React.useEffect(() => {
-    localStorage.setItem("projects-display-section", projectsToggleState)
+    if (isBrowser) {
+      window.localStorage.setItem(
+        "projects-display-section",
+        projectsToggleState
+      )
+    }
   }, [projectsToggleState])
 
   const toggleTab = (index) => {
