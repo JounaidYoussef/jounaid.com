@@ -1,6 +1,8 @@
 import "./index.scss"
 import React from "react"
 import BlogPostCard from "../Cards/BlogPostCard"
+import DrawnArrow from "../../assets/DrawnArrow"
+import { Link } from "gatsby"
 
 const Articles = ({ data }) => {
   return (
@@ -15,6 +17,16 @@ const Articles = ({ data }) => {
           ) : null
         )}
       </div>
+      <Link
+        to="/blog"
+        // activeClassName="active"
+        className="see-all"
+      >
+        <div>See the full blog</div>
+        <div style={{ transform: "rotate(90deg)", marginLeft: "4px" }}>
+          <DrawnArrow height="24px" width="24px" fill="#527693" />
+        </div>
+      </Link>
     </div>
   )
 }

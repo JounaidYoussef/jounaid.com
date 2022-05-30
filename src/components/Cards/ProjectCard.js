@@ -28,9 +28,6 @@ const ProjectCard = ({ post }) => {
               imgStyle={{ borderRadius: "10px" }}
               alt="hello"
             />
-            <div className="copylink">
-              <button onClick={() => copylink()} className="copyl"></button>
-            </div>
           </div>
 
           <div className="col">

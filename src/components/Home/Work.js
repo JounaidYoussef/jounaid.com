@@ -18,6 +18,16 @@ const Articles = ({ data }) => {
           ) : null
         )}
       </div>
+      <Link
+        to="/projects"
+        // activeClassName="active"
+        className="see-all"
+      >
+        <div>Browse All Projects</div>
+        <div style={{ transform: "rotate(90deg)", marginLeft: "4px" }}>
+          <DrawnArrow height="24px" width="24px" fill="#527693" />
+        </div>
+      </Link>
     </div>
   )
 }

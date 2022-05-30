@@ -3,6 +3,8 @@ import React from "react"
 function DrawnArrow({ ...props }) {
   return (
     <svg
+      height={24}
+      width={24}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 96.3 96.3"
       style={{
