@@ -33,12 +33,13 @@ const ContactForm = () => {
           </div> */}
           <form
             name="contact"
-            method="POST"
+            method="post"
             data-netlify="true"
             className="contact-form"
             data-netlify-honeypot="bot-field"
-            action="/blog"
+            action="POST"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="contact-item row icenter">
               <Profile />
               <input placeholder="Name" type="text" name="name" required />
