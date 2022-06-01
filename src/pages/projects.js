@@ -123,7 +123,6 @@ const Projects = ({ data }) => {
               Clones
             </button>
           </div> */}
-
           <div className="content-tabs">
             <div
               className={

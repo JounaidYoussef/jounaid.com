@@ -1,11 +1,10 @@
 import "./index.scss"
 import React from "react"
-import BlogPostCard from "../Cards/BlogPostCard"
 import ProjectCard from "../Cards/ProjectCard"
 
 const ProjectsList = ({ data, category }) => {
   return (
-    <div>
+    <div className="projects-grid">
       {data.map((post) =>
         post.frontmatter.categories.includes(category) &&
         post.frontmatter.posttype === "project" ? (

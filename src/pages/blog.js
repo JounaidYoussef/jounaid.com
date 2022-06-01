@@ -136,61 +136,51 @@ const Blog = ({ data }) => {
             </button>
           </div>
         </div>
-        <div className={!toggleViewMode ? "grid-layout" : "list-layout"}>
-          <div className="content-tabs">
-            <div
-              className={
-                blogToggleState === 1
-                  ? "projects-content  active-content"
-                  : "projects-content"
-              }
-            >
-              <BlogPostList
-                category="all"
-                data={posts}
-                mode={!toggleViewMode}
-              />
-            </div>
+        <div className="content-tabs">
+          <div
+            className={
+              blogToggleState === 1
+                ? "projects-content  active-content"
+                : "projects-content"
+            }
+          >
+            <BlogPostList category="all" data={posts} mode={!toggleViewMode} />
+          </div>
 
-            <div
-              className={
-                blogToggleState === 2
-                  ? "projects-content  active-content"
-                  : "projects-content"
-              }
-            >
-              <BlogPostList
-                category="dev"
-                data={posts}
-                mode={!toggleViewMode}
-              />
-            </div>
-            <div
-              className={
-                blogToggleState === 3
-                  ? "projects-content  active-content"
-                  : "projects-content"
-              }
-            >
-              <BlogPostList
-                category="design"
-                data={posts}
-                mode={!toggleViewMode}
-              />
-            </div>
-            <div
-              className={
-                blogToggleState === 4
-                  ? "projects-content  active-content"
-                  : "projects-content"
-              }
-            >
-              <BlogPostList
-                category="tools"
-                data={posts}
-                mode={!toggleViewMode}
-              />
-            </div>
+          <div
+            className={
+              blogToggleState === 2
+                ? "projects-content  active-content"
+                : "projects-content"
+            }
+          >
+            <BlogPostList category="dev" data={posts} mode={!toggleViewMode} />
+          </div>
+          <div
+            className={
+              blogToggleState === 3
+                ? "projects-content  active-content"
+                : "projects-content"
+            }
+          >
+            <BlogPostList
+              category="design"
+              data={posts}
+              mode={!toggleViewMode}
+            />
+          </div>
+          <div
+            className={
+              blogToggleState === 4
+                ? "projects-content  active-content"
+                : "projects-content"
+            }
+          >
+            <BlogPostList
+              category="tools"
+              data={posts}
+              mode={!toggleViewMode}
+            />
           </div>
         </div>
       </main>

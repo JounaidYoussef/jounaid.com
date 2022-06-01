@@ -1,16 +1,10 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { format } from "date-fns"
 
 const ProjectCard = ({ post }) => {
   const date = format(new Date(post.frontmatter.date), "MMMM do yyyy")
-
-  const copylink = () => {
-    event.preventDefault()
-    console.log("hello")
-  }
 
   return (
     <div>
