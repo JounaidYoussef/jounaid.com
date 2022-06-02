@@ -278,13 +278,67 @@ input[id="radio-4"] {
   bottom: 0;
   left: 0;
   width: 400px;
-  height: 160px;
-  background-color: #ccc;
+  height: 220px;
+  background-color: #ffffff;
+  color: #527693;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1.6em 1.2em 1.6em 1.2em;
+}
+
+.success-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #527693;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 1.2em;
+}
+
+.success-redirect {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.8em;
+}
+
+.return-tab {
+  color: #527693;
+}
+
+.close-tab {
+  color: #ff506e;
+}
+
+#sentSVG {
+  position: absolute;
+  transform: translate(0px, -80px);
+}
+
+.close-windows {
+  margin: 0.8em 0 0.8em 0;
+  padding: 0.2em 1em 0.2em 1em;
+  border: 2px solid #527693;
+  color: #527693;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.close-windows:hover {
+  background-color: #527693;
+  color: #f0f0f0;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
 }
