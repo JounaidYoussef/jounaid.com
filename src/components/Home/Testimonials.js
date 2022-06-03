@@ -39,13 +39,13 @@ const Testimonials = () => {
               <div className="col ta">
                 <Quote />
                 <text style={{ fontSize: 13, fontWeight: "400" }}>
-                  Youssef is the right freelancer for the job . Tireless work
-                  ethic , he is not just willing to do whatever it takes to
-                  create a product that will translate the customer's vision
-                  into reality but also explaining how it works for better
-                  understanding in the client side . Quality , performance and
-                  efficient are the result of working with him , actually an
-                  inspiring person Looking forward to working with him again!
+                  Youssef is the right person for the job . Tireless work ethic
+                  , he is not just willing to do whatever it takes to create a
+                  product that will translate the customer's vision into reality
+                  but also explaining how it works for better understanding in
+                  the client side. Quality , performance and efficiency are the
+                  results of working with him , actually an inspiring person and
+                  I'm looking forward to working with him again!
                 </text>
               </div>
               <div className="col icenter testimonial-avatar-container">
@@ -80,13 +80,15 @@ const Testimonials = () => {
               <div className="col ta">
                 <Quote />
                 <text style={{ fontSize: 13, fontWeight: "400" }}>
-                  Youssef is the right freelancer for the job . Tireless work
-                  ethic , he is not just willing to do whatever it takes to
-                  create a product that will translate the customer's vision
-                  into reality but also explaining how it works for better
-                  understanding in the client side . Quality , performance and
-                  efficient are the result of working with him , actually an
-                  inspiring person Looking forward to working with him again!
+                  I really enjoyed working with Youssef, both for his ability to
+                  quickly understand the subjects that were asked of him, but
+                  also for his sympathy and good humor on a daily basis. In just
+                  3 months, Youssef was able to develop a web portal to display
+                  the compatibility between OS and software products, as part of
+                  his internship. In addition, Youssef regularly monitors
+                  technology in order to be aware of the latest news and trends
+                  in the web development market (Angular, Javascript) as well as
+                  CI/CD (GitLab). Thank you Youssef! :D
                 </text>
               </div>
               <div className="col icenter testimonial-avatar-container">
