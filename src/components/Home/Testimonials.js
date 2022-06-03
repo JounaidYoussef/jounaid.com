@@ -101,7 +101,7 @@ const Testimonials = () => {
                   }}
                 >
                   <StaticImage
-                    src="../../assets/pictures/youssef.webp"
+                    src="../../assets/pictures/alexandre.webp"
                     alt="Personal Picture"
                     style={{ borderRadius: "100%", width: 48, height: 48 }}
                   />
@@ -109,10 +109,11 @@ const Testimonials = () => {
 
                 <div className="col ta">
                   <text style={{ fontSize: 12, fontWeight: "600" }}>
-                    Mohamed Adnane Abouchadi
+                    Alexandre Deplaix
                   </text>
                   <text style={{ fontSize: 10, fontWeight: "400" }}>
-                    CTO at Skwiq
+                    Responsable forfait de services Qualifications Systèmes chez
+                    Orange
                   </text>
                 </div>
               </div>
@@ -123,13 +124,13 @@ const Testimonials = () => {
               <div className="col ta">
                 <Quote />
                 <text style={{ fontSize: 13, fontWeight: "400" }}>
-                  Youssef is the right freelancer for the job . Tireless work
-                  ethic , he is not just willing to do whatever it takes to
-                  create a product that will translate the customer's vision
-                  into reality but also explaining how it works for better
-                  understanding in the client side . Quality , performance and
-                  efficient are the result of working with him , actually an
-                  inspiring person Looking forward to working with him again!
+                  Youssef is the right person for the job . Tireless work ethic
+                  , he is not just willing to do whatever it takes to create a
+                  product that will translate the customer's vision into reality
+                  but also explaining how it works for better understanding in
+                  the client side . Quality , performance and efficient are the
+                  result of working with him , actually an inspiring person
+                  Looking forward to working with him again!
                 </text>
               </div>
               <div className="col icenter testimonial-avatar-container">
@@ -142,7 +143,7 @@ const Testimonials = () => {
                   }}
                 >
                   <StaticImage
-                    src="../../assets/pictures/youssef.webp"
+                    src="../../assets/pictures/adnane.webp"
                     alt="Personal Picture"
                     style={{ borderRadius: "100%", width: 48, height: 48 }}
                   />
