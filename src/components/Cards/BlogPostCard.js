@@ -73,10 +73,10 @@ const BlogPostCard = ({ viewMode, post }) => {
           className="list-blogpost-image-container"
         />
         <div className="list-blogpost-info-container">
-          <p style={{ fontSize: "10px", fontWeight: 400 }}>
+          <h2>{post.frontmatter.title}</h2>
+          <h4 style={{ fontSize: "10px", fontWeight: 400 }}>
             {date} — {post.frontmatter.min} min read
-          </p>
-          <h3>{post.frontmatter.title}</h3>
+          </h4>
           <span />
         </div>
       </div>
