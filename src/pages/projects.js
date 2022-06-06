@@ -3,6 +3,7 @@ import * as React from "react"
 import { useState } from "react"
 import ProjectsList from "./../components/Projects/ProjectsList"
 import { graphql } from "gatsby"
+import Projects from "./projects"
 
 const isBrowser = typeof window !== "undefined"
 
@@ -37,6 +38,10 @@ const Projects = ({ data }) => {
     <Layout iscontact={false}>
       <title>Projects | Youssef Jounaid</title>
       <main>
+        <div>
+          <h2>Featured Work</h2>
+          <h4>Find the latest of my projects here</h4>
+        </div>
         <div>
           <div className="radio-container">
             <div className="tabs">
