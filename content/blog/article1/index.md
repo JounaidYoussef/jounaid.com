@@ -1,11 +1,11 @@
 ---
 date: 2022-01-01
-title: "Article1 is a long title for testing how it will be displayed"
+title: "Why I decided to start Blogging"
 author: "Youssef Jounaid"
 categories: ["all", "dev"]
 keywords: ["blog", "blog", "blog"]
 published: true
-banner: "./louvre.jpg"
+banner: "./blog.jpg"
 lead: false
 min: 2
 posttype: "post"

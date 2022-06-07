@@ -107,21 +107,22 @@ p {
 
 .list-blogpost-container {
   display: flex;
-  height: 300px;
+  height: 220px;
   flex-direction: row;
   border-radius: 20px;
   margin: 0.8em 0 0.8em 0;
+  color: #527693;
 }
 
 .list-blogpost-image-container {
-  width: 300px;
+  width: 50%;
   border-radius: 20px;
 }
 
 .list-blogpost-info-container {
   display: flex;
   flex-direction: column;
-  padding: 1.6em;
+  padding: 1.6em 1.6em 1.6em 3.6em;
 }
 
 .grid-blogpost-container {
@@ -130,6 +131,7 @@ p {
   background-color: #e0e0e0;
   border-radius: 20px;
   margin: 0.8em 0 0.8em 0;
+  color: #527693;
 }
 
 .grid-blogpost-image-container {

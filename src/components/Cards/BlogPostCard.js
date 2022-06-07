@@ -38,15 +38,21 @@ const BlogPostCard = ({ viewMode, post }) => {
             </div>
           </div>
 
-          <div className="col">
-            <text style={{ fontSize: "10px", fontWeight: 400 }}>
+          <div className="col mx-2">
+            <text
+              style={{
+                fontSize: "14px",
+                fontWeight: 400,
+                margin: "1em 0 0.6em 0",
+                color: "#527693",
+              }}
+            >
               {date} — {post.frontmatter.min} min read
             </text>
-            <text style={{ fontSize: "20px", fontWeight: 600 }}>
+            <text
+              style={{ fontSize: "24px", fontWeight: 600, color: "#4C596A" }}
+            >
               {post.frontmatter.title}
-            </text>
-            <text style={{ fontSize: "12px", fontWeight: 400 }}>
-              {post.excerpt}
             </text>
           </div>
         </div>
@@ -73,10 +79,30 @@ const BlogPostCard = ({ viewMode, post }) => {
           className="list-blogpost-image-container"
         />
         <div className="list-blogpost-info-container">
-          <h2>{post.frontmatter.title}</h2>
-          <h4 style={{ fontSize: "10px", fontWeight: 400 }}>
+          <text style={{ fontSize: "28px", fontWeight: 600, color: "#4C596A" }}>
+            {post.frontmatter.title}
+          </text>
+
+          <text
+            style={{
+              fontSize: "14px",
+              fontWeight: 400,
+              margin: "0.6em 0 0.6em 0",
+              color: "#64758b",
+            }}
+          >
+            {post.excerpt}
+          </text>
+          <text
+            style={{
+              fontSize: "14px",
+              fontWeight: 400,
+              margin: "0.6em 0 0.6em 0",
+              color: "#527693",
+            }}
+          >
             {date} — {post.frontmatter.min} min read
-          </h4>
+          </text>
           <span />
         </div>
       </div>
