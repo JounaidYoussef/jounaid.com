@@ -1,12 +1,14 @@
 ---
 date: 2022-03-12
-title: "Projectclll"
+title: "Aboucadi.net"
 author: "Youssef Jounaid"
 categories: ["all", "clients"]
 keywords: ["music", "nextjs", "react"]
+stack: ["NextJS", "Vercel"]
 published: true
 banner: "./project.jpg"
 posttype: "project"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies."
 lead: true
 ---
 

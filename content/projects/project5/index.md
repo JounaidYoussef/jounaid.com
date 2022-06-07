@@ -4,9 +4,11 @@ title: "Projectapssss"
 author: "Youssef Jounaid"
 categories: ["all", "apps"]
 keywords: ["music", "nextjs", "react"]
+stack: ["React Native", "Expo"]
 published: true
 banner: "./project.jpg"
 posttype: "project"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies."
 lead: true
 ---
 

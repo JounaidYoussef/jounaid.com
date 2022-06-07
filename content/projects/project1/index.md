@@ -1,12 +1,14 @@
 ---
 date: 2022-03-12
-title: "Project1"
+title: "Jounaid.com"
 author: "Youssef Jounaid"
 categories: ["all", "clients"]
 keywords: ["music", "nextjs", "react"]
+stack: ["NextJS", "Lumen", "Angular", "REST"]
 published: true
 banner: "./project.jpg"
 posttype: "project"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies."
 lead: true
 ---
 

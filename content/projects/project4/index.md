@@ -4,9 +4,11 @@ title: "Project1"
 author: "Youssef Jounaid"
 categories: ["all", "client"]
 keywords: ["music", "nextjs", "react"]
+stack: ["GatsbyJS", "GraphQL"]
 published: true
 banner: "./project.jpg"
 posttype: "project"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies."
 lead: false
 ---
 
