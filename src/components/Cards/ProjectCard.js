@@ -23,16 +23,29 @@ const ProjectCard = ({ post }) => {
               alt="hello"
             />
           </div>
-
-          <div className="col">
-            <text style={{ fontSize: "10px", fontWeight: 400 }}>
+          <div className="col mx-2">
+            {/* <text
+              style={{
+                fontSize: "14px",
+                fontWeight: 400,
+              }}
+            >
               {date} — {post.frontmatter.min} min read
-            </text>
-            <text style={{ fontSize: "20px", fontWeight: 600 }}>
+            </text> */}
+            <text
+              style={{
+                fontSize: "24px",
+                fontWeight: 600,
+                margin: "0.4em 0 0.2em 0",
+                color: "#4C596A",
+              }}
+            >
               {post.frontmatter.title}
             </text>
-            <text style={{ fontSize: "12px", fontWeight: 400 }}>
-              {post.excerpt}
+            <text
+              style={{ fontSize: "12px", fontWeight: 400, color: "#527693" }}
+            >
+              {post.frontmatter.description}
             </text>
           </div>
         </div>

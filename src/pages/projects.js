@@ -3,7 +3,6 @@ import * as React from "react"
 import { useState } from "react"
 import ProjectsList from "./../components/Projects/ProjectsList"
 import { graphql } from "gatsby"
-import Projects from "./projects"
 
 const isBrowser = typeof window !== "undefined"
 
@@ -197,9 +196,10 @@ export const pageQuery = graphql`
           min
           published
           categories
+          description
           posttype
         }
-        excerpt
+        excerpt(pruneLength: 100)
         id
       }
     }

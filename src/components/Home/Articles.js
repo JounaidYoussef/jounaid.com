@@ -32,29 +32,3 @@ const Articles = ({ data }) => {
 }
 
 export default Articles
-
-// export const pageQuery = graphql`
-//   query MyQuery {
-//     blog: allMarkdownRemark {
-//       posts: nodes {
-//         fields {
-//           slug
-//         }
-//         frontmatter {
-//           date
-//           title
-//           author
-//           categories
-//           min
-//           banner {
-//             childImageSharp {
-//               gatsbyImageData(width: 1000, formats: [AUTO, WEBP, AVIF])
-//             }
-//           }
-//         }
-//         excerpt
-//         id
-//       }
-//     }
-//   }
-// `
