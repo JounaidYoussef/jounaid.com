@@ -16,7 +16,36 @@ export default () => {
             And get the latest articles delivered right to your inbox!
           </text>
         </div>
-        <div className="row" style={{ width: "70%", marginTop: "0.8em" }}>
+
+        <form
+          action="https://tinyletter.com/jounaidyoussef"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/jounaidyoussef', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+          className="row"
+          style={{ width: "70%", marginTop: "0.8em" }}
+        >
+          <div className="subscribe-item row icenter">
+            <BareMail width="20" />
+            <input
+              className="in"
+              type="text"
+              name="email"
+              placeholder="Type your email"
+              id="tlemail"
+            />
+          </div>
+
+          <input type="hidden" value="1" name="embed" />
+          <button
+            className="subscribe-button mx-2"
+            data-element="submit"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </form>
+        {/* <div className="row" style={{ width: "70%", marginTop: "0.8em" }}>
           <div className="subscribe-item row icenter">
             <BareMail width="20" />
             <input
@@ -31,11 +60,11 @@ export default () => {
             onClick={() => {
               console.log("Subscribe")
             }}
-            className="subscribe-button mx-2"
+
           >
             Subscribe
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   )
