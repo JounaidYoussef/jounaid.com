@@ -48,6 +48,47 @@ const ProjectCard = ({ post }) => {
               {post.frontmatter.description}
             </text>
           </div>
+          <div className="row my-2">
+            <span
+              style={{
+                fontSize: "10px",
+                fontWeight: 400,
+                color: "#fff",
+                backgroundColor: "#4c596a",
+                padding: "0.4em 0.8em 0.4em 0.8em",
+                borderRadius: "20px",
+                margin: "0 0.4em 0 0.4em",
+              }}
+            >
+              GatsbyJS
+            </span>
+            <span
+              style={{
+                fontSize: "10px",
+                fontWeight: 400,
+                color: "#fff",
+                backgroundColor: "#527693",
+                padding: "0.4em 0.8em 0.4em 0.8em",
+                borderRadius: "20px",
+                margin: "0 0.4em 0 0.4em",
+              }}
+            >
+              GraphQL
+            </span>
+            <span
+              style={{
+                fontSize: "10px",
+                fontWeight: 400,
+                color: "#2f4353",
+                backgroundColor: "#B4C4D1",
+                padding: "0.4em 0.8em 0.4em 0.8em",
+                borderRadius: "20px",
+                margin: "0 0.4em 0 0.4em",
+              }}
+            >
+              Javascript
+            </span>
+          </div>
         </div>
         {/* <div className="grid-blogpost-container">
         <GatsbyImage
