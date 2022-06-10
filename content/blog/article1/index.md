@@ -11,28 +11,20 @@ min: 2
 posttype: "post"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies. Pellentesque imperdiet nisl id odio fermentum tempus. Praesent commodo, lacus a sagittis porttitor, tellus arcu euismod ipsum, a hendrerit ex neque nec est. Maecenas tortor lectus, venenatis sed mi ac, euismod ultrices urna. Integer posuere mi metus. Donec id aliquam nulla. Nunc convallis eros at sagittis pellentesque. Integer molestie, justo quis maximus vehicula, enim libero tincidunt tellus, et sagittis arcu ligula sit amet erat. Nulla ullamcorper volutpat velit, sed maximus enim malesuada id. In hac habitasse platea dictumst. Nam et vestibulum augue. Ut vel lacus quam. Pellentesque fringilla, urna pellentesque sollicitudin mollis, felis orci rutrum libero, sit amet tempus metus ex ac odio. Quisque sit amet sodales augue.
+You don’t have anything to say, the things you could write about had already been written by experts, that’s what I have been telling myself for a long period of time.
 
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
+It all began when I was working at **Obytes**, where Blogging contests were held and open source was very welcomed. it was at this moment I knew that this is what I want to do, share knowledge and decipher IT abstract concepts. At the time, I didn’t start away, because I wasn’t confident, I thought I should write some Millennium Technology Prize winning essay, revolutionary, radically new and innovative blog posts.
 
-## Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies. Pellentesque imperdiet nisl id odio fermentum tempus. Praesent commodo
+Well I was wrong, the Beginner Feeling (which is relatively good if kept under a certain degree) always tell you that you need to be the next **Brendan Eich** to write a blog post. the goal is not necessarily to share expertise but to document your journey, track your progress and start interesting debates or discussions.
 
-> lorem !!!
+And these are the reasons why I decided to start a blog :
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies. Pellentesque imperdiet nisl id odio fermentum tempus. Praesent commodo
+**Communication:** as an outgoing introvert or an Ambivert, I kept the majority of my thoughts to myself. It turns out that by expressing yourself through blogging, you will be more confident about yourself, you'll get a chance to know, discuss and understand other’s views.
 
-- Lorem ipsum dolo
-- Lorem ipsum dolo
-- Lorem ipsum dolo
-- …
+**Blogging allows you to tell a story.** Humans are addicted to stories, its considered better than bare information. Blogging allows you to unveil the process, circumstances and difficulties that you face in your journey.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies. Pellentesque imperdiet nisl id odio fermentum tempus. Praesent commodo, lacus a sagittis porttitor, tellus arcu euismod ipsum, a hendrerit ex neque nec est. Maecenas tortor lectus, venenatis sed mi ac.
+**Organize Your Thoughts and Validate Expertise.** Being good do not depend only on your technical skills but also on your ability to simplify composed and complex topics. Your blog can also serve as a skills portfolio.
 
-leave a comment.
+**Stand out and market yourself;** Instead of waiting for recruiters to notice your resume, writing blogposts and talking about your projects will not only give you exposure, but also it’ll help you stand out from the crowd and maybe get freelance jobs.
 
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies. Pellentesque imperdiet nisl id odio fermentum tempus. Praesent commodo, lacus a sagittis porttitor
+**It is 100 seconds to midnight**.

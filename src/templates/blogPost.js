@@ -1,25 +1,56 @@
 import React from "react"
+import "./index.scss"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { format } from "date-fns"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
+  const date = format(new Date(post.frontmatter.date), "MMMM do yyyy")
 
   return (
     <Layout iscontact={false}>
-      <div>
-        <p>{post.frontmatter.posttype}</p>
-
-        <h1>{post.frontmatter.title}</h1>
-        <small>{post.frontmatter.author}</small>
-        <small>{post.frontmatter.date}</small>
-        <GatsbyImage
-          image={post.frontmatter.banner.childImageSharp.gatsbyImageData}
-          alt="hello"
-        />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      {post.frontmatter.posttype == "post" ? (
+        <div className="post-container">
+          {/* <p>{post.frontmatter.posttype}</p> */}
+          <text style={{ fontSize: "32px", fontWeight: 600, color: "#4C596A" }}>
+            {post.frontmatter.title}
+          </text>{" "}
+          <text
+            style={{
+              fontSize: "14px",
+              fontWeight: 400,
+              margin: "0.4em 0 0.6em 0",
+              color: "#527693",
+            }}
+          >
+            {date} — {post.frontmatter.min} min read
+          </text>
+          {/* <small>{post.frontmatter.author}</small> */}
+          <GatsbyImage
+            image={post.frontmatter.banner.childImageSharp.gatsbyImageData}
+            alt="hello"
+          />{" "}
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+      ) : (
+        <div>
+          <div className="post-container">
+            {/* <p>{post.frontmatter.posttype}</p> */}
+            <text
+              style={{ fontSize: "32px", fontWeight: 600, color: "#4C596A" }}
+            >
+              {post.frontmatter.title}
+            </text>{" "}
+            {/* <GatsbyImage
+                image={post.frontmatter.banner.childImageSharp.gatsbyImageData}
+                alt="hello"
+              />{" "} */}
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </div>{" "}
+        </div>
+      )}
     </Layout>
   )
 }
@@ -34,7 +65,7 @@ export const query = graphql`
         min
         banner {
           childImageSharp {
-            gatsbyImageData(width: 500, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(width: 300, formats: [AUTO, WEBP, AVIF])
           }
         }
         published
