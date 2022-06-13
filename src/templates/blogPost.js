@@ -71,6 +71,7 @@ export const query = graphql`
         published
         categories
         posttype
+        stack
       }
     }
   }

@@ -49,20 +49,23 @@ const ProjectCard = ({ post }) => {
             </text>
           </div>
           <div className="row my-2">
-            <span
-              style={{
-                fontSize: "10px",
-                fontWeight: 400,
-                color: "#fff",
-                backgroundColor: "#4c596a",
-                padding: "0.4em 0.8em 0.4em 0.8em",
-                borderRadius: "20px",
-                margin: "0 0.4em 0 0.4em",
-              }}
-            >
-              GatsbyJS
-            </span>
-            <span
+            {post.frontmatter.stack?.map((post) => (
+              <span
+                style={{
+                  fontSize: "10px",
+                  fontWeight: 400,
+                  color: "#fff",
+                  backgroundColor: "#4c596a",
+                  padding: "0.4em 0.8em 0.4em 0.8em",
+                  borderRadius: "20px",
+                  margin: "0 0.4em 0 0.4em",
+                }}
+              >
+                {post}
+              </span>
+            ))}
+
+            {/* <span
               style={{
                 fontSize: "10px",
                 fontWeight: 400,
@@ -87,7 +90,7 @@ const ProjectCard = ({ post }) => {
               }}
             >
               Javascript
-            </span>
+            </span> */}
           </div>
         </div>
         {/* <div className="grid-blogpost-container">
