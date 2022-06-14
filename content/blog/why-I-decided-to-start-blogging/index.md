@@ -28,3 +28,5 @@ And these are the reasons why I decided to start a blog :
 **Stand out and market yourself;** Instead of waiting for recruiters to notice your resume, writing blogposts and talking about your projects will not only give you exposure, but also it’ll help you stand out from the crowd and maybe get freelance jobs.
 
 **It is 100 seconds to midnight**.
+
+![The end is near! ](https://media.giphy.com/media/simpsons-apocalypse-eXo5eC1tK7cas/giphy.gif)
