@@ -10,7 +10,7 @@ stack:
     { color: "#527693", tech: "Lumen" },
     { color: "#B4C4D1 ", tech: "REST" },
   ]
-  published: true
+published: true
 banner: "./project.jpg"
 posttype: "project"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies."
