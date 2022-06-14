@@ -4,7 +4,9 @@ title: "Projectapssss"
 author: "Youssef Jounaid"
 categories: ["all", "apps"]
 keywords: ["music", "nextjs", "react"]
-stack: ["React Native", "Expo"]
+stack:
+  [{ color: "#4C596A", tech: "NextJS" }, { color: "#527693", tech: "Lumen" }]
+
 published: true
 banner: "./project.jpg"
 posttype: "project"

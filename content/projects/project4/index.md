@@ -4,7 +4,7 @@ title: "Project1"
 author: "Youssef Jounaid"
 categories: ["all", "client"]
 keywords: ["music", "nextjs", "react"]
-stack: ["GatsbyJS", "GraphQL"]
+stack: [{ color: "#4C596A", tech: "NextJS" }]
 published: true
 banner: "./project.jpg"
 posttype: "project"

@@ -4,7 +4,13 @@ title: "Jounaid.com"
 author: "Youssef Jounaid"
 categories: ["all", "clients"]
 keywords: ["music", "nextjs", "react"]
-stack: ["NextJS", "Lumen", "Angular", "REST"]
+stack:
+  [
+    { color: "#4C596A", tech: "NextJS" },
+    { color: "#527693", tech: "Lumen" },
+    { color: "#B4C4D1 ", tech: "Angular" },
+    { color: "#B5B4B9", tech: "REST" },
+  ]
 published: true
 banner: "./project.jpg"
 posttype: "project"

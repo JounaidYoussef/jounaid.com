@@ -4,8 +4,13 @@ title: "Mostakbal Conservatory"
 author: "Youssef Jounaid"
 categories: ["all", "clones"]
 keywords: ["music", "nextjs", "react"]
-stack: ["Angular", "Spring"]
-published: true
+stack:
+  [
+    { color: "#4C596A", tech: "NextJS" },
+    { color: "#527693", tech: "Lumen" },
+    { color: "#B4C4D1 ", tech: "REST" },
+  ]
+  published: true
 banner: "./project.jpg"
 posttype: "project"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium at nisl quis ultricies."
