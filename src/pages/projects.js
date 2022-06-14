@@ -198,7 +198,10 @@ export const pageQuery = graphql`
           categories
           description
           posttype
-          stack
+          stack {
+            color
+            tech
+          }
         }
         excerpt(pruneLength: 100)
         id

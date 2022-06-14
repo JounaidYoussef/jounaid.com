@@ -55,13 +55,13 @@ const ProjectCard = ({ post }) => {
                   fontSize: "10px",
                   fontWeight: 400,
                   color: "#fff",
-                  backgroundColor: "#4c596a",
-                  padding: "0.4em 0.8em 0.4em 0.8em",
-                  borderRadius: "20px",
-                  margin: "0 0.4em 0 0.4em",
+                  backgroundColor: post.color,
+                  padding: "0.6em 1em 0.6em 1em",
+                  borderRadius: "40px",
+                  margin: "0 0.6em 0 0.6em",
                 }}
               >
-                {post}
+                {post.tech}
               </span>
             ))}
 

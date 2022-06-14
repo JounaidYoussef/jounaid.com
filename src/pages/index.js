@@ -75,6 +75,10 @@ export const pageQuery = graphql`
           categories
           posttype
           lead
+          stack {
+            tech
+            color
+          }
         }
         excerpt
         id

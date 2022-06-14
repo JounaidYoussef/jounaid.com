@@ -71,7 +71,10 @@ export const query = graphql`
         published
         categories
         posttype
-        stack
+        stack {
+          color
+          tech
+        }
       }
     }
   }
