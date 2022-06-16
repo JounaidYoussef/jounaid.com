@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-disqus",
       options: {
-        shortname: "https-teal-boba-8f9978-netlify-app",
+        shortname: "jounaid",
       },
     },
     {

@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { format } from "date-fns"
-import { DiscussionEmbed } from "disqus-react"
+import { Disqus } from "gatsby-plugin-disqus"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
@@ -12,8 +12,8 @@ export default function BlogPost({ data }) {
   const title = post.frontmatter.title
 
   const disqusConfig = {
-    shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: post.slug, title },
+    url: `jounaid.com/${post.fields.slug}/`,
+    title: title,
   }
 
   return (
@@ -56,9 +56,9 @@ export default function BlogPost({ data }) {
               />{" "} */}
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <div>
-              <DiscussionEmbed {...disqusConfig} />
+              <Disqus config={disqusConfig} />
             </div>
-          </div>{" "}
+          </div>
         </div>
       )}
     </Layout>
