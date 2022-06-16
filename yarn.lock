@@ -6529,6 +6529,11 @@ gatsby-parcel-config@0.6.0:
     "@parcel/transformer-raw" "2.5.0"
     "@parcel/transformer-react-refresh-wrap" "2.5.0"
 
+gatsby-plugin-disqus@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.2.4.tgz#81990e857ddbbee5b4a0602e1afcfc62be5330f0"
+  integrity sha512-HoNJdTKKifRIGVMTMt1rbFModWm3UT7Mnae24R0kuR0bj5b1XzJF9pgQ78BSFVP+D7Yndn51+vEr8goDLIBOGg==
+
 gatsby-plugin-google-fonts@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz"

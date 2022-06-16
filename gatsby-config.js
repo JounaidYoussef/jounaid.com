@@ -5,6 +5,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-disqus",
+      options: {
+        shortname: "https-teal-boba-8f9978-netlify-app",
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "favicon",

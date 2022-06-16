@@ -4,14 +4,21 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { format } from "date-fns"
+import { DiscussionEmbed } from "disqus-react"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   const date = format(new Date(post.frontmatter.date), "MMMM do yyyy")
+  const title = post.frontmatter.title
+
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: post.slug, title },
+  }
 
   return (
     <Layout iscontact={false}>
-      {post.frontmatter.posttype == "post" ? (
+      {post.frontmatter.posttype === "post" ? (
         <div className="post-container">
           {/* <p>{post.frontmatter.posttype}</p> */}
           <text style={{ fontSize: "32px", fontWeight: 600, color: "#4C596A" }}>
@@ -48,6 +55,9 @@ export default function BlogPost({ data }) {
                 alt="hello"
               />{" "} */}
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div>
+              <DiscussionEmbed {...disqusConfig} />
+            </div>
           </div>{" "}
         </div>
       )}
