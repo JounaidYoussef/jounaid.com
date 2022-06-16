@@ -40,6 +40,9 @@ export default function BlogPost({ data }) {
             alt="hello"
           />{" "}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div className="comments-section">
+            <Disqus config={disqusConfig} />
+          </div>
         </div>
       ) : (
         <div>
@@ -55,9 +58,6 @@ export default function BlogPost({ data }) {
                 alt="hello"
               />{" "} */}
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <div>
-              <Disqus config={disqusConfig} />
-            </div>
           </div>
         </div>
       )}
