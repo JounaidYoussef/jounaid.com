@@ -12,7 +12,7 @@ export default function BlogPost({ data }) {
   const title = post.frontmatter.title
 
   const disqusConfig = {
-    url: `jounaid.com/${post.slug}/`,
+    url: `https://jounaid.com/${post.slug}/`,
     title: title,
   }
 
