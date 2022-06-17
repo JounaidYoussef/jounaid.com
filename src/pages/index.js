@@ -9,11 +9,6 @@ import Articles from "../components/Home/Articles"
 import Subscribe from "../components/Home/Subscribe"
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  fontFamily: "Poppins",
-  fontWeight: "300",
-}
 
 // data
 // const links = [
@@ -37,7 +32,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout iscontact={false}>
       <title>Youssef Jounaid Personal Portfolio</title>
-      <main style={pageStyles}>
+      <main>
         <Intro />
         <Skills />
         <Articles data={posts} />

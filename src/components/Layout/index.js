@@ -4,16 +4,6 @@ import React, { useState } from "react"
 import "./index.scss"
 import ScrollUp from "../../assets/ScrollUp"
 
-const styles = {
-  color: "#232129",
-  padding: "20px 160px 40px 160px",
-}
-
-const container = {
-  padding: "0 0 0 0",
-  minwidth: "320px",
-}
-
 const isBrowser = typeof window !== "undefined"
 
 export default ({ iscontact, children, isFooterDisabled = false }) => {
@@ -39,8 +29,8 @@ export default ({ iscontact, children, isFooterDisabled = false }) => {
     }
   }
   return (
-    <div style={container}>
-      <div style={styles}>
+    <div className="container">
+      <div className="styles">
         <Header iscontact={iscontact} />
         {children}
       </div>

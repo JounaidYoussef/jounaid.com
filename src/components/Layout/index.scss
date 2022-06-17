@@ -1,3 +1,21 @@
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+.styles {
+  color: #232129;
+  padding: 20px 160px 40px 160px;
+}
+
+@media only screen and (max-width: 800px) {
+  .styles {
+    color: #232129;
+    padding: 20px 20px 20px 20px;
+    min-width: 320px;
+  }
+}
+
 .scrollTop {
   position: -webkit-sticky; /* Safari */
   position: sticky;
