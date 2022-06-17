@@ -21,7 +21,7 @@ export default () => {
           <div className="ta">
             <h1>Hello</h1>
           </div>
-          <div className="row icenter">
+          <div className="microcontainer icenter first">
             <div className="minicontainer icenter jcenter">
               <p style={{ maxWidth: "40em", textJustify: "auto" }}>
                 I’m{" "}
@@ -50,7 +50,7 @@ export default () => {
               <Avatar />
             </div>
           </div>
-          <div className="row icenter">
+          <div className="microcontainer icenter second">
             <div
               style={{ marginRight: "0.8em" }}
               className="minicontainer icenter jcenter"
@@ -81,7 +81,7 @@ export default () => {
               </p>
             </div>
           </div>
-          <div className="row icenter">
+          <div className="microcontainer icenter third">
             <div className="minicontainer icenter jcenter">
               <p
                 style={{
@@ -112,7 +112,7 @@ export default () => {
             Get In Touch
           </Link>
         </div>
-        <div className="row jcenter">
+        <div className="about-bar jcenter">
           <SocialBar fill="#527693" />
           <ArtBar fill="#527693" />
         </div>
