@@ -76,7 +76,7 @@ const Header = ({ iscontact }) => {
         <div className="contact">
           {!iscontact ? (
             <Link className="getintouch" to="/contact">
-              Get In Touch
+              Contact
             </Link>
           ) : (
             <a onClick={() => history.back()} className="close">

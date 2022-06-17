@@ -73,8 +73,9 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-      <div className="jcenter" style={{ marginTop: "2em" }}>
-        <SocialBar fill="#4C596A" />
+      <div className="about-bar jcenter">
+        <SocialBar fill="#527693" />
+        <ArtBar fill="#527693" />
       </div>
     </div>
   )
