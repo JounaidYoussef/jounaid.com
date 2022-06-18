@@ -6,7 +6,7 @@ categories: ["all", "design"]
 keywords: ["blog", "blog", "blog"]
 published: true
 banner: "./louvre.jpg"
-lead: true
+lead: false
 min: 2
 posttype: "post"
 ---

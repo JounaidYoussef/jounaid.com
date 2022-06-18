@@ -1,12 +1,12 @@
 ---
-date: 2022-01-01
+date: 2022-03-13
 title: "Why I decided to start Blogging"
 author: "Youssef Jounaid"
 categories: ["all", "dev"]
 keywords: ["blog", "blog", "blog"]
 published: true
 banner: "./blog.jpg"
-lead: false
+lead: true
 min: 2
 posttype: "post"
 ---
