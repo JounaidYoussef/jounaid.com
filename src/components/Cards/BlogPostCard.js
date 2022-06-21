@@ -8,10 +8,10 @@ import Checkmark from "../../assets/Checkmark"
 const BlogPostCard = ({ viewMode, post }) => {
   const date = format(new Date(post.frontmatter.date), "MMMM do yyyy")
 
-  const copylink = () => {
-    event.preventDefault()
-    console.log("hello")
-  }
+  // const copylink = () => {
+  //   event.preventDefault()
+  //   console.log("hello")
+  // }
 
   return !viewMode ? (
     <div>
@@ -29,12 +29,12 @@ const BlogPostCard = ({ viewMode, post }) => {
               imgStyle={{ borderRadius: "10px" }}
               alt="hello"
             />
-            <div className="copylink">
+            {/* <div className="copylink">
               <button onClick={() => copylink()} className="copyl">
                 <CopyLink width="10px" height="10px" />
                 <Checkmark width="12px" height="12px" />
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="col mx-2">
