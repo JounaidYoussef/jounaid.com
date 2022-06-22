@@ -29,10 +29,11 @@ export default () => {
             <BareMail width="20" />
             <input
               className="in"
-              type="text"
+              type="email"
               name="email"
               placeholder="Type your email"
               id="tlemail"
+              required
             />
           </div>
 
