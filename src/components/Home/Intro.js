@@ -30,7 +30,7 @@ export default () => {
               Visit Blog
             </Link>
             <a
-              href="https://www.google.com"
+              href="Jounaid_Youssef.pdf"
               target="_blank"
               className="visit-resume second"
             >
