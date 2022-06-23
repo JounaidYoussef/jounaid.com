@@ -29,4 +29,4 @@ And these are the reasons why I decided to start a blog :
 
 **It is 100 seconds to midnight**.
 
-![The end is near! ](https://media.giphy.com/media/xBqg5gAf1xINizpek6/giphy.gif)
+<!-- ![The end is near! ](https://media.giphy.com/media/xBqg5gAf1xINizpek6/giphy.gif) -->

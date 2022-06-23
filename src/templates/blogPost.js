@@ -38,6 +38,7 @@ export default function BlogPost({ data }) {
           <GatsbyImage
             image={post.frontmatter.banner.childImageSharp.gatsbyImageData}
             alt="hello"
+            style={{ height: "auto", width: "100%" }}
           />{" "}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <div className="comments-section">
