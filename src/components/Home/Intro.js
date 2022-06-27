@@ -17,10 +17,9 @@ export default () => {
           {/* <hr className="line" /> */}
           <p className="intro">
             Software Engineer, Designer and Art Enthusiast,
-            <br />
-            I love using functional programming concepts in JavaScript and
-            building <br />
-            applications with React & React Native.{" "}
+            <br />I love using functional programming & OOP paradigms in
+            Typescript and Java, building applications and creating visual
+            identities.{" "}
           </p>
           <p className="intro,visit">
             You can find articles on these subjects and more on my blog
