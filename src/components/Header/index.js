@@ -92,19 +92,19 @@ const Header = ({ iscontact }) => (
               About
             </Link>
           </li>
-          <li className="contact">
-            {!iscontact ? (
-              <Link className="getintouch" to="/contact">
-                Contact
-              </Link>
-            ) : (
-              <a onClick={() => history.back()} className=" close">
-                Close
-              </a>
-            )}
-          </li>
         </ul>
       </div>
+    </div>
+    <div className="contact">
+      {!iscontact ? (
+        <Link className="getintouch" to="/contact">
+          Contact
+        </Link>
+      ) : (
+        <a onClick={() => history.back()} className=" close">
+          Close
+        </a>
+      )}
     </div>
   </header>
 )
