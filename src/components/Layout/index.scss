@@ -8,11 +8,11 @@
   padding: 20px 160px 40px 160px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1080px) {
   .styles {
     color: #232129;
     padding: 20px 20px 20px 20px;
-    min-width: 320px;
+    min-width: 320px !important;
   }
 }
 
