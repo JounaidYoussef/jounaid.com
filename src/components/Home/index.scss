@@ -297,9 +297,9 @@
   color: #527693;
   font-weight: 600;
   margin: 0.8em 0 0.8em 0;
-  width: 100%;
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: flex-end;
 }
 
@@ -365,6 +365,18 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
+}
+
+@media only screen and (max-width: 800px) {
+  .gridarticles {
+    display: flex;
+    flex-direction: column;
+  }
+  .see-all {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
 }
 
 .subscribe-section {
