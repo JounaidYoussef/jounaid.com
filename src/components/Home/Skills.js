@@ -13,7 +13,7 @@ export default () => {
       <div className="row-skills-container">
         <div className="skill-container">
           <div className="image-container">
-            <W />
+            <W className="webdev-icon" />
           </div>
           <div>
             <p id="skills-section-title">Web Development</p>
@@ -21,7 +21,7 @@ export default () => {
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <Mm />
+            <Mm className="mobile-icon" />
           </div>
           <div>
             <p id="skills-section-title">Mobile Development</p>
@@ -29,7 +29,7 @@ export default () => {
         </div>
         <div className="skill-container">
           <div className="image-container">
-            <U />
+            <U className="design-icon" />
           </div>
           <div>
             <p id="skills-section-title">UI/UX Design</p>

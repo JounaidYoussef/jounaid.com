@@ -1,12 +1,13 @@
 import React from "react"
 
-function U({ ...props }) {
+function U({ className, ...props }) {
   return (
     <svg
       width={72}
       height={72}
       fill="none"
       viewBox="0 0 176 197"
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

@@ -1,6 +1,6 @@
 import React from "react"
 
-function Mm({ ...props }) {
+function Mm({ className, ...props }) {
   return (
     <svg
       width={72}
@@ -8,6 +8,7 @@ function Mm({ ...props }) {
       fill="none"
       viewBox="0 0 146 194"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
       {...props}
     >
       <path

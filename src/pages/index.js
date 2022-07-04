@@ -35,8 +35,8 @@ const IndexPage = ({ data }) => {
       <main>
         <Intro />
         <Skills />
-        <Articles data={posts} />
-        <Work data={posts} />
+        {/* <Articles data={posts} />
+        <Work data={posts} /> */}
         <Testimonials />
         <Subscribe />
       </main>
