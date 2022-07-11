@@ -29,7 +29,7 @@ const Articles = ({ data }) => {
     <div className="col icenter">
       <h2>Blog</h2>
       <div className="gridarticles">
-        {(getWindowWidth() < 800 ? leadposts.slice(0, 2) : leadposts).map(
+        {(getWindowWidth() < 992 ? leadposts.slice(0, 2) : leadposts).map(
           (post) => (
             <article key={post.id}>
               <BlogPostCard viewMode={false} post={post} />

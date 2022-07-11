@@ -30,7 +30,7 @@ const Articles = ({ data }) => {
     <div className=" icenter col">
       <h2>Featured Work</h2>
       <div className="gridarticles">
-        {(getWindowWidth() < 800 ? leadprojects.slice(0, 2) : leadprojects).map(
+        {(getWindowWidth() < 992 ? leadprojects.slice(0, 2) : leadprojects).map(
           (post) => (
             <article key={post.id}>
               <ProjectCard post={post} />

@@ -1,11 +1,11 @@
 ---
-date: 2022-03-12
+date: 2022-03-14
 title: "Article7"
 author: "Youssef Jounaid"
 categories: ["all", "tools"]
 keywords: ["blog", "blog", "blog"]
 published: true
-banner: "./louvre.jpg"
+banner: "./blog.jpg"
 lead: true
 min: 2
 posttype: "post"

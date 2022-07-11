@@ -23,7 +23,7 @@ export default () => {
           target="popupwindow"
           onsubmit="window.open('https://tinyletter.com/jounaidyoussef', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
           className="subscribe-section"
-          style={{ width: "70%", marginTop: "0.8em" }}
+          style={{ width: "90%", marginTop: "0.8em" }}
         >
           <div className="subscribe-item row icenter">
             <BareMail width="20" />
