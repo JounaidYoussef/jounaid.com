@@ -119,7 +119,7 @@ const Testimonials = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="col testimonial-card-container">
               <div className="col ta">
                 <Quote />
@@ -159,7 +159,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </div>
         <button className="swiper-button-next">
           <Arrow fill="#B4C4D1" />

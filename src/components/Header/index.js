@@ -28,12 +28,16 @@ import "./index.scss"
 
 const Header = ({ iscontact }) => (
   <header className="header">
-    <div className="css-icons-sttl">
-      <Link to="/">
+    <div id="a" className="css-icons-sttl">
+      <Link
+        className="logo-link"
+        style={{ width: "36px", height: "36px" }}
+        to="/"
+      >
         <Jo />
       </Link>
     </div>
-    <div className="dropdown-menu">
+    <div id="b" className="dropdown-menu">
       <input type="checkbox" id="checkbox" />
       <label id="burger" htmlFor="checkbox">
         <span>&nbsp;</span>
@@ -95,7 +99,7 @@ const Header = ({ iscontact }) => (
         </ul>
       </div>
     </div>
-    <div className="contact">
+    <div id="c" className="contact">
       {!iscontact ? (
         <Link className="getintouch" to="/contact">
           Contact

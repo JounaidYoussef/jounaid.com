@@ -192,9 +192,10 @@ input#checkbox {
 #burger span {
   background: #4c596a;
   display: block;
-  width: 28px;
-  height: 3px;
-  margin-bottom: 6px;
+  width: 32px;
+  height: 4px;
+  border-radius: 10px;
+  margin-bottom: 8px;
   position: relative;
   top: 0;
   transition: all ease-in-out 0.5s;
@@ -204,11 +205,29 @@ input#checkbox {
 }
 
 @media (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+  #a {
+    order: 1;
+    margin-right: 5em;
+    display: flex;
+    align-self: flex-start;
+  }
+  #b {
+    order: 3;
+    display: flex;
+    align-self: flex-start;
+  }
+  #c {
+    order: 2;
+    display: flex;
+    align-self: flex-start;
+  }
+
   #burger {
     display: block;
-  }
-  .contact {
-    padding: 5px 0;
   }
 
   .menu_element::after {
@@ -227,7 +246,7 @@ input#checkbox {
   .menu_element {
     display: -webkit-box;
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 16px;
   }
   .menu-content {
     height: 0;
@@ -253,17 +272,21 @@ input#checkbox {
   }
   input:checked ~ #burger span:nth-child(1) {
     transform: rotate(45deg);
-    top: 9px;
-    width: 28px;
+    top: 12px;
+    width: 32px;
   }
   input:checked ~ #burger span:nth-child(3) {
     transform: rotate(-45deg);
-    top: -9px;
-    width: 28px;
+    top: -12px;
+    width: 32px;
   }
 
   .header {
     align-items: unset;
+  }
+  .logo-link {
+    display: flex;
+    align-self: center;
   }
 }
 .css-icons-sttl a {
