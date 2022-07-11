@@ -5,6 +5,8 @@ import { transform } from "typescript"
 import { Link } from "gatsby"
 import DrawnArrow from "../../assets/DrawnArrow"
 
+const isBrowser = typeof window !== "undefined"
+
 const Articles = ({ data }) => {
   const leadprojects = data.filter(
     (e) => e.frontmatter.lead === true && e.frontmatter.posttype === "project"
@@ -24,8 +26,11 @@ const Articles = ({ data }) => {
   }, [])
 
   function getWindowWidth() {
-    return innerWidth
+    if (isBrowser) {
+      return innerWidth
+    }
   }
+
   return (
     <div className=" icenter col">
       <h2>Featured Work</h2>

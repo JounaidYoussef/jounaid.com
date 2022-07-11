@@ -4,6 +4,8 @@ import BlogPostCard from "../Cards/BlogPostCard"
 import DrawnArrow from "../../assets/DrawnArrow"
 import { Link } from "gatsby"
 
+const isBrowser = typeof window !== "undefined"
+
 const Articles = ({ data }) => {
   const leadposts = data.filter(
     (e) => e.frontmatter.lead === true && e.frontmatter.posttype === "post"
@@ -23,7 +25,9 @@ const Articles = ({ data }) => {
   }, [])
 
   function getWindowWidth() {
-    return innerWidth
+    if (isBrowser) {
+      return innerWidth
+    }
   }
   return (
     <div className="col icenter">
