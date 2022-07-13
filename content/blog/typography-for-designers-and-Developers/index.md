@@ -1,11 +1,11 @@
 ---
-date: 2022-03-13
-title: "Article5"
+date: 2022-03-14
+title: "Typography for Designers & Developers"
 author: "Youssef Jounaid"
 categories: ["all", "tools"]
 keywords: ["blog", "blog", "blog"]
 published: true
-banner: "./louvre.jpg"
+banner: "./blog.png"
 lead: true
 min: 2
 posttype: "post"

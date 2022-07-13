@@ -1,12 +1,12 @@
 ---
-date: 2022-03-12
-title: "Article4"
+date: 2022-03-13
+title: "Why you should know Moore, Kryder et Nielsen Laws"
 author: "Youssef Jounaid"
-categories: ["all", "design"]
+categories: ["all", "tools"]
 keywords: ["blog", "blog", "blog"]
 published: true
-banner: "./louvre.jpg"
-lead: false
+banner: "./blog.png"
+lead: true
 min: 2
 posttype: "post"
 ---
