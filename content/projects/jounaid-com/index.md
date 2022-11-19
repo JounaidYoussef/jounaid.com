@@ -2,14 +2,13 @@
 date: 2022-03-12
 title: "Jounaid.com"
 author: "Youssef Jounaid"
-categories: ["all", "clients"]
+categories: ["all"]
 keywords: ["music", "nextjs", "react"]
 stack:
   [
-    { color: "#4C596A", tech: "NextJS" },
-    { color: "#527693", tech: "Lumen" },
-    { color: "#B4C4D1 ", tech: "Angular" },
-    { color: "#B5B4B9", tech: "REST" },
+    { color: "#0693e3", tech: "React" },
+    { color: "#512da8", tech: "Gatsby" },
+    { color: "#E739AE", tech: "GraphQL" },
   ]
 published: true
 banner: "./project.jpg"
