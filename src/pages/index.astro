@@ -1,0 +1,242 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features from '~/components/widgets/Features.astro';
+
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+const metadata = {
+  title: 'Youssef JOUNAID',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="SaaS Web Demo"
+    actions={[
+      { variant: 'primary', text: 'Visit Blog', href: '#blog' },
+      { text: 'View Resume', href: '/resume' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white highlight"
+        >SaaS</span
+      > companion<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
+      >
+      Seamlessly blend the power of Astro 4.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <!-- <Features
+    id="features"
+    title="Why choose AstroWind?"
+    subtitle="Each of the following features enhances AstroWind's value proposition."
+    columns={2}
+    items={[
+      {
+        title: 'Integration of Astro 4.0 and Tailwind CSS',
+        description:
+          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'Versatile design for startups, small businesses, and more',
+        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Effortless customization for portfolios and marketing sites',
+        description:
+          'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Optimized landing pages and engaging blogs',
+        description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
+        icon: 'tabler:podium',
+      },
+      {
+        title: 'Fast loading times and production-ready code',
+        description: `Using Astro 4.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'SEO-optimized structure for enhanced visibility',
+        description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
+        icon: 'tabler:eyeglass',
+      },
+    ]}
+  /> -->
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Explore my insightful articles on my blog"
+    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-slate-200 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Words from collaborators"
+    testimonials={[
+      {
+        testimonial: `I had the chance to mentor Youssouf during his internship and first year at Obytes. 
+        
+        He showed consistent growth as a developer and a solid grasp of front-end development concepts. 
+        
+        Through dedicated practice and a willingness to learn, he steadily improved his skills and contributed well to our projects.`,
+        name: 'Youssouf EL AZIZI',
+        job: 'Mobile tribe lead at Obytes',
+        image: {
+          src: 'https://media.licdn.com/dms/image/v2/D4E03AQHAmu47EUM58w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673366160822?e=1735776000&v=beta&t=UqVjpAgw6aCQtdX2aa3My420mIjZj3157p4kLLTxbK8',
+          alt: 'Emily Kennedy Image',
+        },
+      },
+      {
+        testimonial: `Very pleased to have been able to work with Youssef.
+
+        When I was at Alten, I recruited him to work for one of our clients in the insurance field as a full-stack Java/Angular developer.
+        Given a complex business context, he was able to integrate well and meet expectations!
+
+        A very serious and dedicated person in his work.`,
+        name: 'Thomas CHAIX',
+        job: 'Engineering Manager at ALTEN',
+        image: {
+          src: 'https://media.licdn.com/dms/image/v2/D4E03AQFhR-Qyk0w8Uw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690791716412?e=1735776000&v=beta&t=raQlR4F-EfP1HcacWuhskx_fJgwdXMIPJVqGas-ccWM',
+          alt: 'Thomas CHAIX Image',
+        },
+      },
+      {
+        testimonial: `I greatly enjoyed working with Youssef, not only for his ability to quickly grasp the topics assigned to him, but also for his friendliness and positive attitude every day.
+
+        During his internship, Youssef was able to develop a web portal in just 3 months that displayed compatibility between operating systems and software products.
+
+        Additionally, Youssef regularly keeps up with the latest trends and innovations in web development (Angular, JavaScript) and CI/CD (GitLab) through continuous learning.
+
+        Thank you, Youssef!`,
+        name: 'Alexandre DEPLAIX',
+        job: 'Product Owner and Team Manager at Orange',
+        image: {
+          src: 'https://media.licdn.com/dms/image/v2/C4E03AQG6Ehg771kGmw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517046983593?e=1735171200&v=beta&t=2xEz8xusxD1337VTYNU8-1Mi9pfVMH2MtYN8c7QZCro',
+          alt: 'Alexandre DEPLAIX Image',
+        },
+      },
+      // {
+      //   testimonial: `It’s been a privilege to work with Youssef, a childhood friend and skilled developer, on various web and mobile projects. His expertise in React and React Native is impressive, consistently delivering high-performance applications with smooth user experiences.
+
+      //   Youssef excels in designing user interfaces, API integration, and performance optimization. He’s also a great team player and a strong independent freelancer, making him a valuable asset in any development role.
+
+      //   I highly recommend Youssef for any web or mobile development project.`,
+      //   name: 'Mohamed Adnane ABOUCHADI',
+      //   job: 'Full Stack Developer at Capgemini',
+      //   image: {
+      //     src: 'https://media.licdn.com/dms/image/v2/D4E03AQGgeqrh-cHU-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719832396342?e=1735171200&v=beta&t=-WGewrP2D2dIkZfapj_0peQ9FVtmaMG7RS84BkUphUs',
+      //     alt: 'Mohamed Adnane ABOUCHADI Image',
+      //   },
+      // },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'More testimonials...',
+      href: 'https://www.linkedin.com/in/jounaidyoussef/details/recommendations/',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+  <!-- Features2 Widget ************** -->
+
+  <!-- <Features2
+    title="About us"
+    subtitle="We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2> -->
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Main features of our templates"
+    subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
+    columns={3}
+    items={[
+      {
+        title: 'Modern and Professional Design',
+        description:
+          'Have a contemporary design that reflects current design trends and gives a professional impression.',
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Responsive and Mobile-Friendly',
+        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
+        icon: 'tabler:picture-in-picture',
+      },
+      {
+        title: 'Customizability',
+        description:
+          'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
+        icon: 'tabler:adjustments-horizontal',
+      },
+      {
+        title: 'Fast Loading Times',
+        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Search Engine Optimization (SEO)',
+        description:
+          'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: 'Compatibility',
+        description: 'The templates work seamlessly across various content management systems and website builders.',
+        icon: 'tabler:plug-connected',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Get templates',
+        href: 'https://github.com/onwidget/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">Be a part of our vision</Fragment>
+
+    <Fragment slot="subtitle">
+      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
+      impact.
+    </Fragment>
+  </CallToAction>
+</Layout>

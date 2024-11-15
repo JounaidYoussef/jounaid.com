@@ -1,0 +1,79 @@
+---
+import { Icon } from 'astro-icon/components';
+import Clock from './Clock.astro';
+
+interface Link {
+  text?: string;
+  href?: string;
+  ariaLabel?: string;
+  icon?: string;
+}
+
+interface Links {
+  title?: string;
+  links: Array<Link>;
+}
+
+export interface Props {
+  links: Array<Links>;
+  secondaryLinks: Array<Link>;
+  socialLinks: Array<Link>;
+  footNote?: string;
+  theme?: string;
+}
+
+const { socialLinks = [], footNote = '', theme = 'light' } = Astro.props;
+---
+
+<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+  <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
+    <!-- // -->
+    <div class="flex items-center justify-center mx-auto">
+      <div class="flex flex-col dark:text-gray-300 font-extrabold text-2xl mb-2 items-center mr-36">
+        <a href="mailto:youssef@jounaid.com">youssef@jounaid.com</a>
+        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+        <!-- <span>
+          <Icon name="tabler:copy" class="w-6 h-6" />
+        </span> -->
+      </div>
+      <a class="dark:text-gray-300 text-lg font-bold mb-2 border-2 rounded-full px-12 py-10" href="/contact"
+        >Leave a Message</a
+      >
+      <div class="flex flex-row items-center dark:text-gray-300 font-medium mb-2 ml-16">
+        <span><Clock /></span>
+        <span class="flex flex-col">
+          <span class="font-bold text-2xl">+33 610 289 955</span>
+          <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+          <span class="font-light text-sm">Paris, Amsterdam, Berlin (CEST)</span>
+        </span>
+      </div>
+    </div>
+    <!-- -- -->
+    <div class="flex items-center justify-center pt-6 md:pt-8">
+      {
+        socialLinks?.length ? (
+          <ul class="flex mb-4">
+            {socialLinks.map(({ ariaLabel, href, text, icon }) => (
+              <li>
+                <a
+                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  aria-label={ariaLabel}
+                  href={href}
+                >
+                  {icon && <Icon name={icon} class="w-5 h-5" />}
+                  <Fragment set:html={text} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          ''
+        )
+      }
+    </div>
+    <div class="text-sm dark:text-gray-300 flex justify-center pb-6">
+      <Fragment set:html={footNote} />
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,146 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Faqs as Props } from '~/types';
+
+const {
+  //   title = '',
+  //   subtitle = '',
+  //   tagline = '',
+  //   items = [],
+  //   columns = 2,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <div class="clock">
+    <div class="wrap">
+      <span class="hour"></span>
+      <span class="minute"></span>
+      <span class="second"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</WidgetWrapper>
+
+<style>
+  html {
+    --clockbg-color: white;
+    --clockborder-color: rgb(243, 243, 243);
+    --hoursminutes-color: black;
+    --seconds-color: rgb(146, 0, 151);
+  }
+  .darkclock {
+    --clockbg-color: rgb(161, 77, 77);
+    --clockborder-color: rgb(180, 66, 66);
+    --hoursminutes-color: black;
+    --seconds-color: rgb(146, 0, 151);
+  }
+
+  .clock {
+    border-radius: 100%;
+    background: var(--clockbg-color);
+    font-family: 'Poppins';
+    border: 5px solid var(--clockborder-color);
+    box-shadow: inset 4px 6px 16px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .wrap {
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+
+  .minute,
+  .hour {
+    position: absolute;
+    height: 27px;
+    width: 3px;
+    margin: auto;
+    top: -26%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--hoursminutes-color);
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .minute {
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    top: -38%;
+    left: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    transform: rotate(90deg);
+  }
+
+  .second {
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    margin: auto;
+    top: -41%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: var(--seconds-color);
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+
+  .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: rgb(243, 243, 243);
+    border: 2px solid #1b1b1b;
+    border-radius: 100px;
+    margin: auto;
+    z-index: 1;
+  }
+</style>
+
+<script>
+  const inc = 1000;
+
+  clock();
+
+  function clock() {
+    const date = new Date();
+
+    const hours = ((date.getHours() + 11) % 12) + 1;
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    const hour = hours * 30;
+    const minute = minutes * 6;
+    const second = seconds * 6;
+
+    const docHour = document.querySelector<HTMLElement>('.hour');
+    const docMinute = document.querySelector<HTMLElement>('.minute');
+    const docSecond = document.querySelector<HTMLElement>('.second');
+
+    docHour!.style.transform = `rotate(${hour}deg)`;
+    docMinute!.style.transform = `rotate(${minute}deg)`;
+    docSecond!.style.transform = `rotate(${second}deg)`;
+  }
+
+  setInterval(clock, inc);
+</script>
