@@ -28,10 +28,10 @@ export const headerData = {
       //   },
       // ],
     },
-    {
-      text: 'Projects',
-      href: getPermalink('/projects'),
-    },
+    // {
+    //   text: 'Projects',
+    //   href: getPermalink('/projects'),
+    // },
     {
       text: 'About',
       href: getPermalink('/about'),
