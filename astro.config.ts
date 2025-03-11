@@ -10,6 +10,7 @@ import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from 'astro-compress';
 import type { AstroIntegration } from 'astro';
+import lottie from 'astro-integration-lottie';
 
 import astrowind from './vendor/integration';
 
@@ -25,6 +26,7 @@ export default defineConfig({
   output: 'static',
 
   integrations: [
+    lottie(),
     tailwind({
       applyBaseStyles: false,
     }),
