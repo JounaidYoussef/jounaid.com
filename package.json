@@ -2,19 +2,21 @@
   "name": "Jounaid.com",
   "version": "2.0",
   "description": "Sharing projects and coding insights through my blog. Focused on creating clean, efficient solutions.",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "npm run check:astro && npm run check:eslint && npm run check:prettier",
+    "check": "pnpm run check:eslint && pnpm run check:prettier",
     "check:astro": "astro check",
     "check:eslint": "eslint .",
     "check:prettier": "prettier --check .",
-    "fix": "npm run fix:eslint && npm run fix:prettier",
+    "fix": "pnpm run fix:eslint && pnpm run fix:prettier",
     "fix:eslint": "eslint --fix .",
-    "fix:prettier": "prettier -w ."
+    "fix:prettier": "prettier -w .",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.7",
