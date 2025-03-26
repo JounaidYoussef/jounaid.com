@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "pnpm run check:pnpm run check:eslint && pnpm run check:prettier",
+    "check": "pnpm run check:eslint && pnpm run check:prettier",
     "check:eslint": "eslint .",
     "check:prettier": "prettier --check .",
     "fix": "pnpm run fix:eslint && pnpm run fix:prettier",
