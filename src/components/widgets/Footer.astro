@@ -29,23 +29,30 @@ const { socialLinks = [], footNote = '', theme = 'light' } = Astro.props;
   <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
     <!-- // -->
-    <div class="flex items-center justify-center mx-auto">
-      <div class="flex flex-col dark:text-gray-300 font-extrabold text-2xl mb-2 items-center mr-36">
+    <div class="grid grid-cols-3 max-lg:flex max-lg:flex-col-reverse">
+      <div
+        class="flex flex-col text-slate-700 dark:text-gray-300 font-extrabold items-start justify-center text-xl mb-2 max-lg:items-center max-lg:my-12"
+      >
+        <span class="text-sm font-light">Feel free to email me at:</span>
         <a href="mailto:youssef@jounaid.com">youssef@jounaid.com</a>
         <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
         <!-- <span>
           <Icon name="tabler:copy" class="w-6 h-6" />
         </span> -->
       </div>
-      <a class="dark:text-gray-300 text-lg font-bold mb-2 border-2 rounded-full px-12 py-10" href="/contact"
-        >Leave a Message</a
+      <div class="flex items-center justify-center">
+        <a class="dark:text-gray-300 text-md font-bold mb-2 border-2 rounded-full px-6 py-2" href="/contact"
+          >Get In Touch</a
+        >
+      </div>
+      <div
+        class="flex flex-row items-center justify-end text-slate-700 dark:text-gray-300 font-medium mb-2 max-lg:justify-center max-lg:mr-10"
       >
-      <div class="flex flex-row items-center dark:text-gray-300 font-medium mb-2 ml-16">
-        <span><Clock /></span>
+        <Clock />
         <span class="flex flex-col">
-          <span class="font-bold text-2xl">+33 610 289 955</span>
+          <a href="tel:33610289955" class="font-bold text-xl">(+33) 610 289 955</a>
           <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
-          <span class="font-light text-sm">Paris, Amsterdam, Berlin (CEST)</span>
+          <span class="font-light text-xs">Paris, Amsterdam, Berlin (CEST)</span>
         </span>
       </div>
     </div>
@@ -72,7 +79,7 @@ const { socialLinks = [], footNote = '', theme = 'light' } = Astro.props;
         )
       }
     </div>
-    <div class="text-sm dark:text-gray-300 flex justify-center pb-6">
+    <div class="text-sm text-slate-700 dark:text-gray-300 flex justify-center pb-6">
       <Fragment set:html={footNote} />
     </div>
   </div>

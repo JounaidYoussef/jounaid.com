@@ -2,21 +2,10 @@
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import type { Faqs as Props } from '~/types';
 
-const {
-  //   title = '',
-  //   subtitle = '',
-  //   tagline = '',
-  //   items = [],
-  //   columns = 2,
-
-  id,
-  isDark = false,
-  classes = {},
-  bg = await Astro.slots.render('bg'),
-} = Astro.props;
+const { id, isDark = false, classes = {}, bg = await Astro.slots.render('bg') } = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <div class="clock">
     <div class="wrap">
       <span class="hour"></span>
@@ -32,13 +21,13 @@ const {
     --clockbg-color: white;
     --clockborder-color: rgb(243, 243, 243);
     --hoursminutes-color: black;
-    --seconds-color: rgb(146, 0, 151);
+    --seconds-color: #4c596a;
   }
   .darkclock {
-    --clockbg-color: rgb(161, 77, 77);
-    --clockborder-color: rgb(180, 66, 66);
+    --clockbg-color: #4c596a;
+    --clockborder-color: #4c596a;
     --hoursminutes-color: black;
-    --seconds-color: rgb(146, 0, 151);
+    --seconds-color: #4c596a;
   }
 
   .clock {
@@ -52,18 +41,18 @@ const {
   .wrap {
     overflow: hidden;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
   }
 
   .minute,
   .hour {
     position: absolute;
-    height: 27px;
+    height: 21px;
     width: 3px;
     margin: auto;
-    top: -26%;
+    top: -36%;
     left: 0;
     bottom: 0;
     right: 0;
@@ -76,9 +65,9 @@ const {
 
   .minute {
     position: absolute;
-    height: 40px;
+    height: 38px;
     width: 2px;
-    top: -38%;
+    top: -62%;
     left: 0;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     transform: rotate(90deg);
@@ -89,7 +78,7 @@ const {
     height: 40px;
     width: 2px;
     margin: auto;
-    top: -41%;
+    top: -68%;
     left: 0;
     bottom: 0;
     right: 0;
@@ -106,8 +95,8 @@ const {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 100px;
     background: rgb(243, 243, 243);
     border: 2px solid #1b1b1b;

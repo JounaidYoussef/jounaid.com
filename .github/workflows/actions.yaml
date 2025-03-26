@@ -23,9 +23,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
-      - run: npm ci
-      - run: npm run build
+      - name: Install PNPM
+        run: npm i -g pnpm
+      - name: Install & Build
+        run: pnpm i  &&  pnpm build
       # - run: npm test
 
   check:
@@ -36,6 +37,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run check
+      - name: Install PNPM
+        run: npm i -g pnpm
+      - name: Install
+        run: pnpm i
+      - name: Check
+        run: pnpm run check
