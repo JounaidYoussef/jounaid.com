@@ -28,7 +28,7 @@ well I’m not here to state the obvious and I’d like to discuss point by poin
 
 CSS doesn’t work like Java, Python, or any other language where you write logic and loops. Instead, it’s all about declaring styles and hoping the browser interpret what you mean. That’s probably why some developers think of CSS as 'just tweaking settings' rather than 'real coding'—until they actually try to center a div and realize how painful it can be.
 
-I think there’s no point in debating whether CSS is a programming language or not(even with Sass powers). It’s a primordial tool in web development. 
+I think there’s no point in debating whether CSS is a programming language or not(even with Sass powers). It’s a primordial tool in web development.
 
 While designers work with vectors and can freely move assets in their Figma, Adobe XD or Sketch files, developers need to convert those design to interactive layouts using CSS(and I can assure you, It's no walk in the park). In a lot of situations, and due to the lack of knowledge of the limitations of the tech stack, programming languages, or frameworks developers are using, designers innovative intent of pushing boundaries can put the developer in a difficult situation, that’s why it is so important to collaborate as the two profiles complement each others and it will be a lot profitable for both to have an idea about the other’s position.
 
@@ -44,7 +44,7 @@ Let's take the Flexbox example (which I’m explaining later) : Internet Explore
 
 If you’d like to know more information or test your more css features, you can easily check the compatibility on platforms like [CanIUse](http://caniuse.com) or [MDN](https://developer.mozilla.org/fr/docs/Web/CSS).
 
-You may sometimes find yourself forced to add Vendor Prefixes; they are unique markers added to a CSS property, tailored to a specific browser's rendering engine. It ensures the property works exclusively in that browser, aligning with its implementation. the most used ones are: 
+You may sometimes find yourself forced to add Vendor Prefixes; they are unique markers added to a CSS property, tailored to a specific browser's rendering engine. It ensures the property works exclusively in that browser, aligning with its implementation. the most used ones are:
 
 - `o-` for old versions of Opera
 - `moz-` for Gecko Engine (Mozilla)
@@ -61,50 +61,40 @@ Unlike programming languages that offer error messages or warnings, CSS provides
 
 ![FlexGrid.png](https://lh3.googleusercontent.com/d/1ITrp1KqJL-9cFiHRvnA4OCbTn_Zhhq75)
 
-
 Before **Flexbox (2012)** and **CSS Grid (2017)** became widely adopted, layouts relied on:
 
 - **Floats:** Elements were floated to create multi-column layouts, but clearing floats was necessary to prevent layout issues.
-    
-    ```css
-    .column {
-      float: left;
-      width: 50%;
-    }
-    .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    ```
-    
+  ```css
+  .column {
+    float: left;
+    width: 50%;
+  }
+  .clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  ```
 - **Inline-Block:** Allowed elements to sit side by side, but inconsistent spacing due to whitespace between elements was a common issue.
-    
-    ```css
-    .box {
-      display: inline-block;
-      width: 200px;
-      height: 100px;
-      background: lightblue;
-    }
-    
-    ```
-    
+  ```css
+  .box {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background: lightblue;
+  }
+  ```
 - **Positioning:** Elements were positioned explicitly using absolute or relative positioning, making layouts less flexible.
-    
-    ```css
-    .container {
-      position: relative;
-    }
-    .box {
-      position: absolute;
-      top: 50px;
-      left: 100px;
-    }
-    
-    ```
-    
+  ```css
+  .container {
+    position: relative;
+  }
+  .box {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+  ```
 
 Today, Flexbox and Grid Layout form the backbone of modern web layouts:
 
@@ -119,7 +109,6 @@ Before Flexbox, aligning things in CSS was a nightmare. You had to mess with flo
   align-items: center;
   gap: 10px;
 }
-
 ```
 
 ---
@@ -132,13 +121,11 @@ Grid excels at **two-dimensional** design, controlling both **rows and columns**
 **Ideal for:** Web page layouts, dashboards, and complex grids.
 
 ```css
-
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
 ```
 
 ## **Breakpoints/media queries**
@@ -171,7 +158,7 @@ While there are tons of CSS frameworks, extensions, and preprocessors, I will fo
 
 As we step into 2024, it's undeniable that CSS has undergone rapid development. Features that were once unique to Sass are now natively integrated into CSS, including variables, functions and Nesting.
 
-following the DRY principle (Don't Repeat Yourself), I find sass the best alternative if you’re not willing to use neither native css or frameworks like tailwindCSS 
+following the DRY principle (Don't Repeat Yourself), I find sass the best alternative if you’re not willing to use neither native css or frameworks like tailwindCSS
 
 **Tailwind CSS**
 
@@ -181,7 +168,7 @@ It is my favorite CSS framework at the moment. Its learning curve is steep, but 
 
 **Bootstrap**
 
-With his latest version, bootstrap still very useful for rapid prototyping and MVPs, but its lack of customization is what is making me not considering it as my first option when I work on a project. 
+With his latest version, bootstrap still very useful for rapid prototyping and MVPs, but its lack of customization is what is making me not considering it as my first option when I work on a project.
 
 To sum it up, CSS can be frustrating, it may take time to master, but skipping it limits your ability to build visually appealing user interfaces. It's a fundamental skill every web developer must learn.
 

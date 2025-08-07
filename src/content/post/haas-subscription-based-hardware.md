@@ -19,7 +19,6 @@ Put simply, **Hardware as a Service (HaaS)** works a lot like renting instead of
 
 Even if you've never personally encountered this trend, it is becoming the default choice for companies, especially in tech . but at the individual level, whether as developers or everyday consumers are facing a real issue concerning the choice between personal property and this new model, that makes you gain a lot of time but it also pulls you into a system where you're constantly paying, often without realizing how little you actually need what you're renting.
 
- 
 ![](https://y.yarn.co/b483287f-8bcf-4ee8-938f-c8052d080cc1_text.gif)
 
 Of course, this shift isn’t without its weird side. I still remember the movie **"Repo Men"**, where people get artificial organs on credit—and if they miss payments, the repo guys literally take them back? Sure, that’s sci-fi (for now), but it makes you wonder: when everything’s on subscription, what happens if you stop paying? Does your smart fridge lock the door until you renew? Okay, maybe not—but relying on rented hardware means companies could cut you off, limit features, or push upgrades you don’t really need. Owning your gear might seem old-school, but at least your screwdriver doesn’t come with a monthly fee.

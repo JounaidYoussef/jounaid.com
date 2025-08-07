@@ -34,12 +34,11 @@ The deeper you go in tech, the more you realize how much you don’t know. And t
 
 ![](https://media1.tenor.com/m/Dts1gcI8Tv0AAAAC/crying-dexter.gif)
 
-There’s always a new framework, a new database, a new AI-powered thing you’re supposed to master by Tuesday. It’s like watching *One Piece* just when you think you’re finally catching up, the story drops a hundred more episodes, three new arcs, and a plot twist no one saw coming.
+There’s always a new framework, a new database, a new AI-powered thing you’re supposed to master by Tuesday. It’s like watching _One Piece_ just when you think you’re finally catching up, the story drops a hundred more episodes, three new arcs, and a plot twist no one saw coming.
 
 This is normal. Tech isn’t a game you finish, it’s an ongoing path. And you don’t need to master every single thing to be a great developer.
 
 > **You just need to know how to learn**.
-> 
 
 With continuous learning often comes continuous doubt — but that doubt doesn't mean you're falling behind. It means you're still growing.
 
@@ -51,23 +50,21 @@ Constantly grinding isn’t the answer. Not everyone has the energy, time, or de
 
 Being well-rested makes you a better developer than staying up all night with messy code and no sleep.
 
-And don’t get too caught up in those dramatic YouTube thumbnails from people saying *“This tech is dead”* or *“Why you’ll never make it”,* usually while calling themselves **ex-Google, ex-Facebook**. Just because someone’s yelling on the internet doesn’t mean they’re right. You're learning, improving, failing sometimes and that’s what really matters.
+And don’t get too caught up in those dramatic YouTube thumbnails from people saying _“This tech is dead”_ or _“Why you’ll never make it”,_ usually while calling themselves **ex-Google, ex-Facebook**. Just because someone’s yelling on the internet doesn’t mean they’re right. You're learning, improving, failing sometimes and that’s what really matters.
 
 ### **The Quiet/Underrated Skills**
 
-You can be a brilliant dev *without* having a GitHub graph that looks like the Matrix. Soft skills like communication, debugging, and knowing when to ask questions? These are power moves. Not everyone needs to be a genius algorithm hacker. There’s just as much value in the dev who patiently helps a teammate, explains something clearly, or writes readable code that doesn’t make future-you cry.
+You can be a brilliant dev _without_ having a GitHub graph that looks like the Matrix. Soft skills like communication, debugging, and knowing when to ask questions? These are power moves. Not everyone needs to be a genius algorithm hacker. There’s just as much value in the dev who patiently helps a teammate, explains something clearly, or writes readable code that doesn’t make future-you cry.
 
 > Stop measuring yourself by noisy metrics. The quiet stuff often speaks louder in real teams.
-> 
 
 ### **Saying “I Don’t Know” Is a Power Move**
 
 One of the most freeing things you can say in general, not only in tech is:
 
 > I don’t know, but I’ll figure it out.
-> 
 
-It’s a phrase that shows humility, honesty, and curiosity — the three pillars of lifelong learning. Nobody expects you to know everything. The industry changes too fast for that. What people appreciate is *how you respond to not knowing*. It’s the difference between faking confidence and building competence.
+It’s a phrase that shows humility, honesty, and curiosity — the three pillars of lifelong learning. Nobody expects you to know everything. The industry changes too fast for that. What people appreciate is _how you respond to not knowing_. It’s the difference between faking confidence and building competence.
 
 ## 🛠️ Bonus: How to Actually Center a `div` in 2024
 
@@ -77,9 +74,9 @@ Okay okay, you made it this far — here’s the real deal.
 
 ```css
 .parent-container {
-  display: flex;           /* Activates Flexbox layout */
+  display: flex; /* Activates Flexbox layout */
   justify-content: center; /* Centers child horizontally */
-  align-items: center;     /* Centers child vertically */
+  align-items: center; /* Centers child vertically */
 }
 ```
 
@@ -87,7 +84,7 @@ Okay okay, you made it this far — here’s the real deal.
 
 ```css
 .parent-container {
-  display: grid;       /* Activates Grid layout */
+  display: grid; /* Activates Grid layout */
   place-items: center; /* Shortcut to center both horizontally & vertically */
 }
 ```

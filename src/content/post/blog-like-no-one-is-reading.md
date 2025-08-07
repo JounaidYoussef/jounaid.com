@@ -18,7 +18,7 @@ Not because I thought the world was desperately waiting for my spicy hot takes o
 
 It all began when I was working at [Obytes](https://www.obytes.com/), where blogging contests were common and open source was encouraged. I didn’t jump in right away, I spent time reading others’ posts and learning. Eventually, I felt inspired to start writing myself, combining my passion for code with a desire to share and grow.
 
-And hey, if you’ve ever caught yourself waiting for your code to compile thinking, *“Huh, that might actually be useful to someone…”* ; maybe you should start one too.
+And hey, if you’ve ever caught yourself waiting for your code to compile thinking, _“Huh, that might actually be useful to someone…”_ ; maybe you should start one too.
 
 Here’s why hitting “publish” (or in my case, `git commit -m "new post 🚀"`) might be one of the best things you can do:
 
@@ -26,7 +26,7 @@ Here’s why hitting “publish” (or in my case, `git commit -m "new post 🚀
 
 Let’s be honest, before blogging, my thoughts were all over the place. I had ideas—but they stayed in my mental RAM, taking up space and disappearing as soon as something else came up.
 
-When you’re thinking about what to write next, you’re actually figuring out what’s important to you. It helps you focus, set some priorities, and get your thoughts in order. Writing things down makes ideas feel clearer. And the cool thing? You can write about different topics at the same time, things you’re learning, stuff you're building, or just something that got you thinking while fixing a bug. 
+When you’re thinking about what to write next, you’re actually figuring out what’s important to you. It helps you focus, set some priorities, and get your thoughts in order. Writing things down makes ideas feel clearer. And the cool thing? You can write about different topics at the same time, things you’re learning, stuff you're building, or just something that got you thinking while fixing a bug.
 
 It’s your space, share what you want. We’re social creatures, and sometimes, just putting your thoughts out there helps you connect in ways you didn’t expect.
 
@@ -38,20 +38,19 @@ Blogging is like building a personal time machine. Each post is a snapshot of wh
 
 Better yet, someone else might stumble on it and realize they’re not alone. Your blog becomes a changelog of progress, both for you and whoever’s following along.
 
-
 ### Sharing Thoughts – And Maybe Helping Someone Along the Way
 
 From solving bugs to understanding new tools, learning how to structure a project, or even picking up better habits, so much of what I know has come from other developers who took the time to share what they learned.
 
 Sometimes all it takes is one post explaining how to center a div (again) in the right way, and it clicks.
 
-I guess what I’m saying is: your thoughts matter, even if they don’t feel groundbreaking. They might be *exactly* what someone else needed to read after their nth stack overflow tab failed them.
+I guess what I’m saying is: your thoughts matter, even if they don’t feel groundbreaking. They might be _exactly_ what someone else needed to read after their nth stack overflow tab failed them.
 
 ### The Amazing Blogging Community
 
 Let’s talk about the people. Because Damn! Developers who blog are some of the most supportive folks out there. Just seeing others share their work, ideas, and struggles made me feel like, “Hey, maybe I can do this too.”
 
-Even before I wrote anything, I saw how others encouraged new voices to start. People cheer each other on, share tips, and make it feel okay to learn out loud. 
+Even before I wrote anything, I saw how others encouraged new voices to start. People cheer each other on, share tips, and make it feel okay to learn out loud.
 
 I used to think blogging would be a lonely thing, but it actually feels like joining a big group where everyone’s figuring things out together.
 
@@ -63,7 +62,6 @@ It might sound odd, but writing actually feels good once you get into it. There�
 
 **And bonus:** blogging means you get to make fun of yourself publicly before anyone else can; Powerful move.
 
-
 ### **Put Yourself Out There – And Let People Find You**
 
 When you write about what you're learning or building, it helps others understand your approach to problems and how you grow. This can leave a strong impression on recruiters, teammates, or anyone who might want to work with you.
@@ -74,7 +72,7 @@ Your blog doesn’t have to be perfect. It just needs to reflect who you are. Wr
 
 ### Also... It’s 89 Seconds to Midnight
 
-Yeah, *that* clock — [The Doomsday Clock](https://thebulletin.org/doomsday-clock/current-time/).
+Yeah, _that_ clock — [The Doomsday Clock](https://thebulletin.org/doomsday-clock/current-time/).
 
 If you needed a sign that life is short, strange, and unpredictable, here it is: 89 seconds to midnight (and maybe even less by the time you read this).
 
