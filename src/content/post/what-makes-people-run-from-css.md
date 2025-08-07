@@ -12,58 +12,177 @@ metadata:
   canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 ---
 
-```go
-package main
+# What makes people run from CSS(100%)
 
-import (
-    "fmt"
-    "net/http"
-)
+Since University days, and even in corporate, a lot of comrades and colleges showed their struggle to use CSS , describing it as a black box. I knew after that it is something common among developer, it even goes sometimes to the point of redirecting their career choices; well, I know people who went backend only for the sake of avoiding CSS.
 
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+![](https://media3.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=7941fdc6mjmz5pz6kn0t6t2f90n3a2uu1kemplqdspczdgm1&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+the question that triggered me to write this article is what makes what is considered a pillar of web and mobile development to be feared by a lot of people and sometimes blocking their learning journey.
+
+Well, there is no exact answer, and I personally think that it’s a matter of necessity. you will probably always tend to delegate the work if there is someone else that can do it in your team, that’s why I think we should maybe put ourselves in non-comfortable situations to force it a little bit.(like what I am doing right now on my portfolio).
+
+well I’m not here to state the obvious and I’d like to discuss point by point what I think is pushing people from learning at least the basics of CSS.
+
+## **Is CSS Even a Programming Language ,Isn’t that for designers?**
+
+CSS doesn’t work like Java, Python, or any other language where you write logic and loops. Instead, it’s all about declaring styles and hoping the browser interpret what you mean. That’s probably why some developers think of CSS as 'just tweaking settings' rather than 'real coding'—until they actually try to center a div and realize how painful it can be.
+
+I think there’s no point in debating whether CSS is a programming language or not(even with Sass powers). It’s a primordial tool in web development. 
+
+While designers work with vectors and can freely move assets in their Figma, Adobe XD or Sketch files, developers need to convert those design to interactive layouts using CSS(and I can assure you, It's no walk in the park). In a lot of situations, and due to the lack of knowledge of the limitations of the tech stack, programming languages, or frameworks developers are using, designers innovative intent of pushing boundaries can put the developer in a difficult situation, that’s why it is so important to collaborate as the two profiles complement each others and it will be a lot profitable for both to have an idea about the other’s position.
+
+![WebDevWebDesign.png](https://lh3.googleusercontent.com/d/1Smcyv099qHrqsTQ87BslgOGubbQdKSmY)
+
+## Browser compatibility/support
+
+Ever had a layout look perfect in Chrome, then open it in Safari and wonder if your CSS file just got ignored? Yeah, that’s **browser compatibility**. Every browser has its own way of interpreting styles, and sometimes they just don’t agree with each other. It’s the reason why we, developers have trust issues 🥲.
+
+Let's take the Flexbox example (which I’m explaining later) : Internet Explorer 11(latest version of the deprecated browser) was only offering partial support for **Flexible Box** while it is fully supported by Chrome and Safari.
+
+![Compatibility.png](https://lh3.googleusercontent.com/d/1FvmdCaOADuiI8nu24MYuFn8HqxHKAA51)
+
+If you’d like to know more information or test your more css features, you can easily check the compatibility on platforms like [CanIUse](http://caniuse.com) or [MDN](https://developer.mozilla.org/fr/docs/Web/CSS).
+
+You may sometimes find yourself forced to add Vendor Prefixes; they are unique markers added to a CSS property, tailored to a specific browser's rendering engine. It ensures the property works exclusively in that browser, aligning with its implementation. the most used ones are: 
+
+- `o-` for old versions of Opera
+- `moz-` for Gecko Engine (Mozilla)
+- `webkit-` for Webkit Engine (Chrome, Safari,newer versions of Opera,...)
+- `ms-` for Microsoft Engine (Internet Explorer)
+
+## **It’s hard to debug**
+
+Like I said earlier in this post, CSS feels like adjusting the settings and its cascading nature makes it worse, rules can cascade and override one another based on specificity, inheritance, and the order in which they are defined. this leads us to the game changer **!important**, it is the life saver for many. In fact, using the `!important` rule will override all previously applied styles for that specific property on the element and save you a lot of time(it is not the cleanest way tho).
+
+Unlike programming languages that offer error messages or warnings, CSS provides no direct feedback when something goes wrong. Instead, it silently applies the nearest valid rule, making it more difficult to identify issues.
+
+## Grid Layout/Flexbox
+
+![FlexGrid.png](https://lh3.googleusercontent.com/d/1ITrp1KqJL-9cFiHRvnA4OCbTn_Zhhq75)
+
+
+Before **Flexbox (2012)** and **CSS Grid (2017)** became widely adopted, layouts relied on:
+
+- **Floats:** Elements were floated to create multi-column layouts, but clearing floats was necessary to prevent layout issues.
+    
+    ```css
+    .column {
+      float: left;
+      width: 50%;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    ```
+    
+- **Inline-Block:** Allowed elements to sit side by side, but inconsistent spacing due to whitespace between elements was a common issue.
+    
+    ```css
+    .box {
+      display: inline-block;
+      width: 200px;
+      height: 100px;
+      background: lightblue;
+    }
+    
+    ```
+    
+- **Positioning:** Elements were positioned explicitly using absolute or relative positioning, making layouts less flexible.
+    
+    ```css
+    .container {
+      position: relative;
+    }
+    .box {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+    }
+    
+    ```
+    
+
+Today, Flexbox and Grid Layout form the backbone of modern web layouts:
+
+Before Flexbox, aligning things in CSS was a nightmare. You had to mess with floats, inline-block (mentioned above), or even weird margin hacks just to center something. Then Flexbox came along and said, 'I got your back.'. Just add `display: flex;`, and suddenly, your elements enter the zone. Want to space them out? `justify-content: space-between;`. for vertical centering use `align-items: center;` and use `justify-content` for horizontal manipulations. It’s not the magic stick for everything but when mastered can save you a lot of time.
+
+**Ideal for:** Navigation bars, buttons, and flexible content blocks.
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
-func main() {
-    http.HandleFunc("/", handler)
-    http.ListenAndServe(":8080", nil)
+```
+
+---
+
+Grid excels at **two-dimensional** design, controlling both **rows and columns** simultaneously for structured layouts.
+
+- Enable it with `display: grid;`.
+- Define layouts using `grid-template-columns` and `grid-template-rows`.
+
+**Ideal for:** Web page layouts, dashboards, and complex grids.
+
+```css
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+```
+
+## **Breakpoints/media queries**
+
+Responsive design isn’t some hidden trick; it’s all about **media queries**, which adjust styles based on screen size, resolution, or device type.
+
+**Breakpoints** are specific screen widths at which a website's layout or design changes to ensure optimal viewing across different devices (e.g., mobile, tablet, desktop). They define when CSS styles should be applied based on screen size.
+
+**Media Queries** are CSS rules that apply styles depending on conditions like screen width, height, resolution, or device orientation. They are used to implement responsive design.
+
+![MediaQueries.png](https://lh3.googleusercontent.com/d/1FqieABSyGYN029ydhy4Wtey1cuu2DE6O)
+
+```css
+@media (max-width: 768px) {
+  body {
+    background-color: lightgray;
+  }
 }
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In this case, if the screen width is **768px or smaller**, the background color will change.
 
-## Nostra torquent consequat volutpat aliquet neque
+## Too many frameworks and tools
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit proin, aenean litora volutpat urna egestas magnis arcu non, cras ut cursus et sed morbi lectus. Integer faucibus sagittis eu nunc urna aliquet a laoreet torquent, suspendisse penatibus nulla sollicitudin congue rutrum dictum. Ornare mi habitasse fermentum phasellus dui et morbi litora sodales dictum id erat, nibh purus class ligula aenean lectus venenatis euismod cras torquent ac. Senectus sagittis conubia hendrerit at egestas porta venenatis nisi metus gravida tempor, aenean facilisis nisl ante facilisi lacus integer hac iaculis purus. Scelerisque libero torquent egestas curae tellus viverra inceptos imperdiet urna, porta suspendisse interdum primis odio morbi tempor commodo dictumst, suscipit ornare habitasse semper feugiat cras quisque lobortis.
+Back in my day (not so long ago), we had only one framework, and it was a lifesaver. I'm talking about **Bootstrap 3**, exactly. Now, there is a variety of frameworks available, depending on the size, complexity, and duration of your project.
 
-Iaculis arcu commodo dis proin vitae himenaeos, ante tristique potenti magna ligula, sagittis libero fermentum ullamcorper sociis. Sem eros non arcu natoque fringilla lacus vestibulum lacinia integer mus viverra in proin, sagittis fusce tortor erat enim rutrum vulputate curae laoreet class diam. Inceptos convallis ac nisi natoque nam quisque magnis ut nullam fringilla curae, luctus lacus purus habitant erat magna molestie class habitasse metus, nibh lobortis tortor curabitur neque phasellus feugiat netus morbi parturient. Neque malesuada mauris justo himenaeos pharetra, ullamcorper enim ligula a nulla consequat, eget vivamus velit ridiculus.
+While there are tons of CSS frameworks, extensions, and preprocessors, I will focus on those I’ve had the chance to work with and share my honest feedback on each one.
 
-## Praesent tellus ad sapien erat or
+**Sass**
 
-- Quam orci nostra mi nulla, hac a.
+As we step into 2024, it's undeniable that CSS has undergone rapid development. Features that were once unique to Sass are now natively integrated into CSS, including variables, functions and Nesting.
 
-- Interdum iaculis quis tellus sociis orci nulla, quam rutrum conubia tortor primis.
+following the DRY principle (Don't Repeat Yourself), I find sass the best alternative if you’re not willing to use neither native css or frameworks like tailwindCSS 
 
-- Non felis sem placerat aenean duis, ornare turpis nostra.
+**Tailwind CSS**
 
-- Habitasse duis sociis sagittis cursus, ante dictumst commodo.
+Tailwind CSS is a **utility-first** framework that lets you build custom designs directly in your HTML by using a set of predefined classes. It's powerful because it promotes **rapid development**, **customizability**, and **flexibility**.
 
-Duis maecenas massa habitasse inceptos imperdiet scelerisque at condimentum ultrices, nam dui leo enim taciti varius cras habitant pretium rhoncus, ut hac euismod nostra metus sagittis mi aenean. Quam eleifend aliquet litora eget a tempor, ultricies integer vestibulum non felis sodales, eros diam massa libero iaculis.
+It is my favorite CSS framework at the moment. Its learning curve is steep, but the payoff is worth it for advanced features.
 
-Nisl ligula ante magnis himenaeos pellentesque orci cras integer urna ut convallis, id phasellus libero est nunc ultrices eget blandit massa ac hac, morbi vulputate quisque tellus feugiat conubia luctus tincidunt curae fermentum. Venenatis dictumst tincidunt senectus vivamus duis dis sociis taciti porta primis, rhoncus ridiculus rutrum curae mattis ullamcorper ac sagittis nascetur curabitur erat, faucibus placerat vulputate eu at habitasse nulla nisl interdum. Varius turpis dignissim montes ac ante tristique quis parturient hendrerit faucibus, consequat auctor penatibus suspendisse rutrum erat nulla inceptos est justo, etiam mollis mauris facilisi cras sociosqu eu sapien sed.
+**Bootstrap**
 
-Blandit aptent conubia mollis mauris habitasse suspendisse torquent aenean, ac primis auctor congue cursus mi posuere molestie, velit elementum per feugiat libero dictumst phasellus. Convallis mollis taciti condimentum praesent id porttitor ac dictumst at, sed in eu eleifend vehicula fermentum lectus litora venenatis, gravida hac molestie cum sociosqu mus viverra torquent. Congue est fusce habitasse ridiculus integer suscipit platea volutpat, inceptos varius elementum pellentesque malesuada interdum magnis. Hac lacus eget enim purus massa commodo nec lectus natoque fames arcu, mattis class quam ut neque dui cras quis diam orci sed velit, erat morbi eros suscipit sagittis laoreet vivamus torquent nulla turpis.
+With his latest version, bootstrap still very useful for rapid prototyping and MVPs, but its lack of customization is what is making me not considering it as my first option when I work on a project. 
 
-Ridiculus velit suscipit consequat auctor interdum magna gravida dictumst libero ut habitasse, sollicitudin vehicula suspendisse leo erat tristique at platea sagittis proin dignissim, id ornare scelerisque et urna maecenas congue tincidunt dictum malesuada. Dui vulputate accumsan scelerisque ridiculus dictum quisque et nam hac, tempus ultricies curabitur proin netus diam vivamus. Vestibulum ante ac auctor mi urna risus lacinia vulputate justo orci sociis dui semper, commodo morbi enim vivamus neque sem pellentesque velit donec hac metus odio. Tempor ultrices himenaeos massa sollicitudin mus conubia scelerisque cubilia, nascetur potenti mauris convallis et lectus gravida egestas sociis, erat eros ultricies aptent congue tortor ornare.
+To sum it up, CSS can be frustrating, it may take time to master, but skipping it limits your ability to build visually appealing user interfaces. It's a fundamental skill every web developer must learn.
 
-Pretium aliquet sodales aliquam tincidunt litora lectus, erat dui nibh diam mus, sed hendrerit condimentum senectus arcu. Arcu a nibh auctor dapibus eros turpis tempus commodo, libero hendrerit dictum interdum mus class sed scelerisque, sapien dictumst enim magna molestie habitant donec. Fringilla dui sed curabitur commodo varius est vel, viverra primis habitant sapien montes mattis dignissim, gravida cubilia laoreet tempus aliquet senectus. Sociosqu purus praesent porttitor curae sollicitudin accumsan feugiat maecenas donec quis lacus, suscipit taciti convallis odio morbi eros nibh bibendum nunc orci. Magna cras nullam aliquam metus nibh sagittis facilisi tortor nec, mus varius curae ridiculus fames congue interdum erat urna, neque odio lobortis mi mattis diam cubilia arcu.
-
-Laoreet fusce nec class porttitor mus proin aenean, velit vestibulum feugiat porta egestas sapien posuere, conubia nisi tempus varius hendrerit tortor. Congue aliquam scelerisque neque vivamus habitasse semper mauris pellentesque accumsan posuere, suspendisse lectus gravida erat sagittis arcu praesent mus ornare. Habitasse nibh nam morbi mollis senectus erat risus, cum sollicitudin class platea congue mattis venenatis, luctus aenean parturient hendrerit malesuada ante. Mus auctor tincidunt consequat massa tortor nulla luctus habitasse vestibulum quis velit, laoreet sagittis cum facilisi in sem tellus leo vulputate vehicula bibendum orci, felis nisl blandit lacus convallis congue turpis magna facilisis condimentum.
-
-Dictumst pellentesque urna donec sociis suscipit montes consequat, commodo quam habitasse senectus fringilla maecenas, inceptos magna tristique eu nullam nam. Maecenas orci nibh hac eu tristique ut penatibus ultrices ante, pellentesque cubilia pharetra dis facilisis aliquam praesent malesuada vivamus, commodo cras velit convallis molestie nec tellus augue. Etiam ut convallis risus id dapibus platea laoreet accumsan, habitant et aenean netus inceptos iaculis per, mauris curae at ligula odio ad eu. Mauris erat tempor interdum sapien commodo per nullam tortor, fusce facilisis vehicula egestas dui nulla conubia ut fames, fringilla et tincidunt penatibus facilisi at mollis.
-
-Fermentum sociosqu litora primis sollicitudin fusce diam consequat vehicula per lobortis et, viverra sodales magna rutrum sed mollis faucibus molestie purus montes est, risus nostra congue venenatis lectus enim torquent eros dis dapibus. Dui suscipit scelerisque massa ligula euismod accumsan augue, magna vel lacus ante nullam senectus commodo, viverra cubilia eros eget penatibus tempor. Mattis mauris hac felis semper dui sociis faucibus mollis ornare pretium aliquam velit nisl, quis litora sem at vel duis rutrum imperdiet natoque viverra himenaeos tempor.
-
-Integer eu tristique purus luctus vivamus porttitor vel nisl, tortor malesuada augue vulputate diam velit pellentesque sodales, duis phasellus vestibulum fermentum leo facilisi porta. Hac porttitor cum dapibus volutpat quisque odio taciti nulla senectus mollis curae, accumsan suscipit cubilia tempor ligula in venenatis justo leo erat, magna tincidunt nullam lacinia luctus malesuada non vivamus praesent pharetra. Non quam felis montes pretium volutpat suspendisse lacus, torquent magna dictumst orci libero porta, feugiat taciti cras ridiculus aenean rutrum. Tellus nostra tincidunt hac in ligula mi vulputate venenatis pellentesque urna dui, at luctus tristique quisque vel a dignissim scelerisque platea pretium, suspendisse ante phasellus porttitor quis aliquam malesuada etiam enim nullam.
-
-Hendrerit taciti litora nec facilisis diam vehicula magnis potenti, parturient velit egestas nisl lobortis tincidunt rutrum cursus, fusce senectus mi massa primis mattis rhoncus. Accumsan est ac varius consequat vulputate, ligula cursus euismod sagittis inceptos scelerisque, lacus malesuada torquent dictumst. Volutpat morbi metus urna rhoncus nunc tempor molestie, congue curabitur quis interdum posuere. Mollis viverra velit tortor mus netus nunc molestie metus, sem massa himenaeos luctus feugiat taciti iaculis fames porttitor, leo arcu consequat gravida dapibus pulvinar elementum.
+Even as a backend developer, understanding frontend basics, including CSS, allows you to contribute to the overall design and user experience, making you a more versatile and valuable member of any development team.
