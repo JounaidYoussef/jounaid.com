@@ -11,7 +11,7 @@ tags:
   - writing
   - habits
 # metadata:
-#   canonical: 
+#   canonical:
 ---
 
 So, I started a blog.
