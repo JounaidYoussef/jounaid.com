@@ -16,7 +16,15 @@ You’ve been recruited by the company you wanted to join, promoted to a higher 
 
 In a world that’s moving so fast — the tech world — there’s a high chance you’ve felt something like this. That creeping sense of “I shouldn’t be here”? That’s what we call **impostor syndrome**. It describes people who’ve actually put in the time and effort to learn the skills needed to do their job, and yet, they still feel unqualified.
 
-![](https://media1.tenor.com/m/HUaRwZ3xfQ8AAAAC/big-bird.gif)
+<style>
+.gif{
+    justify-self: center;
+}
+</style>
+
+<img class='gif' src="https://media1.tenor.com/m/HUaRwZ3xfQ8AAAAC/big-bird.gif"/>
+
+<!-- ![](https://media1.tenor.com/m/HUaRwZ3xfQ8AAAAC/big-bird.gif) -->
 
 Let’s not confuse impostor syndrome with lying on your résumé. Impostor syndrome is when you’ve actually done the work; you’ve studied, practiced, built things, but still feel like you don’t deserve your seat at the table. Lying on your résumé, on the other hand, is when you actually have no idea what you’re doing but somehow finessed your way in. One is a confidence issue. The other is... a future case study for the HR department.
 
@@ -32,7 +40,15 @@ Remember that most people only post their wins, not their bugs, breakdowns, or b
 
 The deeper you go in tech, the more you realize how much you don’t know. And that’s not a sign of failure, that’s just how it is.
 
-![](https://media1.tenor.com/m/Dts1gcI8Tv0AAAAC/crying-dexter.gif)
+<style>
+.gif{
+    justify-self: center;
+}
+</style>
+
+<img class='gif' src="https://media1.tenor.com/m/Dts1gcI8Tv0AAAAC/crying-dexter.gif"/>
+
+<!-- ![](https://media1.tenor.com/m/Dts1gcI8Tv0AAAAC/crying-dexter.gif) -->
 
 There’s always a new framework, a new database, a new AI-powered thing you’re supposed to master by Tuesday. It’s like watching _One Piece_ just when you think you’re finally catching up, the story drops a hundred more episodes, three new arcs, and a plot twist no one saw coming.
 

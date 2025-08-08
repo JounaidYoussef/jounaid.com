@@ -19,7 +19,13 @@ Put simply, **Hardware as a Service (HaaS)** works a lot like renting instead of
 
 Even if you've never personally encountered this trend, it is becoming the default choice for companies, especially in tech . but at the individual level, whether as developers or everyday consumers are facing a real issue concerning the choice between personal property and this new model, that makes you gain a lot of time but it also pulls you into a system where you're constantly paying, often without realizing how little you actually need what you're renting.
 
-![](https://y.yarn.co/b483287f-8bcf-4ee8-938f-c8052d080cc1_text.gif)
+<style>
+.gif{
+    justify-self: center;
+}
+</style>
+
+<img class='gif' src="https://y.yarn.co/b483287f-8bcf-4ee8-938f-c8052d080cc1_text.gif" width="40%" height="40%"/>
 
 Of course, this shift isn’t without its weird side. I still remember the movie **"Repo Men"**, where people get artificial organs on credit—and if they miss payments, the repo guys literally take them back? Sure, that’s sci-fi (for now), but it makes you wonder: when everything’s on subscription, what happens if you stop paying? Does your smart fridge lock the door until you renew? Okay, maybe not—but relying on rented hardware means companies could cut you off, limit features, or push upgrades you don’t really need. Owning your gear might seem old-school, but at least your screwdriver doesn’t come with a monthly fee.
 
@@ -31,7 +37,13 @@ Let’s shift gears for a second—from control and consumerism to **cold, hard 
 
 From a business perspective, The goal isn’t just to sell hardware once and move on. It’s to **minimize CAC** (the cost of convincing someone to become a customer) and **maximize LTV** (the total revenue a business expects to earn from a single customer over time). Subscriptions stretch the customer relationship across months—or years—making each user more valuable the longer they stick around.
 
-![LTV-CAC.png](https://lh3.googleusercontent.com/d/15aKGhYhdCayu0mgtFm_Mm8R5M5RTPU__)
+<style>
+.gif{
+    justify-self: center;
+}
+</style>
+
+<img class='gif' src="https://lh3.googleusercontent.com/d/15aKGhYhdCayu0mgtFm_Mm8R5M5RTPU__"/>
 
 The chart shows that the cost to get a new customer (CAC) hasn’t changed much, but the money earned from each customer over time (LTV) has gone up. This means companies are making more profit from each customer, which is a good sign for subscription models.
 
@@ -39,7 +51,15 @@ The chart shows that the cost to get a new customer (CAC) hasn’t changed much,
 
 Here’s an easy chart to help you figure out if HaaS (Hardware as a Service) or owning your own hardware is a better fit for you. It’s a quick way to compare based on what matters most like cost, control, or how easily you can grow.
 
-![HaasOrPurchase.png](https://lh3.googleusercontent.com/d/1owgMI1HqSGjA3alf6WqXU7Sub551xxKS)
+<style>
+.gif{
+    justify-self: center;
+}
+</style>
+
+<img alt='HaasOrPurchase' class='gif' src="https://lh3.googleusercontent.com/d/1owgMI1HqSGjA3alf6WqXU7Sub551xxKS"/>
+
+<!-- ![HaasOrPurchase.png](https://lh3.googleusercontent.com/d/1owgMI1HqSGjA3alf6WqXU7Sub551xxKS) -->
 
 ## **Environmental Impact**
 

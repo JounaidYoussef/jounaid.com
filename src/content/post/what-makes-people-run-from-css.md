@@ -12,11 +12,15 @@ metadata:
   canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 ---
 
-# What makes people run from CSS(100%)
-
 Since University days, and even in corporate, a lot of comrades and colleges showed their struggle to use CSS , describing it as a black box. I knew after that it is something common among developer, it even goes sometimes to the point of redirecting their career choices; well, I know people who went backend only for the sake of avoiding CSS.
 
-![](https://media3.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=7941fdc6mjmz5pz6kn0t6t2f90n3a2uu1kemplqdspczdgm1&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+<style>
+.gif{
+    justify-self: center;
+}
+</style>
+
+<img class='gif' src="https://media3.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=7941fdc6mjmz5pz6kn0t6t2f90n3a2uu1kemplqdspczdgm1&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="35%" height="35%"/>
 
 the question that triggered me to write this article is what makes what is considered a pillar of web and mobile development to be feared by a lot of people and sometimes blocking their learning journey.
 

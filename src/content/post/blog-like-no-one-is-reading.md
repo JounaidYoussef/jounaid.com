@@ -76,6 +76,14 @@ Yeah, _that_ clock — [The Doomsday Clock](https://thebulletin.org/doomsday-clo
 
 If you needed a sign that life is short, strange, and unpredictable, here it is: 89 seconds to midnight (and maybe even less by the time you read this).
 
+<style>
+.gif{
+    justify-self: center;
+}
+</style>
+
+<img alt='HaasOrPurchase' class='gif' src="https://media1.tenor.com/m/pioJTCSFe78AAAAC/the-simpsons-homer.gif"/>
+
 So… why not write that blog post now? Before the aliens arrive or the AI takes over.
 
 (And hey, if the machines do take over, maybe they’ll read your blog, think you’re cool, and give you a higher rank in the Matrix. Maybe I’m getting carried away. 😅)
