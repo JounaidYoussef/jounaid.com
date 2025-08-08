@@ -1,14 +1,15 @@
 ---
-publishDate: 2023-07-15T00:00:00Z
+publishDate: 2025-03-05T00:00:00Z
 title: 'HaaS (Not the F1 Team): Is Subscription-Based Hardware the Future?'
-excerpt: Ever clicked on an ad and found yourself on a page that seemed to really want you to do something? Congratulations, you've landed on a Landing Page!
+excerpt: What if owning hardware was yesterday’s news? Let's discover how Hardware as a Service (HaaS) is changing the game!
 image: https://lh3.googleusercontent.com/d/10clY09JewuN2JY1cw-h1kz5NfWK_K9FG
 tags:
-  - landing-pages
-  - front-end
-  - resources
-metadata:
-  canonical: https://astrowind.vercel.app/landing
+  - hardware
+  - techtrends
+  - business
+  - subscription
+# metadata:
+#   canonical:
 ---
 
 In Formula 1, Haas team doesn’t build its own engines—they source them from Ferrari. It’s a smart way to stay competitive without the burden of manufacturing everything themselves.

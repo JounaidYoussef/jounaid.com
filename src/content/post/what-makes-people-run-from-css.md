@@ -1,15 +1,19 @@
 ---
-publishDate: 2023-08-12T00:00:00Z
+publishDate: 2024-07-19T00:00:00Z
 # author: Youssef Jounaid
 title: What makes people run from CSS
-excerpt: Start your web journey with AstroWind – harness Astro and Tailwind CSS for a stunning site. Explore our guide now.
+excerpt: Loved by designers, feared by developers. Find out what makes it so tricky and how to conquer it.
 image: https://lh3.googleusercontent.com/d/13VAz_tCr0NtHDUW66OCqRnqk-OlrZrVR
 # category: Tutorials
 tags:
-  - astro
-  - tailwind css
-metadata:
-  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
+  - web development
+  - frontend
+  - flexbox
+  - grid
+  - design
+  - styling
+# metadata:
+#   canonical:
 ---
 
 Since University days, and even in corporate, a lot of comrades and colleges showed their struggle to use CSS , describing it as a black box. I knew after that it is something common among developer, it even goes sometimes to the point of redirecting their career choices; well, I know people who went backend only for the sake of avoiding CSS.

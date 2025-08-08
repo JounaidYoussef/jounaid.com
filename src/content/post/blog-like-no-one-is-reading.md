@@ -1,15 +1,17 @@
 ---
-publishDate: 2023-08-12T00:00:00Z
+publishDate: 2022-08-06T00:00:00Z
 # author: Youssef Jounaid
 title: Blog Like No One’s Reading (Because Maybe No One Is, And That’s Okay)
-excerpt: Start your web journey with AstroWind – harness Astro and Tailwind CSS for a stunning site. Explore our guide now.
+excerpt: Write like no one’s watching, because maybe they’re not. But that’s okay. Blogging is your space to grow, learn, and share your story.
 image: https://lh3.googleusercontent.com/d/1nrmuCoXAItgTB-CgZd4bPAsgvbmUAxH5
 # category: Tutorials
 tags:
-  - astro
-  - tailwind css
-metadata:
-  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
+  - blogging
+  - mindset
+  - writing
+  - habits
+# metadata:
+#   canonical: 
 ---
 
 So, I started a blog.

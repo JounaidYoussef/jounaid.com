@@ -1,15 +1,17 @@
 ---
-publishDate: 2023-07-15T00:00:00Z
+publishDate: 2024-12-20T00:00:00Z
 title: 'How to Center a Div (And Still Feel Like a Fraud): Impostor Syndrome in Tech'
 excerpt: You came here for how to center a div, right? Don’t worry, we’ll get to that. But first, let’s talk about why Stack Overflow makes you feel like a fraud.
 
 image: https://lh3.googleusercontent.com/d/1IXOrfafHReay6Arv1nbwIVE6FC9_xAte
 tags:
-  - landing-pages
-  - front-end
-  - resources
-metadata:
-  canonical: https://astrowind.vercel.app/landing
+  - mentalhealth
+  - mindset
+  - selfdoubt
+  - motivation
+  - impostor syndrome
+# metadata:
+#   canonical:
 ---
 
 You’ve been recruited by the company you wanted to join, promoted to a higher position, or invited to work on an interesting project. But instead of feeling proud of your achievement, you start to doubt yourself. You wonder if you’re really as competent or brilliant as others think, and you worry that it’s only a matter of time before someone realizes you’re not actually qualified.
