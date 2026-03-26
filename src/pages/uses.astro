@@ -1,0 +1,28 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import UsesBody from '../content/md/usesBody.md';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Uses',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    image={{
+      src: 'https://lh3.googleusercontent.com/d/1wCKaydDpfhAIrP3UrSEEoqlnCKM64-ON',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title"
+      ><span class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading">The Workspace </span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      This is my setup—the gear and software I use every day to build and ship. It’s a mix of tools I’ve gathered over
+      time that help me stay focused and enjoy the process. Nothing fancy, just the things that get the job done.
+    </Fragment>
+  </Hero>
+  <UsesBody />
+</Layout>

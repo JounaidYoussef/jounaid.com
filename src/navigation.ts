@@ -2,6 +2,11 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
+            { text: 'Home', href: getPermalink() },
+                    {
+      text: 'Projects',
+      href: getPermalink('/projects'),
+    },
     {
       text: 'Blog',
       href: getBlogPermalink(),
@@ -28,13 +33,11 @@ export const headerData = {
       //   },
       // ],
     },
-    // {
-    //   text: 'Projects',
-    //   href: getPermalink('/projects'),
-    // },
+
+    { text: 'Uses', href: getPermalink('/uses') },
     { text: 'About', href: getPermalink('/about') },
-    { text: 'Resume', href: getPermalink('/resume') },
-    { text: 'Services', href: getPermalink('/services') },
+    // { text: 'Resume', href: getPermalink('/resume') },
+    // { text: 'Services', href: getPermalink('/services') },
   ],
   actions: [{ text: 'Get In Touch', href: getPermalink('/contact') }],
 };
@@ -51,6 +54,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/JounaidYoussef' },
   ],
   footNote: `
-    Copyright © 2025 · All rights reserved.
+    Copyright © 2026 · All rights reserved.
   `,
 };

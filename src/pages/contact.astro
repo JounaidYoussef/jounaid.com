@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
+import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
   title: 'Contact',
@@ -9,14 +10,19 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <Hero>
+    <Fragment slot="title"
+      ><span class="text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading">The Reach Out</span>
+    </Fragment>
 
-  <HeroText title="Let's Connect!" />
-
+    <Fragment slot="subtitle">
+      Want to build something together, or just talk about code, design, movies, or music? I’m always open to new ideas
+      and fresh perspectives. Drop a message and let’s see where it goes.
+    </Fragment>
+  </Hero>
   <ContactUs
     id="form"
     classes={{ container: 'pt-0 lg:pt-0 md:pt-0' }}
-    subtitle="I'm always eager to connect and discuss new projects, ideas, or collaborations. Whether you have a question, need assistance, or just want to say hello, feel free to reach out !"
     inputs={[
       {
         type: 'text',

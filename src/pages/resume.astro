@@ -1,5 +1,7 @@
 ---
-import Features3 from '~/components/widgets/Features3.astro';
+import Features from '~/components/widgets/Features.astro';
+// import Features3 from '~/components/widgets/Features3.astro';
+import Languages from '~/components/widgets/Languages.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -10,54 +12,151 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Steps Widget ****************** -->
+  <div class="py-12 md:py-16 lg:py-20">
+    <div class="flex w-4/5 mx-auto py-12">
+      <span>
+        <span>
+          “I’m Youssef JOUNAID, a Software Enginner passionate about creating meaningful work that drives impact. Here’s
+          a closer look at my journey — or grab the résumé if you’d like the quick version.”
+        </span>
+        <br />
+        <button>Download PDF version</button>
+      </span>
 
-  <Steps
-    id="resume"
-    title="Work experience"
-    items={[
-      {
-        title:
-          'Full Stack Engineer Java/Angular<br /> <span class="font-normal">ALTEN SO, Toulouse, France</span> <br /> <span class="text-sm font-normal">2022 - 2024</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'Front-End Developer Intern<br /> <span class="font-normal">Orange France, Villejuif, France</span> <br /> <span class="text-sm font-normal">2021 - 2022</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'Web and Mobile Engineer <br /> <span class="font-normal">Orange Bytes, Casablanca, Morocco</span> <br /> <span class="text-sm font-normal">2020 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
-        icon: 'tabler:briefcase',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  />
+      <span>Hellooo</span>
+    </div>
+    <div class="flex flex-row w-4/5 mx-auto">
+      <div class="basis-3/5">
+        <Steps
+          id="resume"
+          title="Work experience"
+          items={[
+            {
+              title:
+                '<span class="text-lg">Full-Stack Developer & UI/UX Designer </span><br /> <span class="font-normal text-base">Freelance, Remote</span> <br /> <span class="text-sm font-normal">2024 - Now</span>',
+              description: `<ul><li>Develop dynamic and optimized user interfaces using Angular and React. </li><li> Design consistent and user-centered experiences by combining strong design skills with client needs analysis.</li></ul>`,
+              icon: 'tabler:briefcase',
+            },
+            {
+              title:
+                '<span class="text-lg">Full Stack Engineer Java/Angular</span><br /> <span class="font-normal text-base">ALTEN SO, Toulouse, France</span> <br /> <span class="text-sm font-normal">2022 - 2024</span>',
+              description: `Collaborate with clients to understand design requirements and objectives. <br />  Développer et migrer l’interface utilisateur vers Angular 13 (depuis
+AngularJS/Angular 8). <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+              icon: 'tabler:briefcase',
+            },
+            {
+              title:
+                '<span class="text-lg">Front-End Developer Intern<br /> <span class="font-normal text-base">Orange France, Villejuif, France</span> <br /> <span class="text-sm font-normal">2021 - 2022</span>',
+              description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+              icon: 'tabler:briefcase',
+            },
+            {
+              title:
+                '<span class="text-lg">Web and Mobile Engineer</span>Web and Mobile Engineer <br /> <span class="font-normal text-base">Orange Bytes, Casablanca, Morocco</span> <br /> <span class="text-sm font-normal">2020 - 2021</span>',
+              description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+              icon: 'tabler:briefcase',
+            },
+          ]}
+          classes={{
+            container:
+              'max-w-3xl py-6 md:py-4 lg:py-2 bg-slate-100 dark:bg-slate-800 my-6 md:my-4 lg:my-2 mx-6 md:mx-4 lg:mx-2 rounded-3xl',
+          }}
+        />
+      </div>
 
-  <!-- Steps Widget ****************** -->
+      <!-- Steps Widget ****************** -->
+      <div class="basis-2/5">
+        <Steps
+          id="resume"
+          title="Education"
+          items={[
+            {
+              title: `<span class="text-lg">Master's in Computer Engineering, specializing in Systems and Software Engineering</span> <br /> <span class="font-normal text-base">University of Franche-Comté</span><br /> <span class="text-sm font-normal">Besançon - France</span> <br /> <span class="text-sm font-normal">2021 - 2022</span>`,
+              icon: 'tabler:school',
+            },
+            {
+              title: `<span class="text-lg">State Engineer’s Degree in Software Engineering</span> <br /> <span class="font-normal text-base">National School of Applied Sciences</span><br /> <span class="text-sm font-normal">Al Hoceima - Morocco</span> <br /> <span class="text-sm font-normal">2014 - 2020</span>`,
+              icon: 'tabler:school',
+            },
+          ]}
+          classes={{
+            container:
+              'max-w-3xl py-6 md:py-4 lg:py-2 bg-slate-100 dark:bg-slate-800 my-6 md:my-4 lg:my-2 mx-6 md:mx-4 lg:mx-2 rounded-3xl',
+          }}
+        />
 
-  <Steps
-    id="resume"
-    title="Education"
-    items={[
-      {
-        title: `Master's in Computer Engineering, specializing in Systems and Software Engineering <br /> <span class="font-normal">University of Franche-Comté</span><br /> <span class="text-sm font-normal">Besançon - France</span> <br /> <span class="text-sm font-normal">2021 - 2022</span>`,
-        icon: 'tabler:school',
-      },
-      {
-        title: `State Engineer’s Degree in Software Engineering <br /> <span class="font-normal">National School of Applied Sciences</span><br /> <span class="text-sm font-normal">Al Hoceima - Morocco</span> <br /> <span class="text-sm font-normal">2014 - 2020</span>`,
-        icon: 'tabler:school',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  />
+        <Languages
+          id="resume"
+          title="Languages"
+          items={[
+            {
+              title: '<span class="text-lg">Arabic </span><br /><span class="text-sm font-normal">Native</span>',
+              icon: 'tabler:language',
+            },
+            {
+              title: '<span class="text-lg">English</span> <br /><span class="text-sm font-normal">Fluent</span>',
+              icon: 'tabler:language',
+            },
+            {
+              title: '<span class="text-lg">French</span> <br /><span class="text-sm font-normal">Fluent</span>',
+              icon: 'tabler:language',
+            },
+            {
+              title: '<span class="text-lg">Spanish</span> <br /><span class="text-sm font-normal">Beginner</span>',
+              icon: 'tabler:language',
+            },
+          ]}
+          classes={{
+            container:
+              'max-w-3xl bg-slate-100 dark:bg-slate-800 py-6 md:py-4 lg:py-2 my-6 md:my-4 lg:my-2 mx-6 md:mx-4 lg:mx-2 rounded-3xl',
+          }}
+        />
+      </div>
+    </div>
 
-  <!-- Features3 Widget ************** -->
+    <!-- Features Widget *************** -->
 
-  <Features3
+    <Features
+      id="features"
+      title="Additional Skills"
+      columns={3}
+      items={[
+        {
+          title: 'Containers',
+          description: 'Docker',
+          icon: 'tabler:box',
+        },
+        {
+          title: 'Databases',
+          description: 'MongoDB, PostgreSQL, Microsoft SQL Server, Elasticsearch',
+          icon: 'tabler:database',
+        },
+        {
+          title: 'Automation',
+          description: 'Jenkins, Ansible',
+          icon: 'tabler:automation',
+        },
+        {
+          title: 'Version Control Tools',
+          description: 'GitLab, GitHub, Microsoft Azure',
+          icon: 'tabler:git-merge',
+        },
+        {
+          title: 'Agile Methods',
+          description: 'Scrum, SAFe, Kanban',
+          icon: 'tabler:arrow-iteration',
+        },
+        {
+          title: 'UI/UX',
+          description: 'Figma, Adobe XD, Wireframing, Prototyping, Usability Testing',
+          icon: 'tabler:layout',
+        },
+      ]}
+    />
+
+    <!-- Features3 Widget ************** -->
+
+    <!-- <Features3
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
     columns={3}
@@ -100,5 +199,6 @@ const metadata = {
         description: 'Quick to adapt to new design trends, technologies, and client preferences.',
       },
     ]}
-  />
+  /> -->
+  </div>
 </Layout>
