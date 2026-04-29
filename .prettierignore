@@ -1,4 +1,12 @@
-dist
+# Ignore lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Ignore build outputs
+dist/
+.astro/
+
 node_modules
 .github
 .changeset
