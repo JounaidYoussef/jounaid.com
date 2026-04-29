@@ -1,4 +1,3 @@
-/** @type {import('prettier').Config} */
 export default {
   printWidth: 120,
   semi: true,
@@ -7,7 +6,7 @@ export default {
   trailingComma: 'es5',
   useTabs: false,
 
-  plugins: [require.resolve('prettier-plugin-astro')],
+  plugins: ['prettier-plugin-astro'],
 
   overrides: [{ files: '*.astro', options: { parser: 'astro' } }],
 };
