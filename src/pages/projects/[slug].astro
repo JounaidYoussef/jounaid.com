@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '~/layouts/PageLayout.astro';
+
+// 1. Tell Astro which slugs to generate
+export async function getStaticPaths() {
+  const projectEntries = await getCollection('project');
+  return projectEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+// 2. Get the specific project data
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout metadata={{ title: entry.data.title }}>
+  <article class="px-6 py-16 mx-auto max-w-4xl">
+    <header class="text-center mb-12">
+      <h1 class="text-5xl font-bold font-heading">{entry.data.title}</h1>
+      <p class="text-xl text-muted mt-4">{entry.data.category} — {entry.data.role}</p>
+    </header>
+
+    <img src={entry.data.image} alt={entry.data.title} class="rounded-xl shadow-lg mb-12" />
+
+    <div class="prose prose-lg dark:prose-invert mx-auto">
+      <Content />
+    </div>
+  </article>
+</Layout>

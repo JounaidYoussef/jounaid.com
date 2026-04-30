@@ -63,6 +63,21 @@ const postCollection = defineCollection({
   }),
 });
 
+const projectCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    category: z.string(),
+    publishDate: z.string().transform((str) => new Date(str)),
+    image: z.string(),
+    role: z.string(),
+    description: z.string(),
+    tags: z.array(z.string()),
+    link: z.string().url().optional(),
+  }),
+});
+
 export const collections = {
   post: postCollection,
+  project: projectCollection,
 };
