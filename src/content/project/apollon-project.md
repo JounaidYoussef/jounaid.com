@@ -1,5 +1,6 @@
 ---
 title: 'Apollon Project'
+weight: 1
 category: 'Brand Identity'
 publishDate: '2026-04-30'
 image: '~/assets/images/apollon-mockup.png'

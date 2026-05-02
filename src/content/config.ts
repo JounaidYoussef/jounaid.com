@@ -67,6 +67,7 @@ const projectCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    weight: z.number().default(99),
     category: z.string(),
     publishDate: z.string().transform((str) => new Date(str)),
     image: z.string(),

@@ -1,5 +1,6 @@
 ---
 title: 'Flavorr'
+weight: 2
 category: 'Brand Identity'
 publishDate: '2026-04-30'
 image: '~/assets/images/apollon-mockup.png'
