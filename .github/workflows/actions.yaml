@@ -11,35 +11,59 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version:
           - 18
           - 20
           - 22
+
     steps:
       - uses: actions/checkout@v4
+
+      # INSTALL PNPM VERSION
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Use Node.js v${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install PNPM
-        run: npm i -g pnpm
-      - name: Install & Build
-        run: pnpm i  &&  pnpm build
-      # - run: npm test
+          cache: pnpm
+
+      # DEBUG STEP
+      - name: Debug workspace file
+        run: cat pnpm-workspace.yaml
+
+      - name: Install
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
 
   check:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Use Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install PNPM
-        run: npm i -g pnpm
+          cache: pnpm
+
+      - name: Debug workspace file
+        run: cat pnpm-workspace.yaml
+
       - name: Install
-        run: pnpm i
+        run: pnpm install
+
       - name: Check
         run: pnpm run check
