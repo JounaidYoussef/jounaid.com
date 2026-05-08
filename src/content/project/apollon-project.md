@@ -3,7 +3,7 @@ title: 'Apollon Project'
 weight: 1
 category: 'Brand Identity'
 publishDate: '2026-04-30'
-image: '~/assets/images/apollon-mockup.png'
+image: 'https://lh3.googleusercontent.com/d/1OR6ckQzr-eQQKBnQ-gTxJsDLVXds7bKD'
 role: 'Lead Designer & Developer'
 description: 'Lead Designer & Developer'
 tags: ['Astro', 'Tailwind', 'Figma']
