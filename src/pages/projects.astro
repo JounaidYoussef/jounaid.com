@@ -42,6 +42,7 @@ const sortedProjects = allProjects.sort((a, b) => a.data.weight - b.data.weight)
             description: project.data.role,
           },
         ]}
+        stack={project.data.tags}
         image={{
           src: project.data.image,
           alt: 'Tech Design Image',

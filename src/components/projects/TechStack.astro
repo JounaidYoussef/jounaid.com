@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const { tag } = Astro.props;
+
+// Map your tags to the specific Iconify identifiers
+// Format is "set-name:icon-name"
+const ICON_MAP: Record<string, string> = {
+  Astro: 'logos:astro-icon',
+  Tailwind: 'logos:tailwindcss-icon',
+  Figma: 'logos:figma',
+  React: 'logos:react',
+  Node: 'logos:nodedotjs',
+};
+
+const iconName = ICON_MAP[tag];
+---
+
+{iconName && <Icon name={iconName} class="w-8 h-8 transition-all duration-300 hover:text-white" title={tag} />}
