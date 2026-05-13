@@ -6,11 +6,34 @@ const { tag } = Astro.props;
 // Map your tags to the specific Iconify identifiers
 // Format is "set-name:icon-name"
 const ICON_MAP: Record<string, string> = {
+  // Frontend
   Astro: 'logos:astro-icon',
   Tailwind: 'logos:tailwindcss-icon',
   Figma: 'logos:figma',
   React: 'logos:react',
+  Angular: 'logos:angular-icon',
+  Vue: 'logos:vue',
+  TypeScript: 'logos:typescript-icon',
+  JavaScript: 'logos:javascript',
+
+  // Backend & Language
   Node: 'logos:nodedotjs',
+  Java: 'logos:java',
+  'Spring Boot': 'logos:spring-icon',
+  Python: 'logos:python',
+  'C#': 'logos:c-sharp',
+
+  // Databases & DevOps
+  PostgreSQL: 'logos:postgresql',
+  MongoDB: 'logos:mongodb-icon',
+  Docker: 'logos:docker-icon',
+  AWS: 'logos:aws',
+  Firebase: 'logos:firebase',
+
+  // Tools
+  Git: 'logos:git-icon',
+  GitHub: 'logos:github-icon',
+  Vercel: 'logos:vercel-icon',
 };
 
 const iconName = ICON_MAP[tag];
